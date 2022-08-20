@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* 로딩 파트 */
+#loading_wrap {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  background: rgb(0, 0, 0);
+  display: none; /*잠깐 없애놈*/
+}
+
+#icon {
+  padding: 20px;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 3;
+  stroke-linecap: round;
+  fill: black;
+  fill-opacity: 0;
+  transition: fill-opacity 1s;
+}
+
+#icon.finished {
+  fill-opacity: 1;
+}
