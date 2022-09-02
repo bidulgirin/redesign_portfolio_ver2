@@ -1,0 +1,133 @@
+#contain {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+
+  overflow: auto;
+}
+h2 {
+  padding: 40px 0;
+}
+.contain-sub {
+  font-size: 80%;
+}
+
+#box1,
+#box2,
+#box3 {
+  width: 30%;
+  margin-bottom: 50px;
+  margin-left: 2.5%;
+
+  overflow: auto;
+  float: left;
+
+  background: rgb(233, 233, 233);
+  box-sizing: border-box;
+  color: #222;
+}
+
+.class-img {
+  background: rgb(211, 211, 211);
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+}
+.lv1 {
+  background: url("../img/main/lv1-1.png") no-repeat center center;
+  background-size: 100%;
+}
+.lv2 {
+  background: url("../img/main/lv2-1.png") no-repeat center center;
+  background-size: 100%;
+}
+.lv3 {
+  background: url("../img/main/lv3-1.png") no-repeat center center;
+  background-size: 100%;
+}
+.class-img img {
+  height: 100%;
+}
+
+.class-txt {
+  overflow: auto;
+  width: 100%;
+}
+/* 의지 박약형*/
+.title {
+  margin: 0 auto;
+  font-size: 130%;
+  height: 80px;
+  font-weight: bold;
+  background: rgb(197, 197, 197);
+  padding: 20px 0;
+}
+
+h3 {
+  text-align: left;
+  padding-top: 10px;
+  text-indent: 5px;
+}
+.description1,
+.description2,
+.description3,
+.views {
+  padding: 20px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.description1 {
+  height: 200px;
+  border-bottom: 1px solid black;
+}
+.description2 {
+  box-sizing: border-box;
+  height: 220px;
+  line-height: 25px;
+  border-bottom: 1px solid black;
+}
+.buypage-button {
+  margin-top: 20px;
+  display: block;
+  margin: 40px;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  background: #ffdf2b;
+  border-radius: 10px;
+}
+.end {
+  background: #6e663e;
+}
+@media screen and (min-width: 900px) and (max-width: 1450px) {
+  #contain {
+    width: 90%;
+  }
+  .title {
+    font-size: 120%;
+  }
+  .lv1 {
+    background-size: 140%;
+  }
+  .lv2 {
+    background-size: 140%;
+  }
+  .lv3 {
+    background-size: 140%;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  #contain {
+    width: 90%;
+  }
+
+  #box1,
+  #box2,
+  #box3 {
+    width: 90%;
+    margin-left: 5%;
+
+    margin-bottom: 10%;
+  }
+}

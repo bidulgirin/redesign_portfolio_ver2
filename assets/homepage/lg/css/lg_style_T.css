@@ -1,0 +1,102 @@
+
+/* 영어 폰트 불러오기*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+/* 한글 폰트 불러오기*/
+@font-face{
+	font-family:"JejuGothic";
+	src:url('../font/JejuGothic.woff') format('woff');
+	
+}
+/* reset css*/
+*{margin:0; padding:0; }
+body{	min-width:1200px;
+		font:16px/1.8 'Titillium Web', sans-serif;
+		color:#222;}
+ul{list-style:none;}
+a{
+	text-decoration:none;
+	outline:0;
+	color:#222;}
+	
+h1{position:fixed;
+	top:40px; left:50px;
+	z-index:10;}
+h2{
+	position:fixed;
+	right:50px;
+	bottom:30px;
+	z-index:9;
+	font-size:100px;
+	color:white;
+	text-shadow:1px 1px 2px #000;
+	}
+#menu{
+	
+	position:fixed;
+	top:50%; transform:translateY(-50%);
+	left:0; 
+	z-index:11;
+	
+	}
+#menu ul{}
+
+#menu ul li a{
+	display:block;
+	width:190px;
+	height:60px;
+	border-right:1px solid #111;
+	font-size:20px;
+	text-align:right;
+	line-height:60px;
+	transition:all 0.5s;
+	padding-right:10px;
+}
+#menu ul li:nth-child(1):hover a{color:#d4164c; border-color:#d4164c;}
+#menu ul li:nth-child(2):hover a{color:#816556; border-color:#816556;}
+#menu ul li:nth-child(3):hover a{color:#ffec6a; border-color:#ffec6a;}
+#menu ul li:nth-child(4):hover a{color:#005a89; border-color:#005a89;}
+/* 제이쿼리 동작을 위한 css*/
+#menu ul li:nth-child(1).on a{color:#d4164c; border-color:#d4164c;}
+#menu ul li:nth-child(2).on a{color:#816556; border-color:#816556;}
+#menu ul li:nth-child(3).on a{color:#ffec6a; border-color:#ffec6a;}
+#menu ul li:nth-child(4).on a{color:#005a89; border-color:#005a89;}
+
+#wrap{}
+div.sc{width:100%; height:700px; position:relative;
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center center;
+overflow:hidden;
+background-attachment:fixed;}
+
+
+div.s1{background-image:url(../images/bg11.jpg);}
+div.s2{background-image:url(../images/bg22.jpg);}
+div.s3{background-image:url(../images/bg33.jpg);}
+div.s4{background-image:url(../images/bg44.jpg);} 
+#wrap section{position:absolute;
+	top:50%;
+	transform:translateY(-50%); left:300px;
+	z-index:16;
+	font-family:"JejuGothic";}
+#wrap section h3{font-size:40px; margin-bottom:20px; font-weight:normal;}
+#wrap section p{font-size:1.2em; font-weight:bold; }
+div.s1 h3{color:#d4164c;}
+div.s2 h3{color:#816556;}
+div.s3 h3{color:#ffec6a;}
+div.s4 h3{color:#005a89;}
+.p11{position:absolute; bottom:0; right:0;}
+.p12{position:absolute; bottom:-40px; right:130px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

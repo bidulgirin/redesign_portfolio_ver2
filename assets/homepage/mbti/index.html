@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>나는 어떤 유튜버가 어울릴까요?</title>
+
+
+    <!-- 기본메타태그관리 -->
+    <meta name="description" content="나는 과연 어떤 유튜버가 어울릴까? 유튜버 심리테스트 MBTI">
+    <meta name="author" content="이경민">
+    <meta name="keywords" content="유튜브심리테스트, 유튜버심리테스트, 유튜브MBTI, 유튜버MBTI, 유튜브클래스, 유클">
+    <meta name="reply-to" content="familykhj@naver.com">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="나는 어떤 유튜버가 어울릴까요?">
+    <meta property="og:image" content="img/sim_sumnail.jpg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:description" content="나는 과연 어떤 유튜버가 어울릴까? 유튜버 심리테스트 MBTI">
+    <meta property="og:url" content="http://youtubeclass.co.kr/sim">
+    <meta property="article:author" content="이경민">
+
+    <meta itemprop="name" content="유튜버 테스트">
+    <meta itemprop="description" content="나는 과연 어떤 유튜버가 어울릴까? 유튜버 심리테스트 MBTI">
+    <meta itemprop="image" content="img/sim_sumnail.jpg">
+
+    <meta name="twitter:title" content="나는 어떤 유튜버가 어울릴까요?">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="나는 과연 어떤 유튜버가 어울릴까? 유튜버 심리테스트 MBTI">
+    <meta name="twitter:creator" content="이경민">
+    <meta name="twitter:image" content="img/sim_sumnail.jpg">
+    <meta name="twitter:url" content="http://youtubeclass.co.kr/sim">
+
+    <meta name="twitter:domain" content="#">
+    <!-- 파비콘 지정-->
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <!-- 대표 url-->
+    <link rel="canonical" href="http://youtubeclass.co.kr/sim">
+    <!-- script -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <!--awesome font-->
+    <script src="https://kit.fontawesome.com/5704d79f78.js" crossorigin="anonymous"></script>
+    <!-- link css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- script -->
+    <meta name="naver-site-verification" content="89f5797780a998d99d5126fdaaa0d52359a079f6" />
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+</head>
+
+<body class="contain" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+    <!-- 시작 화면 -->
+
+
+
+    <div class="area">
+
+        <!-- 시작 화면 -->
+        <div class="contents_wrap">
+            <article class="start" style="background:#f54f4f; height:670px; ">
+                <div class="start_white"
+                    style="width:90%; height:620px; margin:0 auto; margin-top:20px; background:#ffffff; border-radius:20px; box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.233);">
+                    <div class="logo mt-3"><a href="http://youtubeclass.co.kr/"><img src="img/info_logo.png"
+                                alt="유튜브클래스로고"></a></div>
+
+                    <h1 class="start_title text-center mt-3">
+                        <img src="img/sim/start_title.png" alt="나는어떤유튜버가어울릴까?">
+                    </h1>
+                    <div style="width:100%; text-align:center;">
+                        <button type="button" class="start_btn btn mt-2" onclick="start();">테스트 START <img
+                                style="width:40px;" src="img/sim/next.png" alt="#"></button>
+                    </div>
+                    <div style="width:100%; margin:0 auto; text-align:center;">
+
+
+                        <!-- Start of CuterCounter Code -->
+                        당신은 <img src="http://www.cutercounter.com/hits.php?id=hevxkpddf&nd=1&style=1" border="0"
+                            alt="hit counter">번째 참여자입니다!
+                        <!-- End of CuterCounter Code -->
+                    </div>
+
+                </div>
+            </article>
+
+
+
+
+            <!-- 질문 화면 -->
+            <article class="question">
+                <div style="position:absolute; top:10px; width:100px; left:50%; margin-left:-50px; z-index: 2;">
+                    <img style="width:100%;" src="img/sim/board.png" alt="#">
+                </div>
+                <div class="question_sub">
+
+                    <!-- <div class="progress mt-3">
+                        <div class="progress-bar" role="progressbar" style=" width: calc(100/12*1%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> -->
+                    <div class="questionWhiteBoard" style="width:85%; margin:0 auto; padding-top:50px;">
+                        <p class=" text-center"
+                            style=" color:rgb(182, 182, 182);   font-family: 'InfinitySans-RegularA1'; ">질문<span
+                                id="num"> 01</span></p>
+                        <h2 id="title" class="que text-center ">문제</h2>
+                        <div id="que_images">
+                            <img class="que_images" src="img/chose/1.jpg" alt="문제">
+                        </div>
+                        <input id="type" type="hidden" value="EI">
+                        <div class="btn_s">
+                            <button id="A" type="button" class="btn btn-primary  chose">그렇다</button>
+                            <button id="A_1" type="button" class="btn btn-primary  chose">보통이다</button>
+                            <button id="B" type="button" class="btn btn-primary chose">아니다</button>
+                            <button id="C" type="button" class="btn btn-primary  mb-4 chose">잘모르겠다</button>
+                        </div>
+                    </div>
+                    <!--보이지는 않지만 값을 저장하고 있는 공간-->
+                    <input type="hidden" id="EI" value="0">
+                    <input type="hidden" id="SN" value="0">
+                    <input type="hidden" id="TF" value="0">
+                    <input type="hidden" id="JP" value="0">
+                </div>
+            </article>
+
+            <!-- 로딩 화면 -->
+            <div id="loader">
+
+                <h2 class="mt-5">당신은 무슨 유튜버...?</h2>
+                <div class="loader_images mt-5">
+                    <img src="img/loding.gif" alt="로딩중">
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var num = 1;
+        var q = {
+            1: { "number": "01", "title": "나는 보통 대화를</br> 먼저 시작해요", "type": "EI", "que_images": "img/chose/1.jpg" },
+            2: { "number": "02", "title": "유행에 관심이 많고  <br/>흐름에 뒤쳐지고<br/> 싶지 않은 편이에요", "type": "EI", "que_images": "img/chose/2.jpg" },
+            3: { "number": "03", "title": "나는 대체로  <br/> 의욕적이고 활동적이에요", "type": "EI", "que_images": "img/chose/3.jpg" },
+
+            4: { "number": "04", "title": "나는 창의적이기보다 <br/> 현실적인 사람이라고<br/> 생각해요", "type": "SN", "que_images": "img/chose/4.jpg" },
+            5: { "number": "05", "title": "나는 눈으로<br/> 확인하지 않는 것은<br/> 잘 믿지 않는 편이에요", "type": "SN", "que_images": "img/chose/5.jpg" },
+            6: { "number": "06", "title": "이유를 알기위해 <br/> 서적을 읽을때도 있어요", "type": "SN", "que_images": "img/chose/6.jpg" },
+
+            7: { "number": "07", "title": "중압갑을 받을 때에도 <br/> 침착하게 집중력을<br/> 유지할 수 있어요", "type": "TF", "que_images": "img/chose/7.jpg" },
+            8: { "number": "08", "title": "마음이나 감정에<br/> 충실하기보다 <br/>한 걸음 물러나서 <br/>객관적으로 전체를 다시 봐요", "type": "TF", "que_images": "img/chose/8.jpg" },
+            9: { "number": "09", "title": "친구가 어떤 일로<br/> 슬퍼할 경우,<br/> 문제를 처리하는 방법을 <br/> 제시해요", "type": "TF", "que_images": "img/chose/9.jpg" },
+
+            10: { "number": "10", "title": "나는 칠칠치 못한 걸<br/> 싫어하고 <br/> 꼼꼼한 편이에요", "type": "JP", "que_images": "img/chose/10.jpg" },
+            11: { "number": "11", "title": "나는 방법이나 <br/>룰을 바꾸는 것을 <br/> 별로 좋아하지는 않아요", "type": "JP", "que_images": "img/chose/11.jpg" },
+            12: { "number": "12", "title": "나는 계획에 없는 물건은  <br/>잘 사지 않는 편이에요", "type": "JP", "que_images": "img/chose/12.jpg" }
+        }
+        var result = {
+            "ISTJ": {
+
+                "gogo": "istj.html",
+                "youtuber": "이슈 유튜버",
+                "mbti": "ISTJ ",
+                "maindes": "나는 반복적인 일이 적성에 맞아",
+                "explain": "img/sim/ISTJ_des.png",
+                "img": "img/istj.png",
+                "b_img": "img/sim/istj.png",
+                "tuber_sumnail": "img/you/issuking.jpg",
+                "tuber_name": "이슈왕",
+                "url1": "https://www.youtube.com/channel/UClyThsEAiGbNeDFH5mAyumw",
+                "tuber_sumnail2": "img/you/issufeed.jpg",
+                "tuber_name2": "이슈피드",
+                "url2": "https://www.youtube.com/channel/UCdgfjsA0QzdqdHtxF9-9R3w"
+
+
+
+            },
+            "ISFJ": {
+                "gogo": "isfj.html",
+                "mbti": "ISFJ ",
+                "youtuber": "펫 유튜버",
+                "maindes": "임금 뒤편의 권력형!",
+                "explain": "img/sim/ISFJ_des.png",
+                "img": "img/isfj.png",
+                "b_img": "img/isfj.png",
+                "tuber_sumnail": "img/you/milboktan.jpg",
+                "tuber_name": "밀키와복이탄이",
+                "url1": "https://www.youtube.com/channel/UCP1CQH2PVJv4-glNTuVJl3g",
+                "tuber_sumnail2": "img/you/creamheros.jpg",
+                "tuber_name2": "크림히어로즈",
+                "url2": "https://www.youtube.com/channel/UCmLiSrat4HW2k07ahKEJo4w"
+
+            },
+            "INFJ": {
+                "gogo": "infj.html",
+                "mbti": "INFJ ",
+                "youtuber": "리뷰 유튜버 ",
+                "maindes": "몰두력 100% <br/> 원리원칙으로 거짓리뷰는 가라!",
+                "explain": "img/sim/INFJ_des.png",
+                "img": "img/infj.png",
+                "b_img": "img/infj.png",
+                "tuber_sumnail": "img/you/itsub.jpg",
+                "tuber_name": "잇썹",
+                "url1": "https://www.youtube.com/channel/UCdUcjkyZtf-1WJyPPiETF1g",
+
+                "tuber_sumnail2": "img/you/gjjb.jpg",
+                "tuber_name2": "가전주부",
+                "url2": "https://www.youtube.com/channel/UC5aNQ65ADb02zEJxzb_zmYQ"
+
+            },
+            "INTJ": {
+                "gogo": "intj.html",
+                "mbti": "INTJ",
+                "youtuber": "손재주 유튜버",
+                "maindes": "한번 딱! 정해지면 그냥 고!",
+                "explain": "img/sim/INTJ_des.png",
+                "img": "img/intj.png",
+                "b_img": "img/intj.png",
+                "tuber_sumnail": "img/you/heopop.jpg",
+                "tuber_name": "허팝",
+                "url1": "https://www.youtube.com/user/heopopfamily",
+
+                "tuber_sumnail2": "img/you/blackhand.jpg",
+                "tuber_name2": "블랙핸드",
+                "url2": "https://www.youtube.com/channel/UCl9nsRuGenStMDZfD95w85A"
+
+            },
+            "ISTP": {
+                "gogo": "istp.html",
+                "mbti": "ISTP ",
+                "youtuber": "꿀팁 유튜버 ",
+                "maindes": "특정분야에 <br/>일가견이 있는 우리들!",
+                "explain": "img/sim/ISTP_des.png",
+
+                "img": "img/istp.png",
+                "b_img": "img/istp.png",
+                "tuber_sumnail": "img/you/mtjang.jpg",
+                "tuber_name": "장박사의 구매중독",
+                "url1": "https://www.youtube.com/channel/UCXTqmMN0BuIVhk6v2BQlGoQ",
+
+                "tuber_sumnail2": "img/you/sinsa.jpg",
+                "tuber_name2": "신사임당",
+                "url2": "https://www.youtube.com/channel/UCaJdckl6MBdDPDf75Ec_bJA"
+
+            },
+            "ISFP": {
+                "gogo": "isfp.html",
+                "mbti": "ISFP ",
+                "youtuber": "예술 유튜버 ",
+                "maindes": "그림으로<br/> 내 모든걸 표현해 버리기!",
+                "explain": "img/sim/ISFP_des.png",
+                "img": "img/isfp.png",
+                "b_img": "img/isfp.png",
+                "tuber_sumnail": "img/you/drawholic.jpg",
+                "tuber_name": "드로우홀릭",
+                "url1": "https://www.youtube.com/channel/UCma2_rrf2FeD82J3OadClvA",
+
+                "tuber_sumnail2": "img/you/sanago.jpg",
+                "tuber_name2": "사나고",
+                "url2": "https://www.youtube.com/channel/UCd4FmcWIVdWAy0-Q8OJBloQ"
+
+            },
+            "INFP": {
+                "gogo": "infp.html",
+                "mbti": "INFP ",
+                "youtuber": "힐링유튜버 ",
+                "maindes": "나는 힐링 받고! 너도 힐링 받어",
+                "explain": "img/sim/INFP_des.png",
+                "img": "img/infp.png",
+                "b_img": "img/infp.png",
+                "tuber_sumnail": "img/you/gltalk.jpg",
+                "tuber_name": "글토크",
+                "url1": "https://www.youtube.com/channel/UC0Ra5o9VIVNBpV7vK5G1tIw",
+
+                "tuber_sumnail2": "img/you/picnicamp.jpg",
+                "tuber_name2": "피크니캠프",
+                "url2": "https://www.youtube.com/channel/UCZigx9P8UN3OLOJif22EpAA"
+
+            },
+            "INTP": {
+                "gogo": "intp.html",
+                "mbti": "INTP",
+                "youtuber": "  집순이 집돌이 유튜버 ",
+                "maindes": "나가기 싫어<br/> 집에서 내가 좋아하는 분야<br/> 유튜브할래!",
+                "explain": "img/sim/INTP_des.png",
+                "img": "img/intp.png",
+                "b_img": "img/intp.png",
+                "tuber_sumnail": "img/you/kimsisun.jpg",
+                "tuber_name": "김시선",
+                "url1": "https://www.youtube.com/user/13neye",
+
+                "tuber_sumnail2": "img/you/winterbookstore.jpg",
+                "tuber_name2": "겨울서점",
+                "url2": "https://www.youtube.com/channel/UCGPfjyMkN7uAmzfRpXL-AxQ"
+
+            },
+            "ESTP": {
+                "gogo": "estp.html",
+                "mbti": "ESTP ",
+                "youtuber": "미션유튜버 스릴형",
+                "maindes": "새로운 도전 욕구가 폭발한드아!!",
+                "explain": "img/sim/ESTP_des.png",
+                "img": "img/estp.png",
+                "b_img": "img/estp.png",
+                "tuber_sumnail": "img/you/uma.jpg",
+                "tuber_name": "U.M.A우마",
+                "url1": "https://www.youtube.com/channel/UCriPmQ2RpvdNSZkMwuOmTnQ",
+
+                "tuber_sumnail2": "img/you/sokee.jpg",
+                "tuber_name2": "쏘키",
+                "url2": "https://www.youtube.com/channel/UCwWZBKbQ6JONDOPJQiNJhvg"
+
+            },
+
+            "ESFP": {
+                "gogo": "esfp.html",
+                "mbti": "ESFP ",
+                "youtuber": "노래 댄스 유튜버",
+                "maindes": "흥이 넘친다 넘쳐! 둠둠칫 둠칫! ",
+                "explain": "img/sim/ESFP_des.png",
+                "img": "img/esfp.png",
+                "b_img": "img/esfp.png",
+                "tuber_sumnail": "img/you/1milliondancestudio.jpg",
+                "tuber_name": "원밀리언스튜디오",
+                "url1": "https://www.youtube.com/channel/UCw8ZhLPdQ0u_Y-TLKd61hGA",
+
+                "tuber_sumnail2": "img/you/jfla.jpg",
+                "tuber_name2": "제이플라",
+                "url2": "https://www.youtube.com/user/JFlaMusic"
+
+            },
+            "ENFP": {
+                "gogo": "enfp.html",
+                "mbti": "ENFP ",
+                "youtuber": " 브이로그 유튜버",
+                "maindes": "평범한 일상은 거부한다!<br/> 새로움을 다오!",
+                "explain": "img/sim/ENFP_des.png",
+                "img": "img/enfp.png",
+                "b_img": "img/enfp.png",
+                "tuber_sumnail": "img/you/hanu.jpg",
+                "tuber_name": "하누",
+                "url1": "https://www.youtube.com/channel/UC5duyhoJ4mXbZff6elnmvTw",
+
+                "tuber_sumnail2": "img/you/tomotomo.jpg",
+                "tuber_name2": "토모토모",
+                "url2": "https://www.youtube.com/channel/UCoQy2wS5aiKCk-rUXiLS-vQ"
+
+            },
+            "ENTP": {
+                "gogo": "entp.html",
+                "mbti": "ENTP ",
+                "youtuber": "미션유튜버",
+                "maindes": "도전과 열정이 우리를 쥐어삼켰다",
+                "explain": "img/sim/ENTP_des.png",
+                "img": "img/entp.png",
+                "b_img": "img/entp.png",
+                "tuber_sumnail": "img/you/malking.jpg",
+                "tuber_name": "말왕",
+                "url1": "https://www.youtube.com/user/MrRagoona88",
+
+                "tuber_sumnail2": "img/you/uma.jpg",
+                "tuber_name2": "UMA",
+                "url2": "https://www.youtube.com/channel/UCriPmQ2RpvdNSZkMwuOmTnQ"
+
+            },
+            "ESFJ": {
+                "gogo": "esfj.html",
+                "mbti": "ESFJ ",
+                "youtuber": " 뷰티 패션 유튜버",
+                "maindes": "칭찬받고 싶어! 욕하지마! <br/> 꿀팁 알려줄테니",
+                "explain": "img/sim/ESFJ_des.png",
+                "img": "img/esfj.png",
+                "b_img": "img/esfj.png",
+                "tuber_sumnail": "img/you/ssin.jpg",
+                "tuber_name": "씬님",
+                "url1": "https://www.youtube.com/user/Hines382",
+
+                "tuber_sumnail2": "img/you/calarygirl.jpg",
+                "tuber_name2": "회사원 A",
+                "url2": "https://www.youtube.com/user/calarygirl"
+
+            },
+            "ENFJ": {
+                "gogo": "enfj.html",
+                "mbti": "ENFJ ",
+                "youtuber": " 동기부여 유튜버",
+                "maindes": "말빨 작렬! 언어의 마술사!",
+                "explain": "img/sim/ENFJ_des.png",
+                "img": "img/enfj.png",
+                "b_img": "img/enfj.png",
+                "tuber_sumnail": "img/you/changeground.jpg",
+                "tuber_name": "체인지그라운드",
+                "url1": "https://www.youtube.com/channel/UCtfGLmp6xMwvPoYpI-A5Kdg",
+
+                "tuber_sumnail2": "img/you/kmtv.jpg",
+                "tuber_name2": "김미경티비",
+                "url2": "https://www.youtube.com/user/artspeech0783"
+
+            },
+            "ENTJ": {
+                "gogo": "entj.html",
+                "mbti": "ENTJ ",
+                "youtuber": "강사 유튜버",
+                "maindes": "나를 따르라!<br/> 내가 지도자니라!",
+                "explain": "img/sim/ENTJ_des.png",
+                "img": "img/entj.png",
+                "b_img": "img/entj.png",
+                "tuber_sumnail": "img/you/doitnowin.jpg",
+                "tuber_name": "장다르크",
+                "url1": "https://www.youtube.com/user/doitnowin",
+
+                "tuber_sumnail2": "img/you/sinsa.jpg",
+                "tuber_name2": "신사임당",
+                "url2": "https://www.youtube.com/channel/UCaJdckl6MBdDPDf75Ec_bJA"
+
+            },
+            "ESTJ": {
+                "gogo": "estj.html",
+                "mbti": "ESTJ ",
+                "youtuber": "자기개발 유튜버",
+                "maindes": "노련한 리더!<br/> 책임감을 가지고 이끌어보자!",
+                "explain": "img/sim/ESTJ_des.png",
+                "img": "img/estj.png",
+                "b_img": "img/estj.png",
+                "tuber_sumnail": "img/you/changeground.jpg",
+                "tuber_name": "체인지그라운드",
+                "url1": "https://www.youtube.com/channel/UCtfGLmp6xMwvPoYpI-A5Kdg",
+                "tuber_sumnail2": "img/you/kmtv.jpg",
+                "tuber_name2": "김미경티비",
+                "url2": "https://www.youtube.com/user/artspeech0783"
+
+
+
+            }
+
+        }
+
+        // 스타트버튼
+        function start() {
+            $(".start").hide();
+            $(".question").show();
+            next();
+        }
+
+        // A 버튼
+        $("#A").click(function () {
+            var type = $("#type").val();
+            var preValue = $("#" + type).val();
+            $("#" + type).val(parseInt(preValue) + 2);
+            next();
+        });
+        $("#A_1").click(function () {
+            var type = $("#type").val();
+            var preValue = $("#" + type).val();
+            $("#" + type).val(parseInt(preValue) + 2);
+            next();
+        });
+        // B 버튼
+        $("#B").click(function () {
+            next();
+        });
+
+        // C 버튼
+        $("#C").click(function () {
+            next();
+
+        });
+        function clickTopButton() {
+            $(".chose").click(function () {
+                $('.questionWhiteBoard').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+
+        }
+        function loading() {
+            setTimeout(function () {
+
+                $("#loader").css("display", "none");
+            }, 2000);
+
+        };
+        //Javascript
+        function goresult() {
+
+        };
+        // next 버튼
+        function next() {
+            if (num == 13) {
+                $(".question").hide();
+                $(".result").show();
+                $("#loader").show();
+                loading();
+                var mbti = "";
+                ($("#EI").val() < 4) ? mbti += "I" : mbti += "E";
+                ($("#SN").val() < 4) ? mbti += "N" : mbti += "S";
+                ($("#TF").val() < 4) ? mbti += "F" : mbti += "T";
+                ($("#JP").val() < 4) ? mbti += "P" : mbti += "J";
+                setTimeout(function () { $(location).attr('href', result[mbti]["gogo"]); }, 2000);
+
+
+                //  alert( mbti + "입니다!");
+
+
+                $("#img").attr("src", result[mbti]["img"]);
+                $("#b_img").attr("src", result[mbti]["b_img"]);
+                $("#youtuber").html(result[mbti]["youtuber"]);
+                $("#maindes").html(result[mbti]["maindes"]);
+                $("#explain").attr("src", result[mbti]["explain"]);
+                $("#mbti").html(result[mbti]["mbti"]);
+
+                //유튜버소개1
+
+                $("a#url").attr("href", result[mbti]["url1"]);
+                $(".tuber_name").html(result[mbti]["tuber_name"]);
+                $("#tuber_sumnail img").attr("src", result[mbti]["tuber_sumnail"]);
+                $("#why").html(result[mbti]["why"]);
+
+                //유튜버소개2
+
+                $("a#url2").attr("href", result[mbti]["url2"]);
+                $(".tuber_name2").html(result[mbti]["tuber_name2"]);
+                $("#tuber_sumnail2 img").attr("src", result[mbti]["tuber_sumnail2"]);
+                $("#why2").html(result[mbti]["why2"]);
+
+
+
+            } else {
+                $('.progress-bar').attr('style', 'width: calc(100/12*' + num + '%)');
+                $('#title').html(q[num]["title"]);
+                $("#type").val(q[num]["type"]);
+                $('#A').html(q[num]["A"]);
+                $("#B").html(q[num]["B"]);
+                $("#C").html(q[num]["C"]);
+                $(".que_images").attr("src", q[num]["que_images"]);
+                $('#num').html(q[num]["number"]);
+                num++;
+                clickTopButton();
+            }
+        }
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6063cdd356ec4c66"></script>
+</body>
+
+</html>

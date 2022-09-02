@@ -16,6 +16,8 @@
 
 .grt_contents {
   /* 컨텐츠 중앙으로 모으기위해 flex 사용*/
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -23,6 +25,7 @@
   background: rgb(17, 17, 17);
   text-align: center;
   overflow: hidden;
+  margin: 0;
 }
 
 .grt_contents #threeJs_object {

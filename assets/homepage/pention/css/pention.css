@@ -1,0 +1,423 @@
+
+		*{	margin:0;
+			padding:0;
+		}
+		/* body 영역 */
+	
+	.hidden{display:hidden;}
+	li{list-style:none;}
+	a{text-decoration:none;
+		color:#222;
+		transition:all 0.5s;}
+	h3{font-size:2.2em;
+		width:200px;
+		margin:0 auto;
+		text-align:center;
+		border-bottom:5px solid #123456;
+		padding:10px;
+		}
+	h4{font-size:1.5em;}
+	.banner img{width:100%;}
+	body{ 
+			font:14px/1.5 "맑은 고딕";
+			font-family: 'BBTreeGR';
+			color:#222;
+			min-width:1200px;
+		}
+		
+		#all{
+		width:100%;
+		background:#eee;
+		margin:0 auto;}
+		#all header h1{}
+			/* header 영역 */
+		header{
+			position:fixed;
+			width:100%;
+			padding:20px;
+			transition:all 0.5s;
+			}
+		header:hover{background:
+			rgba(169,208,245,1);}
+		header h1{
+			position:relative;
+			width:30%;
+			left:100px;
+			
+		}
+		/* nav 영역 */
+		
+		
+		 nav{
+			position:absolute;
+			width:800px;
+			right:100px;
+			top:30px;
+			min-width:500px;
+			transition:all 0.5s;
+			
+		}
+		/*메인 메뉴*/
+		.navMenu{
+			position:absolute;
+			width:800px;
+			right:0;
+			top:0px;
+			min-width:500px;
+			transition:all 0.5s;
+			z-index:544;}
+		.navMenu li{
+			width:16.66%;
+			float:left;
+			box-sizing:border-box;
+			text-align:center;
+			
+		}
+		.navMenu li a{
+			display:block;
+			text-align:center;
+			padding:10px;
+			box-sizing:border-box;
+			font-weight:bold;
+			font-size:1.1em;
+			}
+		
+		.navMenu li a:hover{
+			background:#123456;
+			color:white;}
+		
+		
+		/*서브 메뉴*/
+		.subMenu{
+			width:100%;
+			background:rgba(255,255,255,0.9);
+			position:absolute;
+			padding-top:35px;
+			z-index:3;
+			display:none;
+			}
+		.navMenu:hover + .subMenu, .subMenu:hover {display:block;} 
+		
+		.subMenu ul{
+			width:16.66%;
+			float:left;
+			text-align:center;
+			line-height:2; 
+			padding:10px 0;
+			box-sizing:border-box;
+		}
+		.subMenu ul:nth-child(4){border:none;}
+		.subMenu ul li a{
+			display:block;
+			padding:10px 0;}
+		.subMenu ul li a:hover{
+			background:#123456;
+			color:white;}
+		
+		/*서브메뉴*/
+		
+		nav>ul>li>ul{
+			position:absolute;
+			display:none;
+			overflow:auto;
+			width:16%;
+			
+			}
+		nav>ul>li>ul>li{
+			overflow:auto;
+			
+			}
+		nav>ul>li>ul>li>a{color:#ccc;
+			opacity:0.8;
+			display:inline-block;
+			width:100%;
+			box-sizing:border-box;
+			padding:20px;
+			display:block;
+			background:rgba(255,255,255,0.8);
+			}
+		nav>ul>li>ul>li>a:hover{
+			opacity:1;
+			color:white;
+			background:#0431B4;} */
+	
+	/* section영역 */
+		h2{
+			
+		    text-align:center;
+		}
+		
+		
+	section.whitebox{ 
+			background:white;
+			padding:50px 0;
+			width:1000px;
+			text-align:center;
+			margin: 0 auto;
+			margin-bottom:10px;
+			box-shadow:2px 2px 6px #ccc;
+			
+		}
+	section h2 img{
+		width:150px;
+		padding-bottom:50px;
+	}
+	/*	section p{text-align:center;}
+		section ul{}
+		section ul li{ 
+			display:inline-block;
+			}
+		#container{text-align:center;}
+		.whitebox{
+			background:white;
+			padding:10px;
+			width:800px;
+			margin: 0 auto; /*width가 정해저있는 인라인 요소일때 박스를 중앙으로 옮기고 싶으면
+			}*/
+			
+		
+    /* 룸 소개 */
+	#blue{
+		  text-align:center;
+		  background:#81BEF7;
+	}
+		.room{
+			
+			width:1200px;
+			margin:0 auto;
+			padding-top:50px;}
+			
+		.room ul{
+			padding-bottom:50px;
+			overflow:auto;
+			
+		}
+		.room ul li{
+			margin-top:20px;
+			border:1px solid #eee;
+			width:30%;
+			padding:0 15px;
+			 float:left;
+			 margin-left:5%;
+			margin-bottom:50px;
+			box-sizing:border-box;
+			height:630px;
+		}
+		.room_text p{
+			margin:0 auto;
+			width:95.5%;
+			 background:white;
+			font-weight:bold;
+			font-size:1.2em;
+			padding:8px;}
+		.room ul li:nth-child(1){
+			margin-left:0%;
+		}
+		.room_img img{
+			width:100%;
+			margin-top:10px;}
+		.room a img{
+			width:30%;
+			margin-top:-40px;
+		}
+	 /* 서비스 안내 */
+		#service_box{
+			background:#eee;
+		}
+		#service{
+			width:1200px;
+			margin:0 auto;
+			padding:50px 0;
+		}
+		#service ul{
+			
+			overflow:auto;
+			margin-top:50px;
+			padding:50px 0;
+		}
+		#service ul li{
+			float:left;
+			margin-left:2%;
+			width:18%;
+			
+		}
+		#service p{
+			background:white;
+			width:50%;
+			margin:10px 0;
+			font-size:1.2em;
+			font-weight:bold;
+			margin:0 auto;}
+		#service ul li:nth-child(1){
+			margin-left:1%;
+			
+		}
+		#service ul li img{width:100%;
+		
+		}
+		
+	/* 여행 안내 */		
+		.trip{
+			width:1200px;	
+			margin:50px 0;
+			margin:0 auto;
+		}
+		.trip ul{
+			overflow:auto;
+			padding:15px 0;
+			
+		}
+		.trip ul li{
+			
+			float:left;
+			width:25%;
+			margin-left:0%;
+			
+		}
+		.trip p{
+			background:white;
+			margin:15px 0;
+			font-size:1.2em;
+			font-weight:bold;
+			margin:0 auto;
+			margin-top:5px;
+			width:99%;}
+		.trip ul li:nth-child(1) {
+			margin-left:0%;
+		}
+		.trip ul li img{
+			width:100%;
+			height:300px;
+		}
+	/* 길 안내 */	
+		.way{
+			overflow:auto;
+			width:1200px;
+			text-align:center;
+			padding:50px 0;
+			margin:0 auto;
+			
+			}
+		
+		.way a{
+			width:45%;
+			padding:50px 0;
+			float:left;
+			padding:20px;
+			background:white;
+			
+			
+			}
+		.way a img{
+			width:100%;
+			padding:150px 0;
+			
+		}
+		.way ul{
+			width:50%;
+			float:right;
+			text-align:left;
+			
+			
+		}
+		.way ul li{
+			width:100%;
+			overflow:auto;
+			padding:8px 0;
+			}
+		.way ul li h4{
+			width:16%;
+			float:left;
+			background:#123456;
+			color:white;
+			text-align:center;
+			border-radius:2px;
+			
+			}
+		.way ul li ol{
+			width:80%;
+			float:right;
+		}
+		.way_content{
+			padding:100px 0;
+			
+		}
+		.way_content ol li:nth-child(4){border-bottom:1px solid black; }
+	/* footer 영역 */	
+		footer{
+			position:relative;
+			background:#123456;
+			overflow:auto;
+			padding:40px 0;
+			box-sizing:border-box;
+		}
+		footer h6{
+			position:absolute;
+			top:60px;
+			left:350px;
+		}
+		footer img{width:200px;}
+		footer p{
+			width:40%;
+			float:right;
+			color:white;
+			text-align:left;
+			border-left:1px solid #fff;
+			padding-left:20px;
+		}
+
+
+
+@font-face { font-family: 'JSDongkang-Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'BBTreeGR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+		
+		/*#blue section ul li p{
+			height:120px;
+			
+		}
+		
+		
+		.trip{
+			width:1200px;
+			overflow:auto;	
+		}
+		.trip ul li {
+			width:24.5%;
+			
+		}
+		
+		.way{
+			overflow:auto;
+			
+			}
+		
+		.way a{
+			width:40%;
+			float:left;
+			padding:20px;
+			background: white;
+			
+			}
+		
+		.way ul{
+			width:45%;
+			float:right;
+		}
+		footer{
+			background:#2E64FE;
+			overflow:auto;
+		}
+		footer h1{
+			width:30%;
+			padding:20px;
+			float:left;	
+			
+		}
+		footer p{
+			width:45%;
+			float:right;
+		}*/
+		

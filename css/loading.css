@@ -2,26 +2,49 @@
 /* 로딩 파트 */
 #loading_wrap {
   position: fixed;
-  justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 100vh;
-  z-index: 100;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
   display: flex;
-  background: rgb(0, 0, 0);
-  display: none; /*잠깐 없애놈*/
+  flex-direction: column;
+  background: rgba(3, 3, 3, 0.736);
+  color: white;
+  font-size: 50px;
 }
 
-#icon {
-  padding: 20px;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 3;
-  stroke-linecap: round;
-  fill: black;
-  fill-opacity: 0;
-  transition: fill-opacity 1s;
+#loading_wrap .loading_1 {
+  position: absolute;
+  width: 120px;
+  animation: rounding 2s ease Infinite;
 }
 
-#icon.finished {
-  fill-opacity: 1;
+#loading_wrap .loading_2 {
+  position: absolute;
+  width: 200px;
+  animation: rounding2 3s ease Infinite;
+}
+
+#loading_wrap > p {
+  font-size: 20px;
+}
+
+@keyframes rounding {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rounding2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }

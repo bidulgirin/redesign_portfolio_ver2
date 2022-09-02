@@ -1,0 +1,49 @@
+.point {
+  font-size: 120%;
+  color: rgb(195, 12, 12);
+  font-weight: bold;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 2vw;
+}
+#banner {
+  padding: 20px 0;
+}
+#contain {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.img-box {
+  top: 100px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.img-box img {
+  width: 50%;
+}
+.txt-box {
+  width: 60%;
+
+  background: rgb(255, 216, 132);
+  margin: 0 auto;
+
+  margin-top: 20px;
+}
+@media screen and (max-width: 800px) {
+  .img-box {
+    width: 90%;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  .img-box img {
+    width: 100%;
+  }
+  .txt-box {
+    width: 90%;
+    font-size: 80%;
+  }
+}

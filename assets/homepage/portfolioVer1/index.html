@@ -1,0 +1,2630 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="퍼블리셔, 웹, 웹 퍼블리셔">
+	<meta name="description" content="웹 퍼블리셔 이경민 포트폴리오 홈페이지 입니다">
+	<meta name="author" content="이경민">
+	<meta name="generator" content="vcode">
+	<meta name="robots" content="index,follow">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="웹퍼블리셔:이경민">
+	<meta property="og:description" content="웹 퍼블리셔 포트폴리오 입니다">
+	<meta property="og:image" content="images/swim.png">
+	<meta property="og:url" content="http://kmportfolio.dothome.co.kr/">
+	<link rel="canonical" href="http://kmportfolio.dothome.co.kr/">
+
+
+
+	<title>lee_kyung_min_portfolio</title>
+
+
+	<link rel="shortcut icon" href="images/icon.png">
+	<link rel="apple-touch-icon" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/introducestyle.css">
+	<link rel="stylesheet" href="css/swipebox.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css" />
+	<link rel="stylesheet" href="css/jquery.modal.css">
+
+	<meta name="naver-site-verification" content="067bf4dfa7ffd4ff165e1dc6283f812751ba7d9e" />
+
+	<!-- 스크립트 선언 -->
+	<script src="js/jquery-2.1.0.min.js"></script>
+	<!-- 포트폴리오 라이트 박스 -->
+	<script src="js/jquery.modal.js"></script>
+	<!-- 메뉴클릭시 자연스럽게넘어가는 plugin -->
+	<script src="js/jquery.scrollTo.js"></script>
+	<!-- 스크롤시 자연스럽게넘어가는 plugin 
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/autoscroll.js"></script>-->
+	<script src="js/jquery.easing.js"></script>
+	<!--네비게이션에 대한 동적 구현-->
+	<!-- <script src="js/intro.js"></script> -->
+	<!-- 원형 그래프 plugin -->
+	<script src="js/circle-progress.js"></script>
+	<script src="js/graph-1.js"></script>
+	<!--스크롤시 컨텐츠 나타남-->
+	<script src="js/respondtxt.js"></script>
+
+
+
+
+	<!-- 스크롤 시 부드럽게 하는 스크립트 -->
+	<script>
+		$(function () {
+			$('#menu a').click(function () {
+				$('body').scrollTo($(this).attr('href'), 500);
+				return false;
+			});
+			$('#headerNav a').click(function () {
+				$('body').scrollTo($(this).attr('href'), 500);
+				return false;
+			});
+			$('.swimming').click(function () {
+				$('body').scrollTo($(this).attr('href'), 500);
+				return false;
+			});
+			$('h6 a').click(function () {
+				$('body').scrollTo($(this).attr('href'), 500);
+				return false;
+			});
+
+			$('#topM a').click(function () {
+				$('body').scrollTo($(this).attr('href'), 500);
+				return false;
+			});
+
+
+		});
+	</script>
+	<script src="js/script-1.js"></script>
+	<!-- light box -->
+	<script src="js/ios-orientationchange-fix.js"></script>
+	<script src="js/jquery.swipebox.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			/* Basic Gallery */
+			$('.swipebox').swipebox();
+
+			/* Video */
+			$('.swipebox-video').swipebox();
+
+			/* Dynamic Gallery */
+			$('#gallery').click(function (e) {
+				e.preventDefault();
+				$.swipebox([
+					{ href: 'http://swipebox.csag.co/mages/image-1.jpg', title: 'My Caption' },
+					{ href: 'http://swipebox.csag.co/images/image-2.jpg', title: 'My Second Caption' }
+				]);
+			});
+
+		});
+	</script>
+	<script src="js/tabmenu.js"></script>
+
+</head>
+
+<body>
+	<div id="menu">
+		<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+
+		<div class="menu-inner">
+			<h1>
+				<img src="images/logo.png" alt="이경민 포트폴리오 로고">
+				<img src="images/logo2.png" alt="이경민 포트폴리오 로고">
+			</h1>
+			<ul>
+				<li class="on"><a href="#intro">Home</a></li>
+				<li><a href="#about_me">About me</a></li>
+				<li><a href="#skill">Skill</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<p class="email"><a href="https://www.google.com/intl/ko/gmail/about/#">de05164@naver.com</a></p>
+		</div>
+		<svg version="1.1" id="blob" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z" />
+		</svg>
+
+	</div>
+	<div id="headerNav">
+		<ul>
+			<li class="on"><a href="#intro">Home</a></li>
+			<li><a href="#about_me">About me</a></li>
+			<li><a href="#skill">Skill</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>
+	<div id="topM">
+		<a href="#intro">^</a>
+	</div>
+	<div id="intro" class="mee">
+		<section class="intro wrap">
+			<h2 class="hidden">intro</h2>
+			<div class="what">
+				<p class="text">Lee Kyung Min Portfolio</p>
+				<p class="typing"> {<span class="typingB"> 끊임 없이 연구하는 웹 퍼블리셔 이경민 입니다 </span> } </p>
+			</div>
+			<div class="water-container">
+				<p>클릭 하세요!</p>
+				<div class="water-wave"></div>
+				<a class="swimming arrow-wrap" href="#about_me"><img src="images/swim.png"
+						alt="캐릭터를 클릭하면 아래로 넘어갑니다"></a>
+				<div class="water-base"></div>
+			</div>
+		</section>
+	</div>
+	<div class="background">
+		<div id="about_me" class="mee z-index">
+			<div class="animation">
+				<div class="p1"></div>
+				<div class="p2"></div>
+				<div class="p3"></div>
+				<div class="p4"></div>
+				<div class="p5"></div>
+				<div class="p6"></div>
+				<div class="p7"></div>
+				<div class="p8"></div>
+				<div class="p9"></div>
+				<div class="p10"></div>
+			</div>
+
+			<section class="about_me wrap">
+				<h3>About me
+					<span class="will"> " 끊임 없이 도전하는 저를 소개합니다 "</span>
+				</h3>
+
+				<div class="fontChange">
+					<p><span class="bigTxt">! 저는 이런 사람입니다 !</span></p>
+
+					<p>#사람의 말을 귀기울여 듣고 다양한 시각을 받아드릴 수 있는 유연한 사람
+					</p>
+					<p>#프로그램의 빠른 이해와 응용력을 가진 사람
+					</p>
+					<p>#독특한 아이디어로 새로운 길을 탐구하고 도전하는 사람
+					</p>
+				</div>
+				<ul>
+
+					<li>
+						<div class="strength strength1">
+							<p class="sTitle">인적사항</p>
+							<span class="year">이름</span>: 이경민 <br />
+							<span class="year">생년월일</span>: 1998.09.27<br />
+							<span class="year">특징</span>: #톡톡튀는 아이디어 #빨리 익히는 #도전적인<br />
+							<span class="year">자격증</span>:
+							gtq 포토샵/ gtq 일러스트 1급 <br />
+
+						</div>
+					</li>
+					<li>
+						<div class="strength me">
+							<img src="images/charactor.png" alt="프로필 사진">
+						</div>
+					</li>
+					<li>
+						<div class="strength strength2">
+							<p class="sTitle">커리어</p>
+
+							<p> <span class="year">2017.2</span>
+								동대부여고 졸업</p>
+
+							<p> <span class="year">2020.2</span>
+								가구디자인과 졸업(2년제)</p>
+
+
+							<p> <span class="year">2020.3</span>
+								동성사 입사(1개월)</p>
+
+
+							<p> <span class="year">2020.7</span>
+								더조은 아카데미 웹 퍼블리셔 과정(4개월)</p>
+
+
+						</div>
+					</li>
+				</ul>
+
+
+
+
+				<div class="Self_introduction">
+
+
+					<p>안녕하세요! 끊임 없이 노력하는 예비 웹 퍼블리셔 이경민 입니다.<br /> 실제 실무 경험을 대비 하기위해 다양한 웹 사이트를 제작해 경험을 쌓았습니다.<br />
+						html5, Css3, jQuery 등 기초를 탄탄하게 공부하였고 앞으로 성장하기 위해 <br />연구를 게을리지 않는 성실한 사람이 되도록 노력하고 있습니다</p>
+
+
+
+				</div>
+			</section>
+		</div>
+
+		<div id="skill" class="mee z-index">
+			<section class="skill wrap">
+
+				<h3>Skill
+					<span class="will"> " 웹 퍼블리셔로서의 기본적인 능력을 가지고 있습니다 "</span>
+				</h3>
+
+				<ul>
+					<li>
+						<div class="photoshop pr">
+
+							<div class="second circle">
+								<strong></strong>
+							</div>
+							<div class="program">
+								<img src="images/program/psd.png" alt="photoshop">
+							</div>
+
+							<div class="skillTxt">
+								<p>photoshop</p>
+								<p>이미지의 불필요한 오브젝트를 자연스럽게 없앨 수 있으며 너무 큰 용량의 이미지를 줄이는 것은 물론 다양한 기능을 사용할 수 있습니다
+								</p>
+							</div>
+
+
+						</div>
+
+					</li>
+					<li>
+						<div class="illust pr">
+							<div class="second circle">
+								<strong></strong>
+							</div>
+							<div class="program">
+								<img src="images/program/ai.png" alt="illust">
+							</div>
+							<div class="skillTxt">
+								<p>illust</p>
+								<p>로고 디자인, 캐릭터 디자인 및 아이콘 제작에 적합한 기능들을 알고 활용할 수 있습니다</p>
+							</div>
+
+
+						</div>
+					</li>
+					<li>
+						<div class="html pr">
+
+							<div class="second circle">
+								<strong></strong>
+							</div>
+							<div class="program">
+								<img src="images/program/html.png" alt="html">
+							</div>
+							<div class="skillTxt">
+								<p>html</p>
+								<p>차후의 빠르고 쉬운 수정이 가능한 효율적인 Dom을 작성하도록 항상
+									노력하며 공부를 지속하고 있습니다
+								</p>
+							</div>
+
+
+						</div>
+					</li>
+					<li>
+						<div class="css pr">
+							<div class="second circle">
+								<strong></strong>
+							</div>
+							<div class="program">
+								<img src="images/program/css.png" alt="css">
+							</div>
+							<div class="skillTxt">
+								<p>css</p>
+								<p>홈페이지의 심미성과 사용성을 위해 레이아웃을 자유자재로 변형 할 수 있습니다</p>
+							</div>
+
+
+
+						</div>
+					</li>
+					<li>
+						<div class="javascript pr">
+							<div class="second circle">
+								<strong></strong>
+							</div>
+							<div class="program">
+								<img src="images/program/java.png" alt="javascript">
+							</div>
+							<div class="skillTxt">
+								<p>javascript</p>
+								<p>jQuery를 이해 및 활용하기 위한 기본적인 문법을 숙지하고 있습니다</p>
+							</div>
+
+
+						</div>
+					</li>
+					<li>
+						<div class="jquery pr">
+							<div class="second circle">
+								<strong></strong>
+							</div>
+							<div class="program">
+								<img src="images/program/jquery.png" alt="jquery">
+							</div>
+							<div class="skillTxt">
+								<p>jQuery</p>
+								<p>plugin을 사용하기 위한 기본적인 문법을 숙지하고 있습니다</p>
+							</div>
+
+
+						</div>
+					</li>
+					<li>
+						<div class="autocad pr">
+							<div class="second circle">
+								<strong></strong>
+							</div>
+							<div class="program">
+								<img src="images/program/autocad.png" alt="autocad">
+							</div>
+							<div class="skillTxt">
+								<p>autocad</p>
+								<p>가구 및 인테리어 설계를 위해 어느정도의 도면을 그릴 수 있습니다</p>
+							</div>
+
+
+						</div>
+					</li>
+					<li>
+						<div class="max pr">
+							<div class="second circle">
+								<strong></strong>
+							</div>
+							<div class="program">
+								<img src="images/program/max.png" alt="3dmax">
+							</div>
+							<div class="skillTxt">
+								<p>3Dmax</p>
+								<p>Low polygon Modeling 간단한 모델링을 할 수 있습니다</p>
+							</div>
+
+
+						</div>
+					</li>
+					<li>
+						<div class="Rhinoceros pr">
+							<div class="second circle">
+								<strong></strong>
+							</div>
+							<div class="program">
+								<img src="images/program/r6.png" alt="Rhinoceros">
+							</div>
+							<div class="skillTxt">
+								<p>Rhinoceros 6</p>
+								<p>high polygon Modeling 곡선을 표현한 모델링을 할 수 있습니다</p>
+							</div>
+
+
+						</div>
+					</li>
+				</ul>
+
+			</section>
+		</div>
+		<!--react 작업중-->
+		<div id="portfolio" class="mee z-index">
+			<section class="portfolio">
+				<h3>Portfolio
+					<span class="will">" 실력있는 전문가가 되기 위해 노력합니다 "</span>
+				</h3>
+				<div id="tabMenu">
+					<div class="button">
+						<ul>
+							<li class="on1">ALL</li>
+							<li>RESPOND</li>
+							<li>PC</li>
+							<li>MOBILE</li>
+							<li>ETC</li>
+						</ul>
+					</div>
+					<div class="pic">
+						<ul>
+							<li class="all">
+
+								<div class="website wrap">
+									<ul class="port cb">
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorp-1.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													심리테스트
+													<p class="portTxt_D"> 자바스크립트 심리테스트 조코딩</p>
+												</div>
+											</a>
+											<div id="pop1" class="pop">
+												<h2>#01 심리테스트</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="javascript:void(0);" target="_blank"><img
+																	src="images/monitorp-1.png" alt="바다와시인"></a>
+															<span><a target="_blank" href="webpages/"
+																	data-hover="보러가기">홈페이지</a></span>
+															<span class="document"><a target="_blank"
+																	href="pdf/pension.pdf"
+																	data-hover="보러가기">기획서</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 3주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게
+																		해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorp-1.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													바다와 시인
+													<p class="portTxt_D"> 펜션사이트/반응형</p>
+												</div>
+											</a>
+											<div id="pop1" class="pop">
+												<h2>#01 바다와 시인</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/pention/index.html" target="_blank"><img
+																	src="images/monitorp-1.png" alt="바다와시인"></a>
+															<span><a target="_blank" href="webpages/pention/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+															<span class="document"><a target="_blank"
+																	href="pdf/pension.pdf"
+																	data-hover="보러가기">기획서</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 3주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게
+																		해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorI-1.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													Iloome
+													<p class="portTxt_D"> 가구&인테리어 사이트/ 반응형</p>
+												</div>
+											</a>
+											<div id="pop2" class="pop">
+												<h2>#02 Iloome</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="javascript:void(0);" target="_blank"><img
+																	src="images/monitorI-1.png" alt="일룸"></a>
+															<span><a target="_blank" href="webpages/illoom/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+															<span class="document"><a target="_blank"
+																	href="pdf/illoom.pdf"
+																	data-hover="보러가기">기획서</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지</p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 2주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 반응형과 제이쿼리를 배운 직후에 만든 웹 페이지이다. 모바일에서 레이아웃이 틀어진것을
+																		보고 고치느라 애먹었던 기억이 있어 그만큼 애정이 있는 웹 사이트이다. 디자인
+																		변경보다는 반응형 구현을 포커스를 잡았다</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorK-1.png" alt="마켓커리">
+												</div>
+												<div class="portTxt">
+													Market karly
+													<p class="portTxt_D"> 반응형 연습 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop3" class="pop">
+												<h2>#03 Market karly</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/market/index.html" target="_blank"><img
+																	src="images/monitorK-1.png" alt="마켓커리"></a>
+															<span><a target="_blank" href="webpages/market/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지</p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 2일</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 처음 반응형을 시도해본 사이트. media screen 단 하나의 명령어를 작성하니
+																		pc용 태블릿용 모바일용이 뚝딱 만들어져 생각보다 어렵지 않다고 느꼈다. 매끄러운
+																		동작을 위해서는 명령어를 반복하지 않고 변경하고 싶은 부분만 언급하는 것만으로도
+																		가능하다는 것을 알게해 준 과정이었다. </p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorB.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													Babasell
+													<p class="portTxt_D"> 옷 쇼핑몰 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop4" class="pop">
+												<h2>#04 Babasell</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/babasell/index.html" target="_blank"><img
+																	src="images/portfolio/4.png" alt="배스킨라빈스"></a>
+															<span><a target="_blank" href="webpages/babasell/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 3일</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 홈페이지를 만들기 전에 그 사이트의 특성을 파악하고 주제에 맞는 색상과 폰트등을
+																		사용하는 것으로 디자인 감각을 익히는 계기가 되었고 홈페이지의 디자인은 사진이 반은
+																		먹고 들어간다는 생각을 하게 해준 홈 페이지이다</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorE.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													Urban project
+													<p class="portTxt_D"> 가상 건설 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop5" class="pop">
+												<h2>#05 Urban Project</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계, 코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/urban/index.html" target="_blank"><img
+																	src="images/portfolio/3.png"
+																	alt="Urban Project"></a>
+															<span><a target="_blank" href="webpages/urban/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 백그라운드에 영상 넣기 작업</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML </p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지 </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 4시간 </p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 수업중 배웠던 홈페이지 구성을 다르게 re-design 한 것으로 urban
+																		project라는 가상의 외국 건설 기업을 소개하는 웹 사이트를 만들고 싶었다.
+																		백그라운드에 영상을 넣어 보는 것으로 css에 position을 이용해 레이아웃을 잡는
+																		것을 더욱 이해 할 수 있게 되었다. </p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#6" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorS.png" alt="동대부여고">
+												</div>
+												<div class="portTxt">
+													동대부여고
+													<p class="portTxt_D"> 동대부여고 리디자인 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop6" class="pop">
+												<h2>#06 동대부여고</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/school/index.html" target="_blank"><img
+																	src="images/portfolio/8.png" alt="동대부여고"></a>
+															<span><a target="_blank" href="webpages/school/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지</p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 1일</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 새로운 리디자인 웹사이트를 찾고 있다가 모교의 홈페이지를 리 디자인하고 싶다고
+																		생각했다. pc와 태블릿 사이즈 까지 제작했고 달력/ 3가지 슬라이드 plugin
+																		적용을 연습할 수 있었다.</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#7" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorn.png" alt="나이키">
+												</div>
+												<div class="portTxt">
+													Nike
+													<p class="portTxt_D"> 나이키 제품 소개 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop7" class="pop">
+												<h2>#07 Nike</h2>
+												<h3>- pc 전용 홈페이지 학습과정에서 만든 웹 페이지 </h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/nike/index.html" target="_blank"><img
+																	src="images/portfolio/5.png" alt="나이키"></a>
+															<span><a target="_blank" href="webpages/nike/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- video를 백그라운드와 transform을 배우는 과정 </p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지</p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 1일</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- navi를 위한 html Dom구조의 기본을 익힐 수 있었고 transform에서
+																		scale,rotate, traslate, skew 를 이용한 네비게이션 배치와
+																		java없이도 간단하게 animation 만으로 동적 효과를 줄 수 있다는 것을 알게
+																		되었다. </p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorL.png" alt="pension">
+												</div>
+												<div class="portTxt">
+
+													LG전자
+													<p class="portTxt_D"> lg전자 상품 소개 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop8" class="pop">
+												<h2>#08 LG전자</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/lg/index.html" target="_blank"><img
+																	src="images/monitorL-1.png" alt="lg전자"></a>
+															<span><a target="_blank" href="webpages/lg/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 3일</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 뒷 배경을 고정시킨채 스크롤이되는 효과에 대해서 배웠고 js에서는 마우스 스크롤에
+																		대한 플러그인을 이용해 자연스럽게 다음으로 넘어가는 효과를 적용하는 연습이 되었다
+																	</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+
+
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorme.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													포트폴리오
+													<p class="portTxt_D"> 이경민 포트폴리오 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop9" class="pop">
+												<h2>#09 포트폴리오 페이지</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="pdf/portfolio.pdf" target="_blank"><img
+																	src="images/monitorme.png" alt="포트폴리오페이지"></a>
+															<span class="document"><a target="_blank"
+																	href="pdf/portfolio.pdf"
+																	data-hover="보러가기">기획서</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 3주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게
+																		해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#0" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/page.jpg" alt="pension">
+												</div>
+												<div class="portTxt">
+													바디프렌드 ( 상세페이지 )
+													<p class="portTxt_D"> 바디프렌드 상품 상세페이지 디자인</p>
+												</div>
+											</a>
+											<div id="pop10" class="pop pop10">
+												<h2>#10 바디프렌드 안마의자 상세페이지</h2><span class="document"><a target="_blank"
+														href="pdf/reserch.pdf" data-hover="보러가기">기획서</a></span>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="pdf/reserch.pdf" target="_blank"><img
+																	src="images/portfolio/inpage.jpg"
+																	alt="안마의자상세페이지"></a>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR </p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 안마의자 상세페이지 </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 1주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 바디프렌드의 안마의자의 상세페이지를 리 디자인 한 것으로, 안마의자의 대한 리서치로
+																		상품에 대한 자세한 기능과 사용자의 니즈를 파악하고 경쟁사를 벤치마킹하며 가상의
+																		클라이언트의 요구사항을 유추하며 진행하였다. 이를 통해 사용자가 원하는 정보가
+																		무엇인가에 대해서 생각하는 과정을 통해 UI/UX를 이해하게 되었다.</p>
+
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#1" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorapps.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													위끌리
+													<p class="portTxt_D"> 스케줄 앱 디자인</p>
+												</div>
+											</a>
+											<div id="pop11" class="pop">
+												<h2>#11 위끌리 ( 모바일 앱 디자인 )</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="javascript:void(0);" target="_blank"
+																onclick='window.open("./weekly.html","event_popup","resizable=no, menubar=no, toolbar=no, location=no, directories=no,width=405,height=700,left=200,top=50 "); return false'><img
+																	src="images/portfolio/11.png" alt="위끌리스케줄앱"></a>
+															<span><a target="_blank" href="#" data-hover="보러가기"
+																	onclick='window.open("./weekly.html","event_popup","resizable=no, menubar=no, toolbar=no, location=no, directories=no,width=405,height=700,left=200,top=50 "); return false'>디자인</a></span>
+															<span class="document"><a target="_blank"
+																	href="pdf/apps.pdf" data-hover="보러가기">기획서</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 스케줄 작성및 알림을 위한 앱 디자인 </p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 2주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 위끌리는 스케줄 및 달력 앱으로
+																		스케줄과 일기를 입력하거나 알람을 받아
+																		효율적으로 시간을 관리하는 것을 도와주는
+																		문화앱이다. 모바일 환경의 적합한 디자인을 생각하고
+																		사용자 측면 즉 손가락으로 터치하는데 불편함이 없도록
+																		최적화하려고 노력하여 모바일의 ui/ux를 이해하는데 큰 도움이 되었다.
+																	</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/not.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													updating...
+												</div>
+											</a>
+											<!--
+												<div id="pop12" class="pop">
+													<h2>#01 pension</h2><span><a target="_blank" href="#" data-hover="보러가기">홈페이지</a></span>
+													<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+													<hr>
+													<div class="pop_sub">
+														<div class="pop_left pop_f">
+															<div class="big">
+																<a href="http://junee3218.dothome.co.kr/portfolio1/index.html" target="_blank"><img src="images/portfolio/2.png" alt="배스킨라빈스"></a>
+															</div>
+														</div>
+														<div class="pop_right pop_f">
+															<div class="pop_sub">
+																<ul>
+																	<li>
+																		<h4>01. 작업내용</h4>
+																		<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																	</li>
+																	<li>
+																		<h4>02. 작업툴</h4>
+																		<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																	</li>
+																	<li>
+																		<h4>03. 제작페이지</h4>
+																		<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																	</li>
+																	<li>
+																		<h4>04. 제작기간</h4>
+																		<p>- 약 3주</p>
+																	</li>
+																	<li>
+																		<h4>05. 제작후기</h4>
+																		<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게 해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+													-->
+										</li>
+									</ul>
+								</div>
+
+							</li>
+							<li class="respond">
+								<div class="website wrap">
+									<ul class="port cb">
+										<li>
+											<a href="#_1" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorp-1.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													바다와 시인
+													<p class="portTxt_D"> 펜션사이트/반응형</p>
+												</div>
+											</a>
+											<div id="pop1_1" class="pop">
+												<h2>#01 바다와 시인 </h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/pention/index.html" target="_blank"><img
+																	src="images/monitorp-1.png" alt="바다와시인"></a>
+															<span><a target="_blank" href="webpages/pention/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+															<span class="document"><a target="_blank"
+																	href="pdf/pension.pdf"
+																	data-hover="보러가기">기획서</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 3주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게
+																		해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+										</li>
+										<li>
+											<a href="#2_1" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorI-1.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													Iloome
+													<p class="portTxt_D"> 가구&인테리어 사이트/ 반응형</p>
+												</div>
+											</a>
+											<div id="pop2_1" class="pop">
+												<h2>#02 Iloome</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/illoom/index.html" target="_blank"><img
+																	src="images/monitorI-1.png" alt="일룸"></a>
+															<span><a target="_blank" href="webpages/illoom/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+															<span class="document"><a target="_blank"
+																	href="pdf/illoom.pdf"
+																	data-hover="보러가기">기획서</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지</p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 2주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 반응형과 제이쿼리를 배운 직후에 만든 웹 페이지이다. 모바일에서 레이아웃이 틀어진것을
+																		보고 고치느라 애먹었던 기억이 있어 그만큼 애정이 있는 웹 사이트이다. 디자인
+																		변경보다는 반응형 구현을 포커스를 잡았다</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#3_1" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorK-1.png" alt="마켓커리">
+												</div>
+												<div class="portTxt">
+													Market karly
+													<p class="portTxt_D"> 반응형 연습 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop3_1" class="pop">
+												<h2>#03 Market karly</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/market/index.html" target="_blank"><img
+																	src="images/monitorK-1.png" alt="마켓커리"></a>
+															<span><a target="_blank" href="webpages/market/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지</p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 2일</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 처음 반응형을 시도해본 사이트. media screen 단 하나의 명령어를 작성하니
+																		pc용 태블릿용 모바일용이 뚝딱 만들어져 생각보다 어렵지 않다고 느꼈다. 매끄러운
+																		동작을 위해서는 명령어를 반복하지 않고 변경하고 싶은 부분만 언급하는 것만으로도
+																		가능하다는 것을 알게해 준 과정이었다. </p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#4_1" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorme.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													포트폴리오
+													<p class="portTxt_D"> 이경민 포트폴리오 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop4_1" class="pop">
+												<h2>#09 포트폴리오 페이지</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="pdf/portfolio.pdf" target="_blank"><img
+																	src="images/monitorme.png" alt="포트폴리오페이지"></a>
+															<span class="document"><a target="_blank"
+																	href="pdf/portfolio.pdf"
+																	data-hover="보러가기">기획서</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 3주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게
+																		해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/not.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													updating...
+												</div>
+											</a>
+											<!--
+												<div id="pop12" class="pop">
+													<h2>#01 pension</h2><span><a target="_blank" href="#" data-hover="보러가기">홈페이지</a></span>
+													<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+													<hr>
+													<div class="pop_sub">
+														<div class="pop_left pop_f">
+															<div class="big">
+																<a href="http://junee3218.dothome.co.kr/portfolio1/index.html" target="_blank"><img src="images/portfolio/2.png" alt="배스킨라빈스"></a>
+															</div>
+														</div>
+														<div class="pop_right pop_f">
+															<div class="pop_sub">
+																<ul>
+																	<li>
+																		<h4>01. 작업내용</h4>
+																		<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																	</li>
+																	<li>
+																		<h4>02. 작업툴</h4>
+																		<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																	</li>
+																	<li>
+																		<h4>03. 제작페이지</h4>
+																		<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																	</li>
+																	<li>
+																		<h4>04. 제작기간</h4>
+																		<p>- 약 3주</p>
+																	</li>
+																	<li>
+																		<h4>05. 제작후기</h4>
+																		<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게 해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+													-->
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/not.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													updating...
+												</div>
+											</a>
+											<!--
+												<div id="pop12" class="pop">
+													<h2>#01 pension</h2><span><a target="_blank" href="#" data-hover="보러가기">홈페이지</a></span>
+													<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+													<hr>
+													<div class="pop_sub">
+														<div class="pop_left pop_f">
+															<div class="big">
+																<a href="http://junee3218.dothome.co.kr/portfolio1/index.html" target="_blank"><img src="images/portfolio/2.png" alt="배스킨라빈스"></a>
+															</div>
+														</div>
+														<div class="pop_right pop_f">
+															<div class="pop_sub">
+																<ul>
+																	<li>
+																		<h4>01. 작업내용</h4>
+																		<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																	</li>
+																	<li>
+																		<h4>02. 작업툴</h4>
+																		<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																	</li>
+																	<li>
+																		<h4>03. 제작페이지</h4>
+																		<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																	</li>
+																	<li>
+																		<h4>04. 제작기간</h4>
+																		<p>- 약 3주</p>
+																	</li>
+																	<li>
+																		<h4>05. 제작후기</h4>
+																		<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게 해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+													-->
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/not.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													updating...
+												</div>
+											</a>
+											<!--
+												<div id="pop12" class="pop">
+													<h2>#01 pension</h2><span><a target="_blank" href="#" data-hover="보러가기">홈페이지</a></span>
+													<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+													<hr>
+													<div class="pop_sub">
+														<div class="pop_left pop_f">
+															<div class="big">
+																<a href="http://junee3218.dothome.co.kr/portfolio1/index.html" target="_blank"><img src="images/portfolio/2.png" alt="배스킨라빈스"></a>
+															</div>
+														</div>
+														<div class="pop_right pop_f">
+															<div class="pop_sub">
+																<ul>
+																	<li>
+																		<h4>01. 작업내용</h4>
+																		<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																	</li>
+																	<li>
+																		<h4>02. 작업툴</h4>
+																		<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																	</li>
+																	<li>
+																		<h4>03. 제작페이지</h4>
+																		<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																	</li>
+																	<li>
+																		<h4>04. 제작기간</h4>
+																		<p>- 약 3주</p>
+																	</li>
+																	<li>
+																		<h4>05. 제작후기</h4>
+																		<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게 해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+													-->
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/not.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													updating...
+												</div>
+											</a>
+											<!--
+												<div id="pop12" class="pop">
+													<h2>#01 pension</h2><span><a target="_blank" href="#" data-hover="보러가기">홈페이지</a></span>
+													<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+													<hr>
+													<div class="pop_sub">
+														<div class="pop_left pop_f">
+															<div class="big">
+																<a href="http://junee3218.dothome.co.kr/portfolio1/index.html" target="_blank"><img src="images/portfolio/2.png" alt="배스킨라빈스"></a>
+															</div>
+														</div>
+														<div class="pop_right pop_f">
+															<div class="pop_sub">
+																<ul>
+																	<li>
+																		<h4>01. 작업내용</h4>
+																		<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																	</li>
+																	<li>
+																		<h4>02. 작업툴</h4>
+																		<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																	</li>
+																	<li>
+																		<h4>03. 제작페이지</h4>
+																		<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																	</li>
+																	<li>
+																		<h4>04. 제작기간</h4>
+																		<p>- 약 3주</p>
+																	</li>
+																	<li>
+																		<h4>05. 제작후기</h4>
+																		<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게 해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+													-->
+										</li>
+									</ul>
+								</div>
+
+							</li>
+							<li class="pc">
+								<div class="website wrap">
+									<ul class="port cb">
+
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorB.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													Babasell
+													<p class="portTxt_D"> 옷 쇼핑몰 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop4_2" class="pop">
+												<h2>#01 Babasell</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/babasell/index.html" target="_blank"><img
+																	src="images/portfolio/4.png" alt="배스킨라빈스"></a>
+															<span><a target="_blank" href="webpages/babasell/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 3일</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 홈페이지를 만들기 전에 그 사이트의 특성을 파악하고 주제에 맞는 색상과 폰트등을
+																		사용하는 것으로 디자인 감각을 익히는 계기가 되었고 홈페이지의 디자인은 사진이 반은
+																		먹고 들어간다는 생각을 하게 해준 홈 페이지이다</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorE.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													Urban project
+													<p class="portTxt_D"> 가상 건설 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop5_2" class="pop">
+												<h2>#02 Urban Project</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계, 코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/urban/index.html" target="_blank"><img
+																	src="images/portfolio/3.png"
+																	alt="Urban Project"></a>
+															<span><a target="_blank" href="webpages/urban/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 백그라운드에 영상 넣기 작업</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML </p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지 </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 4시간 </p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 수업중 배웠던 홈페이지 구성을 다르게 re-design 한 것으로 urban
+																		project라는 가상의 외국 건설 기업을 소개하는 웹 사이트를 만들고 싶었다.
+																		백그라운드에 영상을 넣어 보는 것으로 css에 position을 이용해 레이아웃을 잡는
+																		것을 더욱 이해 할 수 있게 되었다. </p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorS.png" alt="동대부여고">
+												</div>
+												<div class="portTxt">
+													동대부여고
+													<p class="portTxt_D"> 동대부여고 리디자인 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop6_2" class="pop">
+												<h2>#03 동대부여고</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/school/index.html" target="_blank"><img
+																	src="images/portfolio/8.png" alt="동대부여고"></a>
+															<span><a target="_blank" href="webpages/school/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지</p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 1일</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 새로운 리디자인 웹사이트를 찾고 있다가 모교의 홈페이지를 리 디자인하고 싶다고
+																		생각했다. pc와 태블릿 사이즈 까지 제작했고 달력/ 3가지 슬라이드 plugin
+																		적용을 연습할 수 있었다.</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorn.png" alt="나이키">
+												</div>
+												<div class="portTxt">
+													Nike
+													<p class="portTxt_D"> 나이키 제품 소개 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop7_2" class="pop">
+												<h2>#04 Nike</h2>
+												<h3>- pc 전용 홈페이지 학습과정에서 만든 웹 페이지 </h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/nike/index.html" target="_blank"><img
+																	src="images/portfolio/5.png" alt="나이키"></a>
+															<span><a target="_blank" href="webpages/nike/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- video를 백그라운드와 transform을 배우는 과정 </p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지</p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 1일</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- navi를 위한 html Dom구조의 기본을 익힐 수 있었고 transform에서
+																		scale,rotate, traslate, skew 를 이용한 네비게이션 배치와
+																		java없이도 간단하게 animation 만으로 동적 효과를 줄 수 있다는 것을 알게
+																		되었다. </p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorL.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													LG전자
+													<p class="portTxt_D"> lg전자 상품 소개 사이트/ PC</p>
+												</div>
+											</a>
+											<div id="pop8_2" class="pop">
+												<h2>#05 LG전자</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="webpages/lg/index.html" target="_blank"><img
+																	src="images/monitorL-1.png" alt="lg전자"></a>
+															<span><a target="_blank" href="webpages/lg/index.html"
+																	data-hover="보러가기">홈페이지</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 3일</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 뒷 배경을 고정시킨채 스크롤이되는 효과에 대해서 배웠고 js에서는 마우스 스크롤에
+																		대한 플러그인을 이용해 자연스럽게 다음으로 넘어가는 효과를 적용하는 연습이 되었다
+																	</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/not.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													updating...
+												</div>
+											</a>
+											<!--
+												<div id="pop12" class="pop">
+													<h2>#01 pension</h2><span><a target="_blank" href="#" data-hover="보러가기">홈페이지</a></span>
+													<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+													<hr>
+													<div class="pop_sub">
+														<div class="pop_left pop_f">
+															<div class="big">
+																<a href="http://junee3218.dothome.co.kr/portfolio1/index.html" target="_blank"><img src="images/portfolio/2.png" alt="배스킨라빈스"></a>
+															</div>
+														</div>
+														<div class="pop_right pop_f">
+															<div class="pop_sub">
+																<ul>
+																	<li>
+																		<h4>01. 작업내용</h4>
+																		<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																	</li>
+																	<li>
+																		<h4>02. 작업툴</h4>
+																		<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																	</li>
+																	<li>
+																		<h4>03. 제작페이지</h4>
+																		<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																	</li>
+																	<li>
+																		<h4>04. 제작기간</h4>
+																		<p>- 약 3주</p>
+																	</li>
+																	<li>
+																		<h4>05. 제작후기</h4>
+																		<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게 해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+													-->
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/not.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													updating...
+												</div>
+											</a>
+											<!--
+												<div id="pop12" class="pop">
+													<h2>#01 pension</h2><span><a target="_blank" href="#" data-hover="보러가기">홈페이지</a></span>
+													<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+													<hr>
+													<div class="pop_sub">
+														<div class="pop_left pop_f">
+															<div class="big">
+																<a href="http://junee3218.dothome.co.kr/portfolio1/index.html" target="_blank"><img src="images/portfolio/2.png" alt="배스킨라빈스"></a>
+															</div>
+														</div>
+														<div class="pop_right pop_f">
+															<div class="pop_sub">
+																<ul>
+																	<li>
+																		<h4>01. 작업내용</h4>
+																		<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																	</li>
+																	<li>
+																		<h4>02. 작업툴</h4>
+																		<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																	</li>
+																	<li>
+																		<h4>03. 제작페이지</h4>
+																		<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																	</li>
+																	<li>
+																		<h4>04. 제작기간</h4>
+																		<p>- 약 3주</p>
+																	</li>
+																	<li>
+																		<h4>05. 제작후기</h4>
+																		<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게 해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+													-->
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/not.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													updating...
+												</div>
+											</a>
+											<!--
+												<div id="pop12" class="pop">
+													<h2>#01 pension</h2><span><a target="_blank" href="#" data-hover="보러가기">홈페이지</a></span>
+													<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+													<hr>
+													<div class="pop_sub">
+														<div class="pop_left pop_f">
+															<div class="big">
+																<a href="http://junee3218.dothome.co.kr/portfolio1/index.html" target="_blank"><img src="images/portfolio/2.png" alt="배스킨라빈스"></a>
+															</div>
+														</div>
+														<div class="pop_right pop_f">
+															<div class="pop_sub">
+																<ul>
+																	<li>
+																		<h4>01. 작업내용</h4>
+																		<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																	</li>
+																	<li>
+																		<h4>02. 작업툴</h4>
+																		<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																	</li>
+																	<li>
+																		<h4>03. 제작페이지</h4>
+																		<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																	</li>
+																	<li>
+																		<h4>04. 제작기간</h4>
+																		<p>- 약 3주</p>
+																	</li>
+																	<li>
+																		<h4>05. 제작후기</h4>
+																		<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게 해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+													-->
+										</li>
+									</ul>
+								</div>
+
+							</li>
+
+							<li class="mobile">
+								<div class="website wrap">
+									<ul class="port cb">
+										<li>
+											<a href="#_3" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorapps-11.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													바다와 시인 펜션
+													<p class="portTxt_D"> 펜션사이트/ 모바일</p>
+												</div>
+											</a>
+											<div id="pop1_3" class="pop">
+												<h2>#01 바다와 시인 </h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="javascript:void(0);" target="_blank"
+																onclick='window.open("webpages/pention/index.html","pension","resizable=no, menubar=no, toolbar=no, location=no, directories=no,width=405,height=700,left=200,top=50 "); return false'><img
+																	src="images/monitorp-1.png" alt="펜션사이트"></a>
+															<span><a target="_blank" href="#" data-hover="보러가기"
+																	onclick='window.open("webpages/pention/index.html","pension","resizable=no, menubar=no, toolbar=no, location=no, directories=no,width=405,height=700,left=200,top=50 "); return false'>모바일
+																	화면</a></span>
+															<span class="document"><a target="_blank"
+																	href="pdf/pension.pdf"
+																	data-hover="보러가기">기획서</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 3주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게
+																		해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+										</li>
+										<li>
+											<a href="#2_3" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorapps-1.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													Iloome
+													<p class="portTxt_D"> 가구&인테리어 사이트/ 모바일</p>
+												</div>
+											</a>
+											<div id="pop2_3" class="pop">
+												<h2>#02 Iloome</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="javascript:void(0);" target="_blank"
+																onclick='window.open("webpages/illoom/index.html","event_popup","resizable=no, menubar=no, toolbar=no, location=no, directories=no,width=405,height=700,left=200,top=50 "); return false'><img
+																	src="images/monitorI-1.png" alt="일룸"></a>
+															<span><a target="_blank" href="#" data-hover="보러가기"
+																	onclick='window.open("webpages/illoom/index.html","event_popup","resizable=no, menubar=no, toolbar=no, location=no, directories=no,width=405,height=700,left=200,top=50 "); return false'>모바일
+																	화면</a></span>
+															<span class="document"><a target="_blank"
+																	href="pdf/illoom.pdf"
+																	data-hover="보러가기">기획서</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지</p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 2주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 반응형과 제이쿼리를 배운 직후에 만든 웹 페이지이다. 모바일에서 레이아웃이 틀어진것을
+																		보고 고치느라 애먹었던 기억이 있어 그만큼 애정이 있는 웹 사이트이다. 디자인
+																		변경보다는 반응형 구현을 포커스를 잡았다</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/monitorapps.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													위끌리
+													<p class="portTxt_D"> 스케줄 앱 디자인</p>
+												</div>
+											</a>
+											<div id="pop11_3" class="pop">
+												<h2>#03 위끌리 ( 모바일 앱 디자인 )</h2>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="javascript:void(0);" target="_blank"
+																onclick='window.open("./weekly.html","event_popup","resizable=no, menubar=no, toolbar=no, location=no, directories=no,width=405,height=700,left=200,top=50 "); return false'><img
+																	src="images/portfolio/11.png" alt="위끌리스케줄앱"></a>
+															<span><a target="_blank" href="#" data-hover="보러가기"
+																	onclick='window.open("./weekly.html","event_popup","resizable=no, menubar=no, toolbar=no, location=no, directories=no,width=405,height=700,left=200,top=50 "); return false'>디자인</a></span>
+															<span class="document"><a target="_blank"
+																	href="pdf/apps.pdf" data-hover="보러가기">기획서</a></span>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 스케줄 작성및 알림을 위한 앱 디자인 </p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 2주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 위끌리는 스케줄 및 달력 앱으로
+																		스케줄과 일기를 입력하거나 알람을 받아
+																		효율적으로 시간을 관리하는 것을 도와주는
+																		문화앱이다. 모바일 환경의 적합한 디자인을 생각하고
+																		사용자 측면 즉 손가락으로 터치하는데 불편함이 없도록
+																		최적화하려고 노력하여 모바일의 ui/ux를 이해하는데 큰 도움이 되었다.
+																	</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/not.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													updating...
+												</div>
+											</a>
+											<!--
+												<div id="pop12" class="pop">
+													<h2>#01 pension</h2><span><a target="_blank" href="#" data-hover="보러가기">홈페이지</a></span>
+													<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+													<hr>
+													<div class="pop_sub">
+														<div class="pop_left pop_f">
+															<div class="big">
+																<a href="http://junee3218.dothome.co.kr/portfolio1/index.html" target="_blank"><img src="images/portfolio/2.png" alt="배스킨라빈스"></a>
+															</div>
+														</div>
+														<div class="pop_right pop_f">
+															<div class="pop_sub">
+																<ul>
+																	<li>
+																		<h4>01. 작업내용</h4>
+																		<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																	</li>
+																	<li>
+																		<h4>02. 작업툴</h4>
+																		<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																	</li>
+																	<li>
+																		<h4>03. 제작페이지</h4>
+																		<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																	</li>
+																	<li>
+																		<h4>04. 제작기간</h4>
+																		<p>- 약 3주</p>
+																	</li>
+																	<li>
+																		<h4>05. 제작후기</h4>
+																		<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게 해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+													-->
+										</li>
+									</ul>
+								</div>
+
+							</li>
+
+							<li class="etc">
+
+								<div class="website wrap">
+									<ul class="port cb">
+										<li>
+											<a href="#0_4" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/page.jpg" alt="pension">
+												</div>
+												<div class="portTxt">
+													바디프렌드 ( 상세페이지 )
+													<p class="portTxt_D"> 바디프렌드 상품 상세페이지 디자인</p>
+												</div>
+											</a>
+											<div id="pop10_4" class="pop pop10">
+												<h2>#01 바디프렌드 안마의자 상세페이지</h2><span class="document"><a target="_blank"
+														href="pdf/reserch.pdf" data-hover="보러가기">기획서</a></span>
+												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+												<hr>
+												<div class="pop_sub">
+													<div class="pop_left pop_f">
+														<div class="big">
+															<a href="pdf/reserch.pdf" target="_blank"><img
+																	src="images/portfolio/inpage.jpg"
+																	alt="안마의자상세페이지"></a>
+														</div>
+													</div>
+													<div class="pop_right pop_f">
+														<div class="pop_sub">
+															<ul>
+																<li>
+																	<h4>01. 작업내용</h4>
+																	<p>- 개인 제작 작품 / 리서치, 디자인 100% 개인제작</p>
+																</li>
+																<li>
+																	<h4>02. 작업툴</h4>
+																	<p>- PHOTOSHOP, ILLUSTRATOR </p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 안마의자 상세페이지 </p>
+																</li>
+																<li>
+																	<h4>04. 제작기간</h4>
+																	<p>- 약 1주</p>
+																</li>
+																<li>
+																	<h4>05. 제작후기</h4>
+																	<p>- 바디프렌드의 안마의자의 상세페이지를 리 디자인 한 것으로, 안마의자의 대한 리서치로
+																		상품에 대한 자세한 기능과 사용자의 니즈를 파악하고 경쟁사를 벤치마킹하며 가상의
+																		클라이언트의 요구사항을 유추하며 진행하였다. 이를 통해 사용자가 원하는 정보가
+																		무엇인가에 대해서 생각하는 과정을 통해 UI/UX를 이해하게 되었다.</p>
+
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</li>
+
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/not.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													updating...
+												</div>
+											</a>
+											<!--
+												<div id="pop12" class="pop">
+													<h2>#01 pension</h2><span><a target="_blank" href="#" data-hover="보러가기">홈페이지</a></span>
+													<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+													<hr>
+													<div class="pop_sub">
+														<div class="pop_left pop_f">
+															<div class="big">
+																<a href="http://junee3218.dothome.co.kr/portfolio1/index.html" target="_blank"><img src="images/portfolio/2.png" alt="배스킨라빈스"></a>
+															</div>
+														</div>
+														<div class="pop_right pop_f">
+															<div class="pop_sub">
+																<ul>
+																	<li>
+																		<h4>01. 작업내용</h4>
+																		<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																		<h4>02. 작업툴</h4>
+																		<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																	<li>
+																		<h4>04. 제작기간</h4>
+																		<p>- 약 3주</p>
+																	</li>
+																	<li>
+																		<h4>05. 제작후기</h4>
+																		<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게 해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+													-->
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/not.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													updating...
+												</div>
+											</a>
+											<!--
+												<div id="pop12" class="pop">
+													<h2>#01 pension</h2><span><a target="_blank" href="#" data-hover="보러가기">홈페이지</a></span>
+													<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+													<hr>
+													<div class="pop_sub">
+														<div class="pop_left pop_f">
+															<div class="big">
+																<a href="http://junee3218.dothome.co.kr/portfolio1/index.html" target="_blank"><img src="images/portfolio/2.png" alt="배스킨라빈스"></a>
+															</div>
+														</div>
+														<div class="pop_right pop_f">
+															<div class="pop_sub">
+																<ul>
+																	<li>
+																		<h4>01. 작업내용</h4>
+																		<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																		<h4>02. 작업툴</h4>
+																		<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																	<li>
+																		<h4>04. 제작기간</h4>
+																		<p>- 약 3주</p>
+																	</li>
+																	<li>
+																		<h4>05. 제작후기</h4>
+																		<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게 해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+													-->
+										</li>
+										<li>
+											<a href="javascript:void(0);" rel="modal:open" target="_blank">
+												<div class="portImg">
+													<img src="images/not.png" alt="pension">
+												</div>
+												<div class="portTxt">
+													updating...
+												</div>
+											</a>
+											<!--
+												<div id="pop12" class="pop">
+													<h2>#01 pension</h2><span><a target="_blank" href="#" data-hover="보러가기">홈페이지</a></span>
+													<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
+													<hr>
+													<div class="pop_sub">
+														<div class="pop_left pop_f">
+															<div class="big">
+																<a href="http://junee3218.dothome.co.kr/portfolio1/index.html" target="_blank"><img src="images/portfolio/2.png" alt="배스킨라빈스"></a>
+															</div>
+														</div>
+														<div class="pop_right pop_f">
+															<div class="pop_sub">
+																<ul>
+																	<li>
+																		<h4>01. 작업내용</h4>
+																		<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
+																</li>
+																<li>
+																		<h4>02. 작업툴</h4>
+																		<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
+																</li>
+																<li>
+																	<h4>03. 제작페이지</h4>
+																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
+																</li>
+																	<li>
+																		<h4>04. 제작기간</h4>
+																		<p>- 약 3주</p>
+																	</li>
+																	<li>
+																		<h4>05. 제작후기</h4>
+																		<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게 해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+													-->
+										</li>
+									</ul>
+								</div>
+								<div class="cad">
+									<h4>~ extra ~
+										<span class="will"> " 웹 퍼블리셔 관련 외의 작업물을 소개합니다 "</span>
+									</h4>
+									<section id="exemple" class="container">
+										<h4 class="hidden">제목필요</h4>
+										<div class="wrap small-width">
+											<div id="try"></div>
+											<ul id="box-container">
+												<li class="box">
+													<a href="images/cad/1.jpg" class="swipebox" title="회전의자 모델링 판넬1">
+														<img src="images/cad/1.jpg" alt="image">
+													</a>
+												</li>
+												<li class="box">
+													<a href="images/cad/2.jpg" class="swipebox" title="회전의자 모델링 판넬2">
+														<img src="images/cad/2.jpg" alt="image">
+													</a>
+												</li>
+												<li class="box">
+													<a href="images/cad/3.jpg" class="swipebox" title="3dmax를 이용한 배경구성">
+														<img src="images/cad/3.jpg" alt="image">
+													</a>
+												</li>
+												<li class="box">
+													<a href="images/cad/4.png" class="swipebox" title="캐릭터 디자인">
+														<img src="images/cad/4.png" alt="image">
+													</a>
+												</li>
+												<li class="box">
+													<a href="images/cad/5.jpg" class="swipebox" title="조립가구 패키지 디자인">
+														<img src="images/cad/5.jpg" alt="image">
+													</a>
+												</li>
+												<li class="box">
+													<a href="images/cad/6.jpg" class="swipebox" title="캐릭터 디자인">
+														<img src="images/cad/6.jpg" alt="image">
+													</a>
+												</li>
+												<li class="box">
+													<a href="images/cad/7.jpg" class="swipebox" title="앱 메인 화면 디자인">
+														<img src="images/cad/7.jpg" alt="image">
+													</a>
+												</li>
+												<li class="box">
+													<a href="images/cad/8.jpg" class="swipebox" title="표지 디자인">
+														<img src="images/cad/8.jpg" alt="image">
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</section>
+								</div>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
+			</section>
+
+
+
+		</div>
+
+		<div id="contact" class="mee z-index">
+
+			<section class="contact wrap">
+				<h3>Contact
+					<span class="will contactspan"> " 함께 회사를 이끌어갈 준비가 되어있습니다"</span>
+				</h3>
+				<div id="treeB">
+					<div class="tree tree1"><img src="images/animation/tree1.png" alt=""></div>
+					<div class="tree tree2"><img src="images/animation/tree2.png" alt=""></div>
+					<div class="tree tree3"><img src="images/animation/tree3.png" alt=""></div>
+					<div class="tree tree4"><img src="images/animation/tree1.png" alt=""></div>
+
+
+
+					<div class="tree tree8"><img src="images/animation/tree2.png" alt=""></div>
+					<div class="tree tree7"><img src="images/animation/tree1.png" alt=""></div>
+					<div class="tree tree6"><img src="images/animation/tree3.png" alt=""></div>
+					<div class="tree tree5"><img src="images/animation/tree2.png" alt=""></div>
+
+
+
+
+				</div>
+
+				<div class="bloon">
+					<img src="images/contect/bollon.png" alt="#">
+				</div>
+				<div class="contectBox">
+					<div class="contectImg">
+						<img src="images/charactor2.png" alt="프로필사진">
+					</div>
+					<div class="contectTxt">
+						<p><img src="images/contect/mail.png" alt="이메일아이콘">&nbsp; <a
+								href="https://www.google.com/intl/ko/gmail/about/#"> E-mail:
+								<span>de05164@naver.com</span></a></p>
+						<p><img src="images/contect/kakao.png" alt="카톡아이콘">&nbsp; Id: <span>de05164</span></p>
+						<p><img src="images/contect/web.png" alt="웹사이트아이콘">&nbsp; web: <a
+								href="http://kmportfolio.dothome.co.kr/"><span>http://kmportfolio.dothome.co.kr/</span></a>
+						</p>
+
+					</div>
+				</div>
+
+
+			</section>
+			<div class="footer">
+				<h6>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</h6>
+				<p class="copyright">copyright.2020.kyung_min.Lee.All right reserved.</p>
+
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+</html>

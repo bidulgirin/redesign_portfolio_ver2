@@ -1,0 +1,259 @@
+*{margin:0; padding:0;}
+
+body, html{ width:100%; height:100%; background-size:100% 100%;
+	
+	}
+	body{font:18px/2 "맑은 고딕";}
+	li{list-style:none;}
+	a{text-decoration:none;
+		color:#222;}
+	
+	@font-face{
+			font-family:'mono';
+		src:url('../font/Monoton-Regular.woff') format('woff');
+		}	
+	@font-face{
+			font-family:'play_b';
+		src:url('../font/Play-Bold.woff') format('woff');
+		}	
+	@font-face{
+			font-family:'play_r';
+		src:url('../font/Play-Regular.woff') format('woff');
+		}	
+	#wrapper{
+		min-width:100%;
+		position:absolute;
+		overflow:hidden; 
+		z-index:1;
+		width:100%;
+		height:100%;
+		background-size:100% 100%;
+		}
+	#header{ 
+			position:fixed;
+			z-index:2;
+			width:600px;
+			height:100%;
+			background:/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#61c419+0,e5e170+100 */
+			background: rgb(97,196,25); /* Old browsers */
+			background: -moz-linear-gradient(-45deg,  rgba(97,196,25,1) 0%, rgba(229,225,112,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(-45deg,  rgba(97,196,25,1) 0%,rgba(229,225,112,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(135deg,  rgba(97,196,25,1) 0%,rgba(229,225,112,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61c419', endColorstr='#e5e170',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+			
+			top:0;
+			left:-350px;
+			transform:skew(-35deg);
+			
+			
+			
+		}
+	header{
+			z-index:3;
+			}
+	
+	
+	h1{
+		transform:skew(35deg);
+		z-index:3;
+		text-align:center;
+		padding-top:20px;}
+	h1 img{width:250px;}
+	
+	/*header style*/
+	#gnb{ 
+		position:absolute;
+		width:200px;
+		height:100%;
+		right:0;
+		transition:all 0.5s;
+		font-weight:bold;
+		color:white;
+		display:inline-block;
+		}
+	#gnb a{transform:skew(35deg);}
+	#header ul{
+		text-align:center;
+		box-sizing:border-box;
+		
+		}
+	
+	#header ul>li{ 
+			position:relative;
+			z-index:3;
+			margin-right:0px;
+			width:200px;
+			height:50px;
+			margin-bottom:10px;
+			display:inline-block;
+			transition:all 0.5s;
+	}
+	#header ul>li:hover{
+		background:black;}
+	
+	#header ul>li>a{
+	width:100%;
+	display:inline-block;
+	box-sizing:border-box;
+	padding:10px;}
+	
+	#header ul>li>a:hover{color:white;}
+	
+	/*submenu*/
+	
+	#header ul>li>ul{
+		position:absolute;
+		display:inline-block;
+		transition:all 1s;
+		z-index:4;
+		left:0px;
+		opacity:0;}
+	#header ul>li:hover ul{	
+		display:inline-block;
+		left:200px;
+		opacity:1;}
+	
+	#header ul>li:hover ul li{left:0px;
+	transition:all 0.5s;}
+	#header ul>li>ul>li{
+		left:0px;
+		background:black;
+		display:none;
+		 }
+	#header ul>li:hover li{display:block;}
+	#header ul>li>ul>li>a{
+		display:inline-block;
+		width:100%;
+		height:100%;
+		margin-bottom:3px;}
+	#header ul>li>ul>li:hover{
+		color:black;
+		background:#b9ff00;}
+	#section{ 	position:fixed;
+				margin-left:-200px;
+				margin-top:-100px;
+				width:100%;
+				height:100%;
+			}
+	#section .mo {
+			position:fixed;
+			z-index:65;
+			top:200px;
+			right:100px;
+			}
+	#section .BEST {
+			position:fixed;
+			z-index:65;
+			top:450px;
+			right:150px;
+			}
+	video{	
+			width:130%;
+			height:130%;
+			margin:0 auto;
+			position:absolute;
+			min-width:2000px;
+			z-index:1;
+			
+		}
+		
+	/*오른쪽 하단 스타일*/
+	
+	#aside{ position:fixed;
+			background:#111;
+			width:500px; height:100%;
+			right:-450px; bottom:0;
+			z-index:21;
+			box-sizing:border-box;
+			transform:skew(-35deg);
+			transition:all 1s;
+			opacity:0.9;
+			}
+	#aside:hover{
+		right:-500px;
+		width:900px;
+		}
+	.asideback{
+		position:absolute;
+		height:100%;
+		left:150px;
+		bottom:0px;
+		text-align:left;
+		padding-top:350px;
+		background:#222;
+		box-sizing:border-box;
+		display:inline-block;
+		transition:all 1s;
+	}
+	#aside:hover .asideback {left:50px;}
+	#aside:hover li{
+		opacity:1;
+		left:0px;}
+	
+	.asideback li{
+		position:relative;
+		left:250px;
+		margin-top:10px;
+		padding:0 50px;
+		box-sizing:border-box;
+		transition:all 1s;
+		opacity:0;
+		}
+	
+	.asideback li p{
+		text-align:left;
+		font-family:arial;
+		font-weight:bold;
+		font-size:17px;
+		color:white;
+		transform:skew(35deg);
+		opacity:0.5;
+		transition:all 0.5s;
+		}
+	.asideback li:hover p{opacity:1;}
+	.asideback li img{
+	opacity:0.1;
+	transform:skew(35deg);
+	transition:all 0.5s;}
+	.asideback li img:hover {opacity:1;}
+	#aside ul li:nth-child(1){transition:all 0.4s;}
+	#aside ul li:nth-child(2){transition:all 0.8s;}
+	#aside ul li:nth-child(3){transition:all 1.2s;}
+	
+	
+	
+	div{color:white; 
+		font-family:"play_r";}
+	
+	
+	#txt{background:yellow;}
+	
+		
+		
+		.mono
+		{
+		font-family:"mono";
+		color:#bafb00;
+		font-size:1000%;
+		}
+		.whitebig{ font-size:300%;}
+		.whitesmall{ font-size:150%;}
+		.green{ font-size:150%;}
+	@keyframe ani1{
+		to{top:0;}
+		
+		from(top:150px;)
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

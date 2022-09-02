@@ -63,6 +63,10 @@ a:hover {
   cursor: none;
 }
 
+img {
+  -webkit-user-drag: none;
+}
+
 #wrapper {
   position: relative;
   max-width: 1920px;

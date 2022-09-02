@@ -1,0 +1,264 @@
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+  z-index: 100;
+  display: none;
+}
+.cnt223 a {
+  text-decoration: none;
+}
+.popup {
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+  position: fixed;
+  z-index: 101;
+}
+.cnt223 {
+  max-width: 400px;
+  width: 60%;
+  min-height: 350px;
+  margin: 100px auto;
+  background: #f3f3f3;
+  position: relative;
+  z-index: 103;
+  padding: 15px 35px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #000;
+}
+.cnt223 img {
+  width: 100%;
+}
+.cnt223 p {
+  clear: both;
+  color: #555555;
+  /* text-align: justify; */
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.cnt223 p a {
+  color: #d91900;
+  font-weight: bold;
+}
+.cnt223 .x {
+  float: right;
+  height: 40px;
+  left: 22px;
+  position: relative;
+  top: 5px;
+  font-size: 180%;
+  width: 40px;
+}
+.cnt223 .x:hover {
+  cursor: pointer;
+}
+#contain {
+  padding: 50px 0;
+  width: 70%;
+  overflow: auto;
+}
+
+.leftSide {
+  background: rgb(255, 255, 255);
+  width: 60%;
+  float: left;
+}
+.leftSide img {
+  width: 90%;
+}
+
+.gif img {
+  width: 80%;
+}
+video {
+  max-width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.rightSide {
+  position: fixed;
+  top: 200px;
+  right: 10%;
+  float: right;
+  width: 400px;
+  height: 400px;
+  text-align: left;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 2px 3px gray;
+}
+.rightSide p {
+  padding: 10px 0;
+}
+.rightSide p.bigTxt {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+table.cash {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 30px 20px;
+}
+a.buy {
+  display: block;
+  width: 80%;
+  box-sizing: border-box;
+  text-align: center;
+
+  padding: 20px;
+  background: #ffdf2b;
+  margin: 0 auto;
+}
+#contain2 {
+  display: none !important;
+}
+
+/* 선택 */
+
+select {
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* arrows */
+/**/
+select.classic {
+  background-image: linear-gradient(45deg, transparent 50%, blue 50%),
+    linear-gradient(135deg, blue 50%, transparent 50%),
+    linear-gradient(to right, skyblue, skyblue);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+select.classic:focus {
+  background-image: linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, gray, gray);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}
+
+select.round {
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    radial-gradient(#ddd 70%, transparent 72%);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 0.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.round:focus {
+  background-image: linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    radial-gradient(gray 70%, transparent 72%);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 0.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+select.minimal {
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.minimal:focus {
+  background-image: linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+#contain2 {
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  background: #ffdf2b;
+  text-align: center;
+}
+#contain2 a {
+  display: block;
+  font-size: 180%;
+  font-weight: bold;
+
+  padding: 20px 100px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1400px) {
+  #contain {
+    width: 100%;
+    overflow: auto;
+  }
+
+  .rightSide {
+    right: 0%;
+    float: right;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  #contain {
+    width: 100%;
+    overflow: auto;
+  }
+  #contain2 {
+    display: block !important;
+  }
+
+  .rightSide {
+    display: none;
+  }
+  .leftSide {
+    width: 100%;
+  }
+}

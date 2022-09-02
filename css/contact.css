@@ -119,18 +119,20 @@
   background-color: rgba(250, 250, 250, 0.217);
 }
 
+.list-unstyled li {
+  font-family: "SUIT-Medium";
+  padding-top: 10px;
+  font-size: 0.9em;
+  color: rgb(255, 216, 74);
+  text-align: right;
+}
+
 @media screen and (max-width: 900px) {
   .contact-up {
     flex-direction: column;
   }
   .contact-form-img {
     width: 100%;
-  }
-  .contact-form-img > img {
-    width: 100px;
-    height: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   .contact-form-info {
     width: 100%;

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+*{margin:0; padding:0;}
+li{list-style:none;}
+a{text-decoration:none; color:#222; outline:0;}
+
+body,html,#wrap {width:100%; font-family: 'Titillium Web', sans-serif;  }
+h1{position:fixed; z-index:100; left:30px;}
+
+#menu{position:fixed; top:46%; transform:tranlateY(-50%); left:50px; text-align:right; z-index:100;}
+#menu ul{ }
+#menu ul li{}
+#menu ul li a{ display:block; padding:20px 10px; border-right:3px solid black; }
+#menu ul li:nth-child(1):hover a{ color:red;}
+#menu ul li:nth-child(2):hover a{ color:yellow;}
+#menu ul li:nth-child(3):hover a{ color:blue;}
+#menu ul li:nth-child(4):hover a{ color:green;}
+#menu ul li a:active {border-right:3px solid red; }
+#menu ul li a:focus {border-right:3px solid red; }
+
+
+h2{position:fixed; font-size:500%; z-index:100; right:30px; bottom:30px;
+color:white; text-shadow:2px 2px 5px gray;}
+#wrap{position:absolute; width:100%;  top:0px; left:0; overflow:hidden;}
+
+
+section{position:relative; top:400px; left:300px; font-weight:bold;}
+h3{font-size:200%; padding-bottom:10px;}
+.s1 h3{color:red;}
+.s2 h3{color:yellow;}
+.s3 h3{color:blue;}
+.s4 h3{color:green;}
+
+
+/* background images*/
+.s1{background:url(../images/bg11.jpg) no-repeat center center; background-size :cover; width:1600px; height:960px; margin:0 auto; overflow:hidden;}
+.s2{background:url(../images/bg22.jpg) no-repeat center center;  width:1600px; height:960px; margin:0 auto; overflow:hidden;}
+.s3{background:url(../images/bg33.jpg) no-repeat center center;   width:1600px; height:960px; margin:0 auto; overflow:hidden;}
+.s4{background:url(../images/bg44.jpg) no-repeat center center;   width:1600px; height:960px; margin:0 auto; overflow:hidden;}
+
+
+.p11{bottom:0; left:0; width:80%; height:92%; margin:0 auto;}
+.p12{bottom:0; left:0; margin:0 auto; }
+

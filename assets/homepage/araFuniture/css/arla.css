@@ -1,0 +1,440 @@
+*{margin:0; padding:0;}
+li{list-style:none;}
+	a{text-decoration:none;
+		color:#121212;}
+body{font:12px/1.5 "맑은 고딕";}	
+	
+	
+	#container{
+		width:100%;
+		background:#fff;}
+	#contain{
+		width:100%;}
+	.con{
+		margin:0 auto;
+		width:1000px;
+		text-align:center;
+		overflow:auto;
+		margin:0 auto;}
+		
+	h3{display:hidden;}
+	 
+	/*헤더*/	
+		#header{
+			background:#fff;
+			
+			position:relative;
+			z-index:4;}
+		h1{
+			width:1000px;
+			margin:0 auto;
+			padding-top:40px;
+			
+			}
+			
+			.headerNavT{
+				width:100%;
+				background:#eee;
+				position:absolute;
+				top:0;
+				right:0;
+				padding:10px;
+				}
+			.sd{
+				width:1000px;
+				margin:0 auto;
+				overflow:auto;}
+			.headerNavT .left{
+				float:left;
+				width:20%;
+				} 
+			.headerNavT .left li{
+				width:50%;
+				float:left;}
+			.headerNavT .right{
+				float:right;
+				width:40%;}			
+			.headerNavT .right li{
+				width:20%;
+				float:left;}
+			
+			
+			
+			.haderNavB{
+				margin:0 auto;
+				position:relative;
+				top:0px;
+				background:gray;
+				width:100%;
+				height:50px;
+				
+				}
+			.haderNavB ul{
+				width:1000px;
+				margin:0 auto;
+				text-align:center;
+				overflow:auto;}
+			.haderNavB ul li{
+				float:left;
+				padding-top:5px;
+				width:14.2%;
+				box-sizing:border-box;
+				
+				}
+			.haderNavB ul li a{
+				width:100%;
+				display:block;
+				padding:8px 0;}
+		
+		
+		
+		
+		
+		#slide{position:relative;
+			margin:0 auto;
+			top:20px;
+			width:1000px;
+			height:400px;
+			overflow:hidden;}
+		
+		
+		#slide img{position:absolute;
+			}
+		
+		
+		.proD{position:relative;
+			overflow:auto;
+			margin-top:30px;
+			
+		}
+		
+		/* 상품 진열대 전체 적용 */
+		
+		.proD h2{padding-top:20px;}
+		.proD div p{padding-bottom:20px;}
+		.proD ul{
+			overflow:auto;
+			}
+		
+		.proD ul li{
+			border:1px solid black;
+			box-sizing:border-box;
+			padding-top:20px;
+			text-align:center;
+			padding:50px 0;
+			float:left;
+			width:19%;
+			margin-left:1%;
+			margin-bottom:1%;
+			box-sizing:border-box;}
+		.proD ul li:nth-child(5n+1){margin-left:0%;}
+		.proD ul li a{
+			overflow:auto;}
+		.proD ul li a img{width:170px;}
+		
+		
+		#Hotdeal{position:relative;}
+		#bestseller{position:relative;}
+		#ACCBEST{position:relative;}
+		
+		#TV_MOVIE{position:relative;
+			width:1000px;}
+		.con h2{padding:30px 0;}
+		.con p{padding:20px 0;}
+		
+		#tv{
+			width:100%;
+			background:#fff;
+			border:1px solid black;
+			overflow:auto;
+			box-sizing:border-box;
+			
+			}
+		#tv>img{
+			width:60%;
+			box-sizing:border-box;
+			float:left;
+			
+			}
+		
+		
+		
+		
+		/*Best review*/
+		
+		#PhotoR{}
+		#PhotoR ul{overflow:auto;}
+		#PhotoR ul li{
+			float:left;
+			width:23%;
+			
+			margin-left:2%;
+			overflow:hidden;}
+		#PhotoR ul li div{ margin-top:5px;}
+		#PhotoR ul li img{width:100%;
+			height:100%;}
+		
+		.furniture {
+			width:40%;
+			float:right;}
+		.furniture h3{
+			width:70%;
+			padding-top:40px;
+			padding-bottom:20px;
+			margin:0 auto;
+			border-bottom:1px solid black;}
+		.furniture ul{
+			box-sizing:border-box;
+			width:100%;
+			margin-top:10px;
+			overflow:auto;
+			
+			}
+		
+		.furniture ul li{
+			
+			width:70%;
+			overflow:auto;
+			padding:15px 0;
+			margin:0 auto;
+			
+			}
+		
+		
+		.furniture ul li a{
+			
+			margin-top:5px;
+			overflow:auto;
+			display:block;
+			
+			
+		}
+		.furniture ul li a:hover{text-decoration:underline;}
+		.furniture ul li .gallery{
+			float:left;
+			width:30%;
+			
+			box-sizing:border-box;
+			}
+		
+		.furniture ul li .description{
+			float:right;
+			width:65%;
+			text-align:left;
+			background:white;}
+		
+		.Manuf{color:#6E6E6E;}
+		.Nickna{color:#86B404;}
+		.cost{
+			text-decoration:none;}
+		#tvNav{position:relative;
+			background:skyblue;}
+		#tvNav ul{overflow:auto;}
+		#tvNav ul li{float:left;}
+		#tvNav ul li a{
+			padding:5px;
+			display:block;
+			}
+	
+		aside{
+			margin:50px 0;
+			width:100%;
+			overflow:auto;}
+		aside h4{text-align:left;
+			font-size:1.5em;
+			font-weight:bold;}
+		aside div{
+			border:1px solid black;
+			box-sizing:border-box;
+			height:200px;
+			float:left;
+			width:33.3333%;}
+	
+		aside h4{border-bottom:1px solid #aaa;
+			width:90%; margin:0 auto;
+			padding:10px 0;
+			box-sizing:border-box;
+			}
+	
+	/*공지사항*/
+	.notice{}
+	.notice ul{
+		width:90%;
+		margin:0 auto;
+		margin-top:20px;}
+	.notice ul li{}
+	.notice ul li a{
+		color:#aaa;
+		padding:2px 0;
+		clear:both;
+		display:block;
+		text-align:left;}
+	.notice ul li a span{
+		float:right;
+		text-align:rignt;}
+	
+	
+	
+	
+	
+	/*고객센터*/
+	.cosCenter{position:relative;}
+	.cosCenter ul{
+		right:20px;
+		top:60px;
+		position:absolute;
+		z-index:6;}
+	.cosCenter ul li{float:left;
+		margin-left:5px;
+		border:1px solid #aaa;
+		border-top-right-radius:8px;
+		border-bottom-left-radius:8px;
+		width:40px;
+		height:40px;
+		background:#fff;
+		overflow:hidden;
+		font-size:0.9em;
+		transition:all 0.2s;
+		}
+	
+	.cosCenter ul li:nth-child(1) a{
+		padding-top:5px;}
+	.cosCenter ul li:nth-child(2),.cosCenter ul li:nth-child(3){line-height:40px;}
+	.cosCenter ul li a{	display:block
+		}
+	.cosCenter>img{width:100%;
+		position:absolute;
+		top:50px;
+		left:0;
+		z-index:5;}
+	.cosCenter ul li:hover{
+		border:1px solid black;
+		}
+	/*FAQ*/
+	.FAQ{}
+	.FAQ ul{overflow:auto;
+		width:90%;
+		margin:0 auto;
+		margin-top:20px;
+		}
+	.FAQ ul li{
+		box-sizing:border-box;
+		border:1px solid #aaa;
+		border-top-right-radius:8px;
+		border-bottom-left-radius:8px;
+		float:left;
+		width:31%;  
+		margin-left:2%;
+		margin-top:2%;
+		overflow:hidden;
+		background:#fff;
+		transition:all 0.2s;
+		}
+	.FAQ ul li:nth-child(3n+1){margin-left:0%;}
+	.FAQ ul li a{display:block;
+		padding:10px 1px;}
+	.FAQ ul li:hover{
+		border:1px solid black;
+		}
+	/*아리아퍼니쳐소개*/
+	.intro{}
+	.intro img{float:left;}
+	
+	/*footerNav*/
+	.footerNav{
+		width:100%;
+		border-top:1px solid #aaa;
+		border-bottom:1px solid #aaa;
+		}
+	/* 공통 ul*/
+	.N{
+		width:1000px;
+		margin:0 auto;
+		overflow:auto;
+		padding:5px 3px;}
+	/*첫번째 ul*/
+	.border{
+		margin-top:6px;
+		width:50%;
+		float:left;
+		
+	}
+	.border li{
+		float:left;
+	}
+	.border li a {
+		border-right:1px solid black;
+		box-sizing:border-box;
+		padding:0 5px;
+		display:block;
+		
+	}
+	.border li:nth-child(3) a{border:none;}
+	/*두번째 ul*/
+	.sns {
+		float:right;
+		width:15%;
+		margin-top:3px;
+		
+		}
+	.sns li{
+		float:left;
+		width:33.3333%;
+		text-align:center;
+		}
+	.sns li img{ width:25px;
+	}
+	
+	/*맨 마지막에 있는 주소 영역*/
+	.last{}
+	.last ul{
+		padding-top:5px;
+		overflow:auto;}
+	.last ul li{float:left;
+	
+		}
+	.last ul li:nth-child(1){
+		text-align:center;
+		width:25%;
+		margin-top:10px;
+	}
+	
+	.last ul li:nth-child(2){
+		width:45%;
+		margin:0 auto;
+		
+		text-align:left;
+		color:gray;
+	}
+	.last ul li:nth-child(3){
+		
+		width:19%;
+		margin-top:20px;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#footer{position:relative;}

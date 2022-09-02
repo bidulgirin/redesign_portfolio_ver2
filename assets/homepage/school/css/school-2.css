@@ -1,0 +1,392 @@
+
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin:0; padding:0;}
+li{list-style:none;}
+a{color:#222;
+		text-decoration:none;}
+body{font:13px/1.5 "맑은 고딕", "Arial";   font-family: 'NEXON Lv1 Gothic OTF'; min-width:1200px;}
+#wrapper{width:100%; margin:0 auto; overflow:hidden;}		
+
+/* 공통 사항*/
+.same{position:relative; margin:0 auto; width:100%;}
+
+
+/* 헤더 영역 */
+#header{
+	width:60%;
+	height:auto;
+	margin:0 auto;
+ text-align:center;
+ 
+	}
+#header h1{ width:160px; float:left; text-align:left; box-sizing:border-box; margin-left:50px; padding:20px 0;}
+#header h1 img{width:90%;}
+#header .topNav{ width:30%;  float:right; margin-top:20px;}
+	.topNav ul{width:100%; overflow:auto; font-size:80%;}
+	.topNav ul li{ float:left; width:25%; }
+	.topNav ul li a{border-right:1px solid black; display:block;}
+	.topNav ul li:last-child a{border:none;}
+
+
+
+#header .mainNav{width:100%; height:40px; clear:both; background:#08298A; font-weight:bold;   }
+	.mainNav ul{width:100%; overflow:auto; }
+	.mainNav ul li{ 
+	float:left; width:8.5%; 
+	border:lpx solid black;
+	box-sizing:border-box;}
+	
+.mainNav ul li:nth-child(9){width:15%}
+.mainNav ul li a{display:block;  padding:10px 0; transition:all 0.5s; color:#f0f0f0; }
+.mainNav ul li:hover a{color:red; }
+
+
+
+
+
+#slider{
+	width:100%;
+	
+	position:relative;
+	
+	height:700px;
+	overflow:hidden;}
+	
+/* 좌우버튼 스타일 */
+button{
+	position:absolute;
+	height:50px;
+	width:100px;
+	
+	/*top:50%;
+	margin-top:-25px;
+	
+	top:0;
+	bottom:0;
+	margin-top:auto;
+	margin-bottom:auto;*/
+	
+	top:50%;
+	transform:translateY(-50%);
+		
+	font-size:3em;
+	color:white;
+	border:none;
+	background:none;
+	cursor:pointer;
+	z-index:5;
+	outline:none;
+}
+
+#btnPrev{left:20px;}
+#btnNext{right:20px;}
+
+
+/* 이미지 슬라이드 영역 */
+.wrap_img{
+	width:100%;
+	height:700px;
+	position:absolute;
+	top:0;
+	left:0;	
+}
+.wrap_img li{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+.wrap_img li h2{
+	color:white;
+	position:absolute;
+	bottom:150px;
+	left:100px;
+	font-size:2em;
+	text-shadow:2px 1px 2px #000;
+}
+.wrap_img li p{
+	color:white;
+	position:absolute;
+	bottom:100px;
+	left:100px;
+	text-shadow:0px 1px 2px #000;
+}
+
+.slide00{background-image:url(../images/4.jpg); left:0;}
+.slide01{background-image:url(../images/1.jpg); left:100%;}
+.slide02{background-image:url(../images/2.jpg); left:200%;}
+.slide03{background-image:url(../images/banner2.jpg); left:300%;}
+.slide04{background-image:url(../images/4.jpg); left:400%;}
+.slide05{background-image:url(../images/1.jpg); left:500%;}
+
+
+
+/* 콘텐츠 영역 */
+
+
+.ul{ min-width:320px; width:20%; height:100%; padding-bottom:0.1%; position:fixed; z-index:100; background:#fefefe;}
+.ul .li{ position:relative; width:100%; height:33.3333%; border:1px solid #123456; box-sizing:border-box;  margin-top:0.5%; overflow:hidden;  }
+
+.ul1{left:0; top:0;}
+.ul2{right:0; top:0;}
+
+
+/* 달력*/
+.calendar{margin:5px auto; margin-top:5%; width:100%; background:red;}
+
+
+/* 콘텐츠 공지사항 가정통신문*/
+.notice, .homeNotice{overflow:auto; }
+.notice h2, .homeNotice h2 , .photo h2 ,.outer h2{float:left; width:30%; height:100%;  letter-spacing:2px; text-align:center; padding-top:20px;
+ color:#222; font-size:110%; box-shadow:1px 1px 2px #999;}
+
+.notice ul, .homeNotice ul{float:right; width:65%; height:100%; margin-right:2.5%;}
+.notice ul li, .homeNotice ul li{
+	border-bottom:1px solid black; 
+	box-sizing:border-box;
+	height:20%;
+	padding-top:10px;
+	padding-left:15px;
+	
+	}
+.notice ul li a, .homeNotice ul li a{
+	display:block;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 90%;
+  height: 20px;}
+.notice ul li:last-child, .homeNotice ul li:last-child{border:none;}
+
+	
+	
+/* 오늘의 급식*/
+.food{width:100%; text-align:center; }
+.title{ color:white; color:#222; font-size:110%; box-shadow:1px 1px 2px #999; font-weight:bold; padding:10px 0; }
+.foodImg{width:60%; margin:0 auto;}
+.foodImg img{width:100%; margin-top:5%;}
+
+.foodTxt{width:95%; margin:0 auto; margin-top:3%;}
+/* 외부 기사 슬라이더 */
+
+.outer {
+	
+	position:relative;
+	background:#fefefe;
+	width:100%;
+	overflow:hidden;
+	
+}
+/*여기가 외부기사 슬라이드에요 */
+.con {
+	position:absolute;
+	height:100%;
+	top:0;
+	right:0;
+	width:70%;
+	  margin:0 auto;
+	 
+	  overflow: hidden;
+  
+  
+}
+
+.slideshow_wrapper {
+  width:100%;
+ height:100%;
+ margin:0 auto;
+  overflow: hidden;
+   
+}
+
+.slideshow {
+  width:300%;
+  height:100%;
+  margin: 0 0 0 -200%;
+  overflow: hidden;
+ position: relative;/*
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration:10s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:alternate;
+   -webkit-animation-play-state: running;*/
+   animation:slide_animation 10s linear infinite alternate;
+}
+
+.slide {
+  
+  width:33.3333%;
+  height: 100%;
+  position:relative;
+  float:left;
+  overflow:hidden;
+  
+}
+
+.slideshow img{
+  width:100%; 
+  height:100%;
+}
+
+@-webkit-keyframes slide_animation {
+  
+  0% {left:0%; }
+  10% {left:0%;}
+  20% {left:0%;}
+  30% {left:0%;}
+  40% {left:0%;}
+  50% {left:100%;}
+  60% {left:100%;}
+  70% {left:100%;}
+  80% {left:200%;}
+  90% {left:200%;}
+  100% {left:200%; }
+  
+  
+}
+
+
+
+/* 포토 갤러리 */
+
+
+.photo .gallery{float:right; width:70%; height:100%; background:red;}
+.photo .gallery img{width:100%; height:100%; }
+
+
+
+/* 아래 슬라이더 영역 */
+
+
+#bottomSlider{height:60px;}
+
+
+#carousel_inner {
+    margin:0 auto;
+    width: 100%;
+	
+    overflow: hidden;
+    background: #F0F0F0;
+}
+
+#carousel_ul li img {
+    width: 150px;
+    height:40px
+}
+
+#carousel_ul {
+	margin:0 auto;
+    position: relative;
+    left: -160px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 9999px;
+    padding-bottom: 10px;
+}
+
+#carousel_ul li {
+    float: left;
+    width: 150px;
+    padding: 0px;
+    height: 40px;
+    background: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#carousel_ul li img {
+    margin-bottom: -4px;
+    cursor: pointer;
+    cursor: hand;
+    border: 0px;
+}
+
+#left_scroll, #right_scroll {
+    float: left;
+    height: 130px;
+    width: 35px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#left_scroll img, #right_scroll img {
+    border: 0;
+ /* remove the default border of linked image */
+/*styling*/
+    cursor: pointer;
+    cursor: hand;
+}
+
+#left_scroll img {
+    width: 25px;
+    height: 25px;
+}
+
+#right_scroll img {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+/* 푸터 영역 */
+#footer{ 
+	background:#777;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+ overflow:auto;  }
+#footer h6{ width:150px; position:absolute; top:80px; left:20px;}
+#footer h6 img{width:100%;}
+#footer .bottomNav{
+	margin-top:50px;
+	width:70%;  
+	margin:0 auto;
+	margin-top:50px;
+ color:white;}
+#footer .bottomNav ul{overflow:auto; text-align:center; margin-left:10%; background:#08298A; }
+#footer .bottomNav ul li{float:left;  width:25%; box-sizing:border-box; font-size:90%; padding:10px 0; }
+#footer .bottomNav ul li a{border-right:1px solid black; 
+ display:block; padding:3px 3px; color:#f0f0f0;}
+#footer .bottomNav ul li:last-child a{border:none; }
+#footer address{
+		text-align:left;
+		clear:both; 
+		font-style:normal; 
+		font-weight:bold; 
+		padding:30px 0;
+		margin-left:20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

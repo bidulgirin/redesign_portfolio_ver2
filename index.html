@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <meta name="keywords" content="퍼블리셔, 웹, 웹퍼블리셔, 포트폴리오, 웹 포트폴리오, 프론트엔드">
+  <meta name="keywords" content="퍼블리셔, 웹, 웹퍼블리셔, 포트폴리오, 웹 포트폴리오, 프론트엔드, 웹퍼블리셔포트폴리오">
   <meta name="description" content="웹 퍼블리셔 이경민 포트폴리오 홈페이지 입니다">
   <meta name="author" content="이경민">
   <meta name="generator" content="vcode">
@@ -13,46 +13,58 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="웹 퍼블리셔 : 이경민">
   <meta property="og:description" content="웹 퍼블리셔 포트폴리오 입니다">
-  <meta property="og:image" content="./assets/img/introduce/1.png">
-  <meta property="og:url" content="http://de05164.dothome.co.kr/">
-  <link rel="canonical" href="http://de05164.dothome.co.kr/">
+  <meta property="og:image" content="./assets/img/main/sumnail.png">
+  <meta property="og:url" content="http://de05164.dothome.co.kr">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:url" content="http://de05164.dothome.co.kr" />
+  <meta name="twitter:title" content="웹 퍼블리셔 : 이경민" />
+  <meta name="twitter:description" content="퍼블리셔, 웹, 웹퍼블리셔, 포트폴리오, 웹 포트폴리오, 프론트엔드, 웹퍼블리셔포트폴리오" />
+  <meta name="twitter:image" content="http://de05164.dothome.co.kr/assets/img/main/sumnail.png" />
+  <meta property="og:title" content="웹 퍼블리셔 : 이경민" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://de05164.dothome.co.kr" />
+  <meta property="og:site_name" content="웹 퍼블리셔 : 이경민" />
+  <!-- 웹 사이트의 제목 -->
+  <meta property="og:url" content="http://de05164.dothome.co.kr" />
+  <!-- 표시하고싶은URL -->
+  <meta property="og:description" content="웹 퍼블리셔 포트폴리오 입니다" />
+
+
+  <link rel="canonical" href="http://de05164.dothome.co.kr">
 
   <title>웹퍼블리셔 포트폴리오 : 이경민 </title>
   <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
 
   <!--css 통합용 <link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
-  <link rel="stylesheet" type="text/css" href="./css/common.min.css?after">
-  <link rel="stylesheet" type="text/css" href="./css/fixed_navi.min.css?after">
-  <link rel="stylesheet" type="text/css" href="./css/main_contents.min.css?after">
-  <link rel="stylesheet" type="text/css" href="./css/introduce.min.css?after">
-  <link rel="stylesheet" type="text/css" href="./css/portfolio.min.css?after">
-  <link rel="stylesheet" type="text/css" href="./css/career.min.css?after">
-  <link rel="stylesheet" type="text/css" href="./css/contact.min.css?after">
-  <link rel="stylesheet" type="text/css" href="./css/skill.min.css?after">
-  <link rel="stylesheet" type="text/css" href="./css/footer.min.css?after">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- fontawsome_cdn start -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css" />
+  <!-- fontawsome_cdn end -->
 
+  <!-- 💎script start -->
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-  <!-- <script src="assets/js/hide_text.js"></script> -->
-  <!-- <script src="assets/js/intersection_observer.js"></script> -->
   <script type="module" src="assets/js/bidulgirin.js"></script>
   <script src="assets/js/egg_animation.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-  <!-- fontawsome_cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css" />
-
+  <script src="./assets/js/console.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
-  <!--웹은 세로 스크롤 모바일 부터는 가로 스크롤 형으로 만들꺼야 반응형 힘내~ -->
+  <!-- 💎script end -->
+
 </head>
 
-<body class="cursor_not_blink">
+<body class="cursor_not_blink" oncontextmenu="return false">
+  <!-- 🔍 로딩 화면 start -->
+  <div id="loading_wrap">
 
+    <img class="loading_1" src="./assets/img/main/loading.png" alt="이미지: 로딩 이미지">
+    <img class="loading_2" src="./assets/img/main/loading2.png" alt="이미지: 로딩 이미지">
+  </div>
+  <!-- 🔍 로딩 화면 end -->
   <!-- 🖱 마우스 커서 start -->
   <div class="cursor_wrap">
     <div id="cursor"></div>
@@ -62,7 +74,6 @@
     </div>
   </div>
   <!-- 🖱 마우스 커서 end -->
-
   <!-- 🚕 고정 네비게이션 start -->
   <nav class="fixed_navi">
     <ul>
@@ -131,17 +142,19 @@
       <!-- 2. 소개 start -->
       <div id="itd_wrap" class="overflow_hidden">
         <h2 class="itd_title">
-          끊임없이 도전하는 사람
+          끊임없이 도전하는 사람 <i class="fas fa-biking"></i>
         </h2>
         <div class="itd_b_video">
-          <video autoplay muted loop>
+          <video playsinline autoplay muted loop>
             <source src="./assets/video/introduce_b.mp4" type="video/mp4">
             <source src="movie.ogg" type="video/ogg">
+            <img src="./assets/video/introduce_b_Moment.jpg" />
           </video>
         </div>
         <div class="itd_background"></div>
         <div class="itd_sub_title">
-          안녕하세요! 재미를 위해 끊임 없이 노력하는 웹 퍼블리셔 이경민 입니다.<br />
+          안녕하세요! 👩🏻 <br />
+          재미를 위해 끊임 없이 노력하는 웹 퍼블리셔 이경민 입니다.<br />
           인터렉티브한 디자인의 웹 사이트를 만들기위해 노력하고 있습니다<br />
           html, Css, javascript 등 기초를 탄탄하게 공부하였고 앞으로 성장하기 위해 <br />
           프론트엔드 개발자를 목표로 달리고 있습니다!
@@ -150,15 +163,15 @@
 
           <div class="egg" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" onclick="click_egg()">
             <p class="itd_click">click<br />↓</p>
-            <img class="wriggling" src="./assets/img/main/egg.png" alt="">
+            <img class="wriggling" src="./assets/img/main/egg.png" alt="이미지: 계란 클릭하세요">
           </div>
           <div class="itd">
             <div class="itd_icon_img">
-              <img src="./assets/img/introduce/1.png" alt="그림: 왠지 신난 병아리 캐릭터">
+              <img src="./assets/img/introduce/1.png" alt="그림:신난 병아리 캐릭터">
             </div>
 
             <div class="itd_des">
-              <p class="itd_des_title">인적사항</p>
+              <p class="itd_des_title"><i class="fas fa-user"></i> 인적사항 </p>
               <table>
                 <tr>
                   <td><span class="bold_txt under_border_y">이름</span></td>
@@ -170,7 +183,7 @@
                 </tr>
                 <tr>
                   <td><span class="bold_txt under_border_y">성격요약 </span></td>
-                  <td>#차분한 #도전적인 #독특한시각</td>
+                  <td>차분한 도전적인 독특한시각</td>
                 </tr>
                 <tr>
                   <td><span class="bold_txt under_border_y">자격증 </span></td>
@@ -187,7 +200,7 @@
             </div>
             <div class="itd_des">
 
-              <p class="itd_des_title">커리어</p>
+              <p class="itd_des_title"><i class="fas fa-award"></i> 커리어</p>
 
               <table>
                 <tr>
@@ -219,19 +232,19 @@
               <img src="./assets/img/introduce/3.png" alt="그림: 묘기를 부리고 있는 병아리 캐릭터">
             </div>
             <div class="itd_des">
-              <p class="itd_des_title">저는 이런 사람입니다</p>
+              <p class="itd_des_title"><i class="fas fa-male"></i> 저는 이런 사람입니다 </p>
               <table>
                 <tr>
-                  <td>#사람들의 다양한 시각을 받아드릴 수 있는 유연한 사람</td>
+                  <td><i class="fas fa-angle-right"></i> 사람들의 다양한 생각을 받아드릴 수 있는 유연한 사람</td>
                 </tr>
                 <tr>
-                  <td>#프로그램의 빠른 이해와 응용력을 가진 사람</td>
+                  <td><i class="fas fa-angle-right"></i> 프로그램의 빠른 이해와 응용력을 가진 사람</td>
                 </tr>
                 <tr>
-                  <td># 깔끔한 코드를 추구하는 사람</td>
+                  <td><i class="fas fa-angle-right"></i> 깔끔한 코드를 추구하는 사람</td>
                 </tr>
                 <tr>
-                  <td># 독특한 시각으로 바라볼줄 아는 사람</td>
+                  <td><i class="fas fa-angle-right"></i> 독특한 시각으로 바라볼줄 아는 사람</td>
                 </tr>
               </table>
             </div>
@@ -248,6 +261,7 @@
           <span>2020.11 ~ 2021.06 하우투</span>
         </h2>
         <div class="carr_point"></div>
+
         <div class="carr_contents contents_ly">
           <div class="carr" data-aos="fade-left">
             <div class="carr_img">
@@ -282,7 +296,8 @@
                 <a href="https://www.how2youtube.com/"></a>
                 외부 템플릿 디자인 변형 및 리디자인<br />
                 PHP를 이용 재사용성을 높힘<br />
-                배운것: Ajax 비동기식 웹페이지 작동원리,<br /> PHP로 컴포넌트 단위로 만들기, Mysql 테이블 데이터 입력방법<br />
+                배운것: Ajax 비동기식 웹페이지 작동원리,<br />
+                PHP로 컴포넌트 단위로 만들기, Mysql 테이블 데이터 입력방법<br />
               </p>
             </div>
           </div>
@@ -297,9 +312,9 @@
               <p class="carr_sub_title"> 유튜브 클래스 </p>
               <p>사용된기술 : HTML, CSS, JavaScript, Php</p>
               <p class="carr_des">
-                - 유튜버가 되고 싶은 사람들을 위한 컨설팅 강의 사이트<br />
-                - 느낀점: 반응형이 없었을때는 폴더를 각각 따로 만들어 기기에 맞춰 경로를 리다이렉션하는 구조 파악.<br />
-                - PC와 MOBILE 파일이 나누어져있음 수정할 때 2번 수정해야하는 번거로움 존재<br />
+                유튜버가 되고 싶은 사람들을 위한 컨설팅 강의 사이트<br />
+                느낀점: 반응형이 없었을때는 폴더를 각각 따로 만들어 기기에 맞춰 경로를 리다이렉션하는 구조 파악.<br />
+                PC와 MOBILE 파일이 나누어져있음 수정할 때 2번 수정해야하는 번거로움 존재<br />
               </p>
             </div>
 
@@ -314,39 +329,15 @@
               <p class="carr_sub_title"> 유튜버적성테스트(MBTI 테스트) </p>
               <p>사용된기술 : HTML, CSS, JavaScript, Php</p>
               <p class="carr_des">
-                - 아이디어 기획을 받아 코드는 하루작성 일러스트 3일<br />
-                - 알코딩 강의를 클론 코딩한 사이트<br />
-                - 일러스트 본인 작품<br />
-                - 유튜브클래스 강의 홍보용 사이트<br />
-                - 4지선다형으로 클릭하는 버튼에따라 점수를 달리하여 결과 조건에 맞는 MBTI가 나오는 원리<br />
+                조코딩 강의 수료 후 응용 작업<br />
+                유튜브클래스 유튜버강의 홍보용 사이트<br />
               </p>
             </div>
           </div>
         </div>
 
       </div>
-      <script>
-        const carr_wrap = document.getElementById('carr_wrap');
-        const background_point = document.querySelector('.carr_point');
-        background_point.style.display = "none";
 
-
-        carr_wrap.addEventListener('click', evt => {
-          console.log(evt.target.nodeName);
-          var target = evt.originalEvent.target;
-
-          if (target.nodeName == "DIV") {
-            // 클릭한 영역이 캔버스일 경우 처리
-            background_point.style.display = "block";
-
-          } else if (target.nodeName == "P") {
-            // 클릭한 영역이 DIV일 경우 처리
-            background_point.style.display = "block";
-          }
-        });
-
-
-      </script>
       <!-- 3. 이력 사항 end -->
 
       <!-- 4. 포트폴리오 start -->
@@ -357,13 +348,25 @@
         <div class="portfolio_contents contents_ly">
           <ul>
             <li>
-              <a href="./assets/homepage/todolist/index.html" class="popup">
+              <a href="./assets/homepage/todo/todolistOptimize/index.html" class="popup">
                 <div class="portImg">
                   <img src="./assets/img/portfolio/todolist.png" alt="사이트 : 심리테스트">
                 </div>
                 <div class="portTxt">
                   투두 리스트
                   <p class="portTxt_D"> 리액트로 만든 투두 리스트</p>
+                </div>
+              </a>
+
+            </li>
+            <li>
+              <a href="./assets/homepage/netflix/index.html" class="popup">
+                <div class="portImg">
+                  <img src="./assets/img/webpages/netflix.png" alt="사이트 : 넷플릭스 클론">
+                </div>
+                <div class="portTxt">
+                  넷플릭스
+                  <p class="portTxt_D"> 리액트로 만든 리액트 클론 사이트</p>
                 </div>
               </a>
 
@@ -446,6 +449,18 @@
               </a>
             </li>
             <li>
+              <a href="./404.html" class="popup">
+                <div class="portImg">
+                  <img src="./assets/img/404/sorry.png" alt="페이지: 404페이지">
+                </div>
+                <div class="portTxt">
+                  404
+                  <p class="portTxt_D"> 잘못된 경로입니다</p>
+                </div>
+              </a>
+
+            </li>
+            <li>
               <div class="portImg">
                 <img src="./assets/img/webpages/not.png" alt="사이트 : 추가예정">
               </div>
@@ -460,96 +475,34 @@
       <!-- 4. 포트폴리오 end -->
 
       <!-- 5. 스킬 start-->
-      <div id="skill" class="">
+      <script>
+        let skills = document.querySelectorAll('.skill_ul > li');
+        let i;
 
-        <section class="skill">
-          <ul class="skill_ul">
-            <li>
-              <div class="photoshop program">
-                <div class="prImg">
-                  <img src="./assets/img/program/psd.png" alt="아이콘: 포토샵">
-                </div>
-              </div>
 
-            </li>
-            <li>
-              <div class="illust program">
 
-                <div class="prImg">
-                  <img src="./assets/img/program/ai.png" alt="아이콘: 일러스트">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="html program">
-                <div class="prImg">
-                  <img src="./assets/img/program/html.png" alt="아이콘: HTML">
-                </div>
-              </div>
-            </li>
+      </script>
 
-          </ul>
-          <ul class="skill_ul">
-            <li>
-              <div class="css program">
-                <div class="prImg">
-                  <img src="./assets/img/program/css.png" alt="아이콘: CSS">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="javascript program">
-
-                <div class="prImg">
-                  <img src="./assets/img/program/java.png" alt="아이콘: 자바스크립트">
-                </div>
-              </div>
-            </li>
-
-          </ul>
-          <ul class="skill_ul">
-            <li>
-              <div class="jquery program">
-
-                <div class="prImg">
-                  <img src="./assets/img/program/jquery.png" alt="아이콘: jQuery">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="autocad program">
-
-                <div class="prImg">
-                  <img src="./assets/img/program/autocad.png" alt="아이콘: 오토캐드">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="max program">
-
-                <div class="prImg">
-                  <img src="./assets/img/program/max.png" alt="아이콘: 3dMax">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="Rhinoceros program">
-                <div class="prImg">
-                  <img src="./assets/img/program/r6.png" alt="아이콘: 라이노">
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div>
       <!-- 5. 스킬end -->
 
       <!-- 6. 연락 start -->
       <div id="contact_wrap">
         <section class="contact-up contents_ly">
-
           <div class="contact-form-img">
-            <img class="wriggling" src="./assets/img/contact/contact_img.png" alt="아이콘: 연락 아이콘">
+            <div id="skill" class="">
+              <section class="skill">
+                <ul class="skill_ul">
+                  <li>
+                    <div class="photoshop program">
+                      <div class="prImg">
+                        <img src="./assets/img/program/programs.png" alt="아이콘: 포토샵">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+              </section>
+            </div>
           </div>
           <div class="contact-form-info">
             <div class="contact-form-info-wrap">
@@ -564,7 +517,7 @@
                   </li>
                   <li>
                     <span>Email</span>
-                    <a href="#">de05164@gmail.com</a>
+                    <a href="mailto:de05164@gmail.com">de05164@gmail.com</a>
                   </li>
 
                 </ul>
@@ -576,7 +529,7 @@
                   <div class="input__wrap controls">
                     <div class="form-group">
                       <div class="entry">
-                        <label>성함</label>
+                        <label for="name">성함</label>
                         <input id="form_name" type="text" name="name" placeholder="Type your name" required="required"
                           data-error="성함을 적어주세요!" />
                       </div>
@@ -585,7 +538,7 @@
 
                     <div class="form-group">
                       <div class="entry">
-                        <label>이메일</label>
+                        <label for="email">이메일</label>
                         <input id="form_email" type="email" name="email" placeholder="Type your Email Address"
                           required="required" data-error="정확한 이메일을 입력해주세요!" />
                       </div>
@@ -594,8 +547,7 @@
 
                     <div class="form-group">
                       <div class="entry">
-                        <label>문의사항</label>
-
+                        <label for="message">문의사항</label>
                         <textarea id="form_message" class="form-control" name="message"
                           placeholder="Tell us about you and the world" required="required"
                           data-error="내용을 적어주세요!"></textarea>
@@ -605,9 +557,7 @@
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="image-zoom" data-dsn="parallax">
-                      <button>
-                        send
-                      </button>
+                      <input type="submit" value="Sumbit">
                     </div>
 
                   </div>
@@ -645,114 +595,22 @@
   </div>
   <!-- 📃 콘텐츠 end -->
 
-  <!-- 🔍 로딩 화면 start -->
-  <div id="loading_wrap">
-    <svg id="icon" viewBox="-14 0 512 512.10682" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="m103.039062 496.582031c-1.921874 0-3.839843-.730469-5.304687-2.195312-2.929687-2.929688-2.929687-7.679688 0-10.605469l9.324219-9.328125c2.929687-2.925781 7.679687-2.925781 10.605468 0 2.929688 2.929687 2.929688 7.679687 0 10.609375l-9.324218 9.324219c-1.464844 1.464843-3.382813 2.195312-5.300782 2.195312zm0 0"
-        fill="#ff4e61" />
-      <path
-        d="m204.226562 138.972656c-1.917968 0-3.839843-.734375-5.304687-2.199218-2.925781-2.929688-2.925781-7.675782 0-10.605469l9.328125-9.324219c2.925781-2.929688 7.675781-2.929688 10.605469 0 2.925781 2.929688 2.925781 7.675781 0 10.605469l-9.328125 9.324219c-1.460938 1.464843-3.382813 2.199218-5.300782 2.199218zm0 0"
-        fill="#ff4e61" />
-      <path
-        d="m419.488281 106.597656c-1.917969 0-3.839843-.730468-5.304687-2.195312-2.925782-2.929688-2.925782-7.679688.003906-10.605469l9.324219-9.328125c2.929687-2.929688 7.675781-2.929688 10.605469 0 2.929687 2.929688 2.929687 7.679688 0 10.605469l-9.324219 9.328125c-1.464844 1.460937-3.386719 2.195312-5.304688 2.195312zm0 0"
-        fill="#5c73bc" />
-      <path
-        d="m419.488281 464.5c-1.917969 0-3.839843-.730469-5.304687-2.195312-2.925782-2.929688-2.925782-7.679688 0-10.605469l9.328125-9.328125c2.929687-2.925782 7.675781-2.925782 10.605469 0 2.929687 2.929687 2.929687 7.679687 0 10.609375l-9.324219 9.324219c-1.464844 1.464843-3.386719 2.195312-5.304688 2.195312zm0 0"
-        fill="#fa0" />
-      <path
-        d="m63.617188 118.929688c-1.917969 0-3.839844-.730469-5.300782-2.195313-2.929687-2.929687-2.929687-7.679687 0-10.605469l9.324219-9.328125c2.929687-2.929687 7.675781-2.929687 10.605469 0 2.929687 2.929688 2.929687 7.679688 0 10.605469l-9.324219 9.328125c-1.464844 1.460937-3.382813 2.195313-5.304687 2.195313zm0 0"
-        fill="#fa0" />
-      <path
-        d="m12.113281 282.339844c-1.917969 0-3.839843-.730469-5.304687-2.195313-2.925782-2.929687-2.925782-7.675781 0-10.605469l9.328125-9.324218c2.925781-2.929688 7.675781-2.933594 10.605469 0 2.929687 2.925781 2.929687 7.675781 0 10.605468l-9.324219 9.324219c-1.464844 1.464844-3.386719 2.195313-5.304688 2.195313zm0 0"
-        fill="#2dc471" />
-      <path
-        d="m219.082031 281.792969-24.347656 12.800781c-6.3125 3.316406-13.695313-2.042969-12.488281-9.074219l4.648437-27.113281c.480469-2.789062-.445312-5.640625-2.472656-7.617188l-19.699219-19.199218c-5.109375-4.980469-2.289062-13.65625 4.769532-14.683594l27.222656-3.953125c2.800781-.40625 5.226562-2.167969 6.480468-4.707031l12.171876-24.667969c3.15625-6.394531 12.28125-6.394531 15.4375 0l12.171874 24.667969c1.253907 2.539062 3.675782 4.300781 6.480469 4.707031l27.222657 3.953125c7.058593 1.027344 9.878906 9.703125 4.769531 14.683594l-19.699219 19.199218c-2.027344 1.976563-2.953125 4.824219-2.472656 7.617188l4.648437 27.113281c1.207031 7.03125-6.171875 12.390625-12.488281 9.074219l-24.347656-12.800781c-2.503906-1.320313-5.5-1.320313-8.007813 0zm0 0"
-        fill="#ffd02f" />
-      <g fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="15" transform="translate(-28.428)"></g>
-      <path
-        d="m407.65625 359.394531-15.75 11.425781c-4.085938 2.964844-9.796875-.042968-9.660156-5.085937l.507812-19.453125c.054688-2.003906-.882812-3.90625-2.503906-5.085938l-15.738281-11.445312c-4.078125-2.96875-2.984375-9.328125 1.855469-10.765625l18.65625-5.523437c1.921874-.570313 3.441406-2.050782 4.0625-3.953126l6.023437-18.503906c1.566406-4.800781 7.953125-5.722656 10.8125-1.566406l11.019531 16.039062c1.136719 1.652344 3.011719 2.640626 5.015625 2.640626l19.460938.011718c5.046875.003906 7.898437 5.792969 4.828125 9.796875l-11.847656 15.4375c-1.222657 1.589844-1.582032 3.679688-.964844 5.585938l6.003906 18.511719c1.558594 4.800781-3.066406 9.300781-7.824219 7.617187l-18.34375-6.496094c-1.890625-.667969-3.988281-.363281-5.613281.8125zm0 0"
-        fill="#ffd02f" />
-      <path
-        d="m103.984375 398.863281 11.9375 15.367188c3.097656 3.984375 9.417969 2.691406 10.699219-2.191407l4.9375-18.824218c.507812-1.9375 1.9375-3.5 3.820312-4.183594l18.304688-6.601562c4.75-1.714844 5.472656-8.128907 1.222656-10.855469l-16.375-10.511719c-1.6875-1.082031-2.734375-2.925781-2.796875-4.929688l-.625-19.449218c-.164063-5.042969-6.039063-7.710938-9.945313-4.515625l-15.058593 12.328125c-1.550781 1.269531-3.625 1.695312-5.550781 1.136718l-18.691407-5.417968c-4.847656-1.402344-9.203125 3.359375-7.367187 8.0625l7.070312 18.128906c.726563 1.867188.492188 3.972656-.632812 5.632812l-10.929688 16.101563c-2.832031 4.175781.351563 9.789063 5.390625 9.5l19.429688-1.121094c2-.117187 3.929687.757813 5.160156 2.34375zm0 0"
-        fill="#ffd02f" />
-      <path
-        d="m272.484375 62.558594c0 11.113281-9.007813 20.125-20.125 20.125-11.113281 0-20.125-9.011719-20.125-20.125 0-11.117188 9.011719-20.128906 20.125-20.128906 11.117187 0 20.125 9.011718 20.125 20.128906zm0 0"
-        fill="#ffd02f" />
-      <path
-        d="m378.167969 447.574219c0 11.117187-9.011719 20.125-20.128907 20.125-11.113281 0-20.125-9.007813-20.125-20.125 0-11.113281 9.011719-20.125 20.125-20.125 11.117188 0 20.128907 9.011719 20.128907 20.125zm0 0"
-        fill="#5c73bc" />
-      <path
-        d="m44.398438 451.558594c0 8.914062-7.226563 16.140625-16.144532 16.140625-8.914062 0-16.140625-7.226563-16.140625-16.140625 0-8.914063 7.226563-16.140625 16.140625-16.140625 8.917969 0 16.144532 7.226562 16.144532 16.140625zm0 0"
-        fill="#62d38f" />
-      <path
-        d="m89.085938 291.503906c0 8.914063-7.226563 16.140625-16.144532 16.140625-8.914062 0-16.140625-7.226562-16.140625-16.140625 0-8.914062 7.226563-16.140625 16.140625-16.140625 8.917969 0 16.144532 7.226563 16.144532 16.140625zm0 0"
-        fill="#5c73bc" />
-      <path
-        d="m213.550781 23.640625c0 8.917969-7.226562 16.144531-16.140625 16.144531-8.914062 0-16.144531-7.226562-16.144531-16.144531 0-8.914063 7.230469-16.140625 16.144531-16.140625 8.914063 0 16.140625 7.226562 16.140625 16.140625zm0 0"
-        fill="#ff4e61" />
-      <path
-        d="m370.199219 158.078125c0 8.914063-7.226563 16.140625-16.144531 16.140625-8.914063 0-16.140626-7.226562-16.140626-16.140625 0-8.917969 7.226563-16.144531 16.140626-16.144531 8.917968 0 16.144531 7.226562 16.144531 16.144531zm0 0"
-        fill="#ff4e61" />
-      <path
-        d="m141.628906 39.972656c-1.917968 0-3.839844-.730468-5.304687-2.195312-2.929688-2.929688-2.929688-7.679688 0-10.605469l9.324219-9.328125c2.929687-2.929688 7.679687-2.929688 10.609374 0 2.925782 2.929688 2.925782 7.679688 0 10.605469l-9.328124 9.328125c-1.460938 1.460937-3.382813 2.195312-5.300782 2.195312zm0 0"
-        fill="#ff4e61" />
 
-      <path
-        d="m223.085938 512c-4.140626 0-7.5-3.359375-7.5-7.5v-113.851562c0-4.140626 3.359374-7.5 7.5-7.5 4.144531 0 7.5 3.359374 7.5 7.5v113.851562c0 4.140625-3.355469 7.5-7.5 7.5zm0 0" />
-      <path
-        d="m223.144531 359.75c-.011719 0-.019531 0-.03125 0h-.113281c-4.144531-.015625-7.488281-3.390625-7.46875-7.53125.015625-4.128906 3.371094-7.46875 7.5-7.46875h.03125.113281c4.144531.019531 7.488281 3.390625 7.46875 7.53125-.015625 4.132812-3.371093 7.46875-7.5 7.46875zm0 0" />
-      <path
-        d="m223.144531 334.710938h-.117187c-4.140625 0-7.5-3.359376-7.5-7.5 0-4.144532 3.359375-7.5 7.5-7.5h.117187c4.140625 0 7.5 3.355468 7.5 7.5 0 4.140624-3.359375 7.5-7.5 7.5zm0 0" />
-      <path
-        d="m88.132812 235.132812c-1.917968 0-3.835937-.734374-5.300781-2.199218l-80.503906-80.503906c-2.929687-2.925782-2.929687-7.675782 0-10.605469 2.929687-2.929688 7.675781-2.929688 10.605469 0l80.503906 80.503906c2.929688 2.929687 2.929688 7.679687 0 10.605469-1.464844 1.464844-3.382812 2.199218-5.304688 2.199218zm0 0" />
-      <path
-        d="m115.246094 262.324219c-1.929688 0-3.855469-.738281-5.320313-2.210938-2.917969-2.9375-2.90625-7.6875.03125-10.605469l.082031-.082031c2.9375-2.917969 7.6875-2.90625 10.605469.03125 2.921875 2.9375 2.90625 7.6875-.03125 10.605469l-.082031.082031c-1.460938 1.453125-3.375 2.179688-5.285156 2.179688zm0 0" />
-      <path
-        d="m132.949219 280.03125c-1.925781 0-3.851563-.738281-5.316407-2.210938-2.921874-2.9375-2.90625-7.6875.03125-10.605468l.082032-.082032c2.9375-2.921874 7.6875-2.90625 10.605468.03125 2.921876 2.9375 2.90625 7.6875-.03125 10.605469l-.082031.082031c-1.460937 1.453126-3.375 2.179688-5.289062 2.179688zm0 0" />
-      <path
-        d="m358.039062 232.273438c-1.917968 0-3.839843-.734376-5.304687-2.199219-2.925781-2.929688-2.925781-7.675781 0-10.605469l80.503906-80.503906c2.933594-2.929688 7.679688-2.929688 10.609375 0 2.929688 2.929687 2.929688 7.679687 0 10.605468l-80.503906 80.503907c-1.464844 1.464843-3.382812 2.199219-5.304688 2.199219zm0 0" />
-      <path
-        d="m330.929688 259.464844c-1.90625 0-3.808594-.722656-5.273438-2.164063l-.082031-.082031c-2.945313-2.910156-2.972657-7.660156-.0625-10.605469 2.910156-2.949219 7.660156-2.976562 10.609375-.0625l.078125.082031c2.949219 2.910157 2.976562 7.65625.066406 10.605469-1.46875 1.484375-3.402344 2.226563-5.335937 2.226563zm0 0" />
-      <path
-        d="m313.222656 277.171875c-1.917968 0-3.839844-.730469-5.304687-2.195313l-.082031-.082031c-2.929688-2.929687-2.929688-7.679687 0-10.605469 2.929687-2.929687 7.679687-2.929687 10.609374 0l.078126.078126c2.929687 2.929687 2.929687 7.679687 0 10.609374-1.460938 1.460938-3.382813 2.195313-5.300782 2.195313zm0 0" />
-      <path
-        d="m304.679688 122.652344c-1.292969 0-2.601563-.335938-3.792969-1.039063-3.570313-2.097656-4.765625-6.691406-2.664063-10.265625l57.695313-98.144531c2.101562-3.570313 6.699219-4.765625 10.269531-2.667969 3.570312 2.101563 4.761719 6.695313 2.664062 10.269532l-57.699218 98.144531c-1.398438 2.378906-3.902344 3.703125-6.472656 3.703125zm0 0" />
-      <path
-        d="m285.269531 155.78125c-1.285156 0-2.585937-.328125-3.773437-1.019531l-.097656-.058594c-3.578126-2.089844-4.789063-6.679687-2.699219-10.257813 2.085937-3.578124 6.679687-4.785156 10.257812-2.699218l.097657.058594c3.578124 2.085937 4.789062 6.679687 2.699218 10.253906-1.394531 2.390625-3.90625 3.722656-6.484375 3.722656zm0 0" />
-      <path
-        d="m272.578125 177.371094c-1.28125 0-2.582031-.332032-3.773437-1.023438l-.097657-.058594c-3.578125-2.085937-4.785156-6.679687-2.699219-10.257812 2.085938-3.578125 6.679688-4.785156 10.257813-2.699219l.097656.058594c3.578125 2.085937 4.789063 6.679687 2.699219 10.257813-1.394531 2.386718-3.90625 3.722656-6.484375 3.722656zm0 0" />
-      <path
-        d="m141.636719 122.652344c-2.574219 0-5.078125-1.324219-6.472657-3.703125l-57.699218-98.144531c-2.101563-3.570313-.90625-8.167969 2.664062-10.265626 3.570313-2.101562 8.167969-.910156 10.265625 2.664063l57.699219 98.148437c2.101562 3.570313.90625 8.164063-2.664062 10.265626-1.195313.699218-2.503907 1.035156-3.792969 1.035156zm0 0" />
-      <path
-        d="m161.046875 155.78125c-2.574219 0-5.082031-1.324219-6.476563-3.707031-2.097656-3.570313-.898437-8.167969 2.675782-10.261719l.097656-.058594c3.574219-2.09375 8.171875-.898437 10.265625 2.675782 2.09375 3.574218.894531 8.167968-2.679687 10.265624l-.097657.058594c-1.191406.695313-2.496093 1.027344-3.785156 1.027344zm0 0" />
-      <path
-        d="m173.734375 177.371094c-2.574219 0-5.078125-1.328125-6.476563-3.710938-2.09375-3.570312-.894531-8.167968 2.679688-10.261718l.097656-.058594c3.574219-2.09375 8.167969-.894532 10.261719 2.679687 2.097656 3.570313.898437 8.167969-2.675781 10.261719l-.097656.058594c-1.191407.699218-2.5 1.03125-3.789063 1.03125zm0 0" />
-
-      <path
-        d="m264.960938 512c-4.144532 0-7.5-3.359375-7.5-7.5 0-56.484375 23.207031-94.664062 42.671874-116.742188 21.140626-23.980468 42.230469-34.511718 43.117188-34.945312 3.714844-1.828125 8.210938-.300781 10.039062 3.417969 1.828126 3.710937.300782 8.199219-3.40625 10.035156-.195312.09375-19.722656 9.9375-38.917968 31.890625-25.550782 29.214844-38.503906 64.996094-38.503906 106.34375 0 4.140625-3.359376 7.5-7.5 7.5zm0 0" />
-
-      <path
-        d="m181.265625 512c-4.140625 0-7.5-3.359375-7.5-7.5 0-29.53125-6.757813-56.554688-20.09375-80.3125-2.027344-3.613281-.742187-8.183594 2.871094-10.210938 3.609375-2.03125 8.183593-.746093 10.210937 2.867188 14.605469 26.027344 22.011719 55.519531 22.011719 87.65625 0 4.140625-3.355469 7.5-7.5 7.5zm0 0" />
-
-      <path
-        d="m288.769531 351.84375c-10.644531 0-19.304687-8.660156-19.304687-19.304688 0-10.640624 8.660156-19.300781 19.304687-19.300781s19.300781 8.660157 19.300781 19.300781c0 10.644532-8.660156 19.304688-19.300781 19.304688zm0-23.605469c-2.371093 0-4.304687 1.929688-4.304687 4.300781 0 2.371094 1.933594 4.304688 4.304687 4.304688 2.371094 0 4.300781-1.933594 4.300781-4.304688 0-2.371093-1.929687-4.300781-4.300781-4.300781zm0 0" />
-      <path
-        d="m83.929688 176.023438c-10.640626 0-19.300782-8.660157-19.300782-19.300782 0-10.644531 8.660156-19.304687 19.300782-19.304687 10.644531 0 19.300781 8.660156 19.300781 19.304687 0 10.640625-8.65625 19.300782-19.300781 19.300782zm0-23.605469c-2.371094 0-4.300782 1.929687-4.300782 4.304687 0 2.371094 1.929688 4.300782 4.300782 4.300782 2.371093 0 4.300781-1.929688 4.300781-4.300782 0-2.375-1.929688-4.304687-4.300781-4.304687zm0 0" />
-      <path
-        d="m362.386719 120.878906c-10.644531 0-19.304688-8.660156-19.304688-19.304687 0-10.640625 8.660157-19.300781 19.304688-19.300781 10.640625 0 19.300781 8.660156 19.300781 19.300781 0 10.644531-8.660156 19.304687-19.300781 19.304687zm0-23.605468c-2.375 0-4.304688 1.929687-4.304688 4.300781 0 2.371093 1.929688 4.304687 4.304688 4.304687 2.371093 0 4.300781-1.933594 4.300781-4.304687 0-2.371094-1.929688-4.300781-4.300781-4.300781zm0 0" />
-    </svg>
-
-  </div>
-  <!-- 🔍 로딩 화면 end -->
 
   <!-- 하단 script 연결 -->
-  <script src="assets/js/loading.js"></script>
+
   <!-- <script src="assets/js/root.js"> </script> -->
+
+  <script src="assets/js/career_point.js"></script>
+  <script src="assets/js/loading.js"></script>
   <script src="assets/js/navi.js"></script>
   <script src="assets/js/scroll_show_navi.js"></script>
   <script src="assets/js/cursor.js"></script>
-  <!-- <script src="assets/js/popup.js"></script> -->
+  <!-- <script src="assets/js/dsn-grid.js"></script>
+  <script src="assets/js/custom.js"></script> -->
+  <script src="assets/js/plugins.js"></script>v
+
+
   <script>
     AOS.init();
   </script>
