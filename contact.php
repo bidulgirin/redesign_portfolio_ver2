@@ -38,7 +38,7 @@
     // Send email
     $result = mail($sendTo, $subject, $message, $headers);
 
-  
 
-if($result){$msg='메일을 전송했습니다';  echo "<script>alert('{$msg}'); window.location.href='http://de05164.dothome.co.kr/'; </script>"; }else{echo "실패";}
+
+if($result){$msg='메일을 전송했습니다';  echo "<script>alert('{$msg}'); window.location.href='https://leekyungminweb.kr/'; </script>"; }else{echo "실패";}
 ?>

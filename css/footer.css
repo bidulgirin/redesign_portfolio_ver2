@@ -1,19 +1,31 @@
 #footer {
+  position: relative;
   width: 100%;
-  background: rgb(22, 21, 21);
+  background: hsl(0deg, 2%, 8%);
   color: white;
+  overflow: hidden;
+}
+
+.footer_p {
+  text-align: center;
 }
 
 .sns {
-  width: 120px;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px 0 20px 0;
+  margin: 0 auto;
+  border-radius: 30px 30px 0 0;
+  background: rgba(255, 255, 255, 0.179);
+  transition: all 0.3s;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  justify-items: center;
 }
 
 .sns a {
+  margin-left: 20px;
   width: 30px;
-  flex: 1;
   display: block;
 }
 
@@ -22,5 +34,6 @@
 }
 
 .sns img {
+  filter: contrast(150%);
   width: 100%;
 }

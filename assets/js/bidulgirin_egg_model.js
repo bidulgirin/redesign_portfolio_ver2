@@ -15,6 +15,7 @@ export default function bidulgirin() {
   const renderer = new THREE.WebGLRenderer({
     canvas,
     antialias: true,
+    alpha: true,
   })
 
   // pc는 400을 기본 사이즈로 정하고 -> 화면에따라 canvas 기본값이 바뀌어야함
@@ -44,10 +45,10 @@ export default function bidulgirin() {
     0.1,
     1000
   )
-  camera.position.set(2, 2, 2)
+  camera.position.set(-0.2, -1, 3)
 
-  scene.background = new THREE.Color(0xffffff)
-  scene.background.opacity = 0
+  // scene.background = new THREE.Color(0xffffff)
+  // scene.background.opacity = 0
   scene.add(camera)
 
   // Light
@@ -83,8 +84,7 @@ export default function bidulgirin() {
 
     function animate() {
       requestAnimationFrame(animate)
-      gltf.scene.rotation.y -= 0.05
-      gltf.scene.rotation.z -= 0.02
+      gltf.scene.rotation.y -= 0.02
     }
     animate()
   })
@@ -127,7 +127,7 @@ export default function bidulgirin() {
 
   //스크롤 시 변화
   canvas.onclick = function () {
-    this.style.backgroundColor = "white"
+    // this.style.backgroundColor = "white"
   }
   window.addEventListener("scroll", function () {
     let scroll = window.scrollY

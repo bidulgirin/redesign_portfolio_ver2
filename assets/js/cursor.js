@@ -14,13 +14,12 @@ function isMobile() {
 }
 const cursor = document.querySelector("#cursor")
 const follower = document.querySelector(".cursor_follower")
-const carr_point_mobile = document.querySelector(".carr_point")
+// const carr_point_mobile = document.querySelector(".carr_point")
 if (isMobile()) {
   //location.href = "/mobile/index.html";	//모바일페이지
 
   cursor.style.display = "none"
   follower.style.display = "none"
-  carr_point_mobile.style.display = "none"
 } else {
   //location.href = "/main.html";		//PC용 페이지
 

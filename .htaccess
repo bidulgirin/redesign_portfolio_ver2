@@ -1,0 +1,7 @@
+<IfModule mod_url.c>
+    checkURL On
+    ServerEncoding EUC-KR
+    ClientEncoding UTF-8
+    ErrorDocument 404 https://leekyungminweb.kr/404.html
+    ErrorDocument 403 https://leekyungminweb.kr/403.html
+</IfModule>

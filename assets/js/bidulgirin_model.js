@@ -26,7 +26,7 @@ export default function bidulgirin() {
     factor = 0.3
     w = window.innerWidth * factor
   } else {
-    factor = 0.8
+    factor = 0.5
     w = window.innerWidth * factor
   }
 
@@ -46,8 +46,8 @@ export default function bidulgirin() {
   )
   camera.position.set(2, 2, 2)
 
-  scene.background = new THREE.Color(0xffffff)
-  scene.background.opacity = 0
+  // scene.background = new THREE.Color(0xffffff)
+  // scene.background.opacity = 0
   scene.add(camera)
 
   // Light
@@ -115,9 +115,6 @@ export default function bidulgirin() {
   draw()
 
   //스크롤 시 변화
-  canvas.onclick = function () {
-    this.style.backgroundColor = "red"
-  }
   window.addEventListener("scroll", function () {
     let scroll = window.scrollY
     let Greetings = document.querySelector(".grts")

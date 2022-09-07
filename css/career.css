@@ -4,6 +4,8 @@
   color: rgb(196, 196, 196);
   padding-bottom: 20px;
   overflow: hidden;
+  background: url("../assets/img/career/back.jpg") no-repeat;
+  background-size: cover;
 }
 
 #carr_wrap:hover {
@@ -52,7 +54,6 @@
 }
 
 .carr_img {
-  min-width: 300px;
   width: 30%;
   overflow: hidden;
   padding-top: 20px;
@@ -67,7 +68,7 @@
 }
 
 .carr_img_m {
-  min-width: 300px;
+  min-width: 280px;
   width: 20%;
 }
 

@@ -30,6 +30,7 @@
 
 .grt_contents #threeJs_object {
   /* three.js 모델 스타일*/
+  background: rgba(255, 255, 255, 0.147);
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -47,9 +48,20 @@
   /* 인삿말 */
   font-size: 140px;
   color: rgb(255, 196, 48);
-  text-shadow: 2px 3px rgba(0, 0, 0, 0.585);
+  background: -webkit-linear-gradient(top, rgb(255, 196, 48), rgb(255, 196, 48), rgb(92, 74, 0), rgb(0, 0, 0));
+  text-shadow: 2px 3px rgba(255, 255, 255, 0.129);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+@keyframes animationgradienttitle {
+  0% {
+    background-position: 200px 1600px;
+  }
+  100% {
+    background-position: 1600px 200px;
+  }
+}
 @media screen and (max-width: 900px) {
   .grt_contents .grts {
     /* 인삿말 */
@@ -61,9 +73,18 @@
     /* 인삿말 */
     font-size: 80px;
   }
+  .grt_contents .grts .grt_contents #threeJs_object {
+    user-select: none;
+    pointer-events: none;
+  }
 }
 @media screen and (max-height: 900px) {
   #grt_wrap {
     height: 100vh;
+  }
+}
+@media screen and (max-width: 380px) {
+  .grt_contents .grts {
+    font-size: 50px;
   }
 }
