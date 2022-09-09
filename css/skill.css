@@ -28,6 +28,7 @@
 }
 
 .prImg img {
+  max-width: 1000px;
   width: 100%;
   animation: bingle 4s infinite;
 }

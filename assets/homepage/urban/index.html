@@ -1,135 +1,121 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1, width=device-width" />
 	<title>Urbanbursh</title>
 	<link rel="stylesheet" type="text/css" href="css/urban.css">
 	<link rel="shortcut icon" href="images/pavi.png">
 </head>
+
 <body>
-	<div id="wrapper">
-		
-		
-		<div id="header">
-			<header>
-					<h1><span>감춰라</span>
-						<img src="images/logo2.png" alt="">
-					</h1>
-					<ul id="gnb">
-						<li>
-							<a href="#">Sales guidance</a>
-							
-						</li>
-						<li>
-							<a href="#">Field Guidance</a>
-							
-						</li>
-						<li>
-							<a href="#">Brand</a>
-							
-						</li>
-						<li>
-							<a href="#">Product Guide</a>
-							
-						</li>
-						<li>
-							<a href="#">Life</a>
-							
-						</li>
-					</ul>
-					
-			</header>
-			<div class="headerback"></div>
-		</div>
-		
-		<div id="section">
+	<div class="background">
+		<div class="background_video">
 			<video src="images/mov33.mp4" loop autoplay muted>
 			</video>
-			<div id="txt">
-				<div class="mo">
-					<span class="mono">2021</span>
-					
-					<span class="whitebig">Urban Development Plan </span>
-				</div>
-				<br/>
-				<div class="BEST">
-					<span class="whitesmall"></span>
-					<span class="green"></span>
-				</div>
-			</div>
-			
 		</div>
-		
-		<div class="content">
-			<ul>
-				<li>
-					<img src="images/urban-1.png" alt="">
-					<p>Safe</p>
-					<p class="des">
-						We think of a safe future.
-					</p>
-				</li>
-				<li>
-					<img src="images/urban-2.png" alt="">
-					<p>comfortable</p>
-					<p class="des">
-						self-supporting AI
-					</p>
-				
-				</li>
-				<li>
-					<img src="images/urban-3.png" alt="">
-					<p>Economic</p>
-					<p class="des">
-						Helps reduce your administrative expenses.
-					</p>
-				</li>
-				<li>
-					<img src="images/urban-4.png" alt="">
-					<p>Emotional</p>
-					<p class="des">
-						It gives you a beautiful city view.
-					</p>
+		<div class="mo">
+			<span class="mono">2021</span>
+			<span class="whitebig">Urban Development Plan </span>
+		</div>
+	</div>
+
+	<div id="wrapper">
+		<header id="header">
+			<div class="header">
+				<h1>
+					<img src="images/logo2.png" alt="signurban_logo">
+				</h1>
+				<ul id="gnb">
+					<li>
+						<a href="#">Sales guidance</a>
+
 					</li>
-			</ul>
-		</div>
+					<li>
+						<a href="#">Field Guidance</a>
 
-		<div id="aside">
-			<img src="images/aside.png" alt="#">
-			
-			<div class="asideback">
-				<h3>Ours Urban</h3>
-				<video src="images/mov2.mp4" loop autoplay muted>
-				</video>
-				<ul>
-					<li><a href="">Event&Community</a></li>
-					<li><a href="">News&Notice</a></li>
-					<li><a href="">Procuct Review</a></li>
+					</li>
+					<li>
+						<a href="#">Brand</a>
+
+					</li>
+					<li>
+						<a href="#">Product Guide</a>
+
+					</li>
+					<li>
+						<a href="#">Life</a>
+
+					</li>
 				</ul>
-				<p>Daewoo Engineering & Construction Co. expects to supply more than 35,000 homes this year.
-			
-				● Over-supply forecast for early this year despite difficult environment at home and abroad
-
-				- 25,994 households will be supplied by the third quarter and 35,509 households will be sold by the end of this year
-
-				- Succeeding in the sale of apartments in Seoul and the metropolitan area through abundant supply of real demand
-
-				- 3 Gwacheon Knowledge Information Town complexes in the fourth quarter and Gamil Prugio and other high-profile complexes in the region will be planned
-
-				● Based on good profitability, the foundation is laid for improving financial structure and mid- to long-term growth.
-
-				- Financial structure can be improved based on the success of the sale in the housing sector with good profitability
-
-				- Based on accurate market analysis and product competitiveness, it is expected to be the driving force behind corporate growth.
-				</p>
-			
-			
-			
 			</div>
-			
-			
+
+		</header>
+		<script>
+			function bye() {
+				const content = document.querySelector('#aside');
+				const x_button = document.querySelector('.x_button');
+
+				x_button.addEventListener('click', function () {
+					content.style.bottom = "-91vh"
+				})
+			}
+		</script>
+		<div id="aside">
+			<div class="aside_wrap">
+				<img src="images/aside.png" alt="#">
+
+				<div class="asideback">
+					<div class="asideback_wrap">
+						<h3>Ours Urban</h3>
+						<div class="x_button" onclick=bye()>X</div>
+						<video src="images/mov2.mp4" loop autoplay muted>
+						</video>
+						<ul>
+							<li><a href="javascript:void(0);"> → Event&Community </a></li>
+							<li><a href="avascript:void(0);"> → News&Notice </a></li>
+							<li><a href="avascript:void(0);"> → Procuct Review </a></li>
+						</ul>
+						<p>
+							Daewoo Engineering & Construction Co. expects to supply more than 35,000 homes this year.
+
+							● Over-supply forecast for early this year despite difficult environment at home and abroad
+
+							- 25,994 households will be supplied by the third quarter and 35,509 households will be sold
+							by
+							the
+							end of this year
+
+							- Succeeding in the sale of apartments in Seoul and the metropolitan area through abundant
+							supply of
+							real demand
+
+							- 3 Gwacheon Knowledge Information Town complexes in the fourth quarter and Gamil Prugio and
+							other
+							high-profile complexes in the region will be planned
+
+							● Based on good profitability, the foundation is laid for improving financial structure and
+							mid-
+							to
+							long-term growth.
+
+							- Financial structure can be improved based on the success of the sale in the housing sector
+							with
+							good profitability
+
+							- Based on accurate market analysis and product competitiveness, it is expected to be the
+							driving
+							force behind corporate growth.
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+
 		</div>
 	</div>
 </body>
-		
+
 </html>

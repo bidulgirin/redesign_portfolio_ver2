@@ -2,14 +2,21 @@
   background: rgb(232, 232, 223);
 }
 
-.portfolio_contents > ul {
+.port_title {
+  color: rgb(104, 98, 84);
+  font-size: 40px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.portfolio_contents ul {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.portfolio_contents > ul li {
+.portfolio_contents ul li {
   max-width: 300px;
   min-width: 280px;
   padding-bottom: 20px;
@@ -18,12 +25,12 @@
   transition: all 0.6s;
 }
 
-.portfolio_contents > ul li .portImg {
+.portfolio_contents ul li .portImg {
   width: 100%;
   box-sizing: border-box;
 }
 
-.portfolio_contents > ul li .portImg > img {
+.portfolio_contents ul li .portImg img {
   height: 140px;
   display: block;
   margin: 0 auto;
@@ -32,7 +39,7 @@
   overflow: hidden;
 }
 
-.portfolio_contents > ul li .portImg:hover > img {
+.portfolio_contents > ul li .portImg:hover img {
   transform: scale(1.1, 1.1);
 }
 
@@ -45,6 +52,20 @@
 .portfolio_contents .portTxt .portTxt_D {
   font-family: "SUIT-Medium";
   margin: 0;
+}
+
+.toy_port {
+  background: rgba(255, 255, 255, 0.469);
+  border-radius: 9px;
+  margin-bottom: 20px;
+}
+
+.toy_port > h3 {
+  color: rgb(104, 98, 84);
+  font-size: 30px;
+  padding: 20px 0;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .pop_wrap {

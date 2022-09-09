@@ -35,6 +35,7 @@ function click_egg() {
   let egg = document.querySelector(".egg")
   let egg_img = document.querySelector(".egg > img")
   let itd = document.querySelectorAll(".itd")
+  let itd_img = document.querySelector(".itd_img")
   const itd_background = document.querySelector(".itd_background")
   const itd_wrap = document.querySelector("#itd_wrap")
   const itd_contents = document.querySelector(".itd_contents")
@@ -52,6 +53,7 @@ function click_egg() {
   //1초 뒤에
   setTimeout(function () {
     itd_wrap.style.height = "auto"
+    itd_img.style.display = "block"
     itd_background.classList.add("down_element_ani")
     itd_contents.classList.add("loading_animation")
     itd_title.style.color = "rgb(255, 196, 48)"

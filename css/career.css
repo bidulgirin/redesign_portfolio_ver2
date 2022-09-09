@@ -4,12 +4,46 @@
   color: rgb(196, 196, 196);
   padding-bottom: 20px;
   overflow: hidden;
-  background: url("../assets/img/career/back.jpg") no-repeat;
   background-size: cover;
 }
 
 #carr_wrap:hover {
   display: block;
+}
+
+.carr_info {
+  width: 40%;
+  margin: 0;
+  text-align: left;
+  padding-right: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.521);
+}
+
+.carr_info_img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carr_info_img > img {
+  width: 100%;
+}
+
+.how2_des {
+  font-family: "SUIT-Medium";
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.how2_des span {
+  font-size: 16px;
+}
+
+.how2_des i {
+  padding-right: 10px;
+}
+
+.carrs {
+  width: 70%;
 }
 
 .carr_title {
@@ -27,6 +61,7 @@
 .carr_contents {
   margin: 0 auto;
   text-align: right;
+  display: flex;
 }
 
 .carr_point {
@@ -54,9 +89,8 @@
 }
 
 .carr_img {
-  width: 30%;
+  width: 100%;
   overflow: hidden;
-  padding-top: 20px;
 }
 
 .carr_img > img {
@@ -87,16 +121,26 @@
 
 .carr_des {
   font-family: "SUIT-Medium";
+  font-size: 15px;
 }
 
 .carr_site {
-  width: 100%;
+  width: 30%;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .carr_site > a {
-  display: block;
+  width: 100%;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.carr_site a:hover {
+  opacity: 0.3;
+}
+
+.go_site {
   background: rgb(255, 196, 48);
   border-radius: 8px;
   padding: 3px 4px;
@@ -104,10 +148,26 @@
   transition: all 0.3s;
 }
 
-.carr_site > a:hover {
-  background: rgba(249, 249, 249, 0.76);
+@media screen and (max-width: 1200px) {
+  .carr_contents {
+    flex-direction: column;
+  }
+  .carr_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.491);
+    margin-bottom: 20px;
+  }
+  .carrs {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
-
 @media screen and (max-width: 900px) {
   .carr_contents {
     margin: 0 auto;
@@ -115,8 +175,9 @@
   .carr {
     flex-direction: column;
   }
-  .carr_img {
-    width: 70%;
+  .carr_site {
+    width: 80%;
+    margin: 0 auto;
   }
   .carr_img_m {
     width: 35%;
@@ -129,9 +190,6 @@
 @media screen and (max-width: 500px) {
   .carr {
     flex-direction: column;
-  }
-  .carr_img {
-    width: 90%;
   }
   .carr_img > img {
     padding-bottom: 10px;
