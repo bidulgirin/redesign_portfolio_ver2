@@ -3,18 +3,19 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: csenter;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   color: white;
 }
 
 .contact-up {
+  box-shadow: inset 3px 3px 15px #222;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   box-sizing: border-box;
-  background: rgb(17, 17, 17);
+  background: #111;
 }
 
 .contact-form-img {
@@ -22,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(255, 196, 48);
+  background: #E09E50;
 }
 
 .contact-form-img > img {
@@ -35,7 +36,7 @@
 
 .contact-form-info a {
   /* phone + email 글 색상*/
-  color: rgb(179, 179, 179);
+  color: #E8ECE8;
 }
 
 .contact-form-info {
@@ -51,6 +52,7 @@
 }
 
 .box-info-contact span {
+  font-family: "SUIT-Medium";
   display: inline-block;
   width: 70px;
   margin-right: 10px;
@@ -58,6 +60,7 @@
 }
 
 .form-box {
+  font-family: "SUIT-Medium";
   border-top: 1px dotted rgb(255, 255, 255);
   padding-top: 20px;
   box-sizing: border-box;
@@ -123,7 +126,6 @@
   font-family: "SUIT-Medium";
   padding-top: 10px;
   font-size: 0.9em;
-  color: rgb(255, 216, 74);
   text-align: right;
 }
 

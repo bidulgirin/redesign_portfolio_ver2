@@ -15,20 +15,21 @@
 }
 
 .skill ul li {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 100%;
   transform: translate(-50%, -50%);
-  width: 100%;
 }
 
 .prImg {
+  max-width: 600px;
+  margin: 0 auto;
   width: 100%;
   margin: 0 auto;
 }
 
 .prImg img {
-  max-width: 1000px;
   width: 100%;
   animation: bingle 4s infinite;
 }

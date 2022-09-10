@@ -1,10 +1,9 @@
 @charset "UTF-8";
 #carr_wrap {
-  z-index: -2;
-  color: rgb(196, 196, 196);
+  background: #111;
+  color: #E8ECE8;
   padding-bottom: 20px;
   overflow: hidden;
-  background-size: cover;
 }
 
 #carr_wrap:hover {
@@ -20,12 +19,15 @@
 }
 
 .carr_info_img {
+  border: 1px solid rgba(255, 255, 255, 0.479);
+  border-radius: 3px;
   width: 100%;
   overflow: hidden;
 }
 
 .carr_info_img > img {
   width: 100%;
+  display: block;
 }
 
 .how2_des {
@@ -47,9 +49,8 @@
 }
 
 .carr_title {
-  padding: 10px 0px 10px 0;
-  padding-left: 20px;
-  font-size: 50px;
+  font-family: "SBAggroB";
+  padding: 30px 0px 10px 30px;
 }
 
 .carr_title > span {
@@ -97,7 +98,7 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 3px;
   margin-bottom: 20px;
 }
 
@@ -107,7 +108,7 @@
 }
 
 .carr_sub_title {
-  border-right: 1px solid rgb(255, 196, 48);
+  border-right: 1px solid #E09E50;
   padding-right: 10px;
   color: white;
   text-align: right;
@@ -131,6 +132,7 @@
 }
 
 .carr_site > a {
+  position: relative;
   width: 100%;
   display: inline-block;
   transition: all 0.5s;
@@ -141,9 +143,13 @@
 }
 
 .go_site {
-  background: rgb(255, 196, 48);
-  border-radius: 8px;
-  padding: 3px 4px;
+  position: absolute;
+  width: 100%;
+  top: 42%;
+  transform: translateY(-50%);
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.653);
+  color: white;
   box-sizing: border-box;
   transition: all 0.3s;
 }

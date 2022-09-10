@@ -56,7 +56,7 @@ function click_egg() {
     itd_img.style.display = "block"
     itd_background.classList.add("down_element_ani")
     itd_contents.classList.add("loading_animation")
-    itd_title.style.color = "rgb(255, 196, 48)"
+    itd_title.style.color = "#E09E50"
     itd_sub_title.style.color = "white"
     //foreach 로 배열에 한번에 적용 for문으로 생겼던 오류도 해결!
     itd.forEach((itd) => (itd.style.display = "block"))
@@ -64,3 +64,15 @@ function click_egg() {
     egg.style.display = "none"
   }, 1000)
 }
+// 대상의 높이를 구해서 그 높이 보다 scroll이 더 커지면 이벤트 발생
+
+window.addEventListener("scroll", (event) => {
+  const main = document.querySelector("#grt_wrap")
+  const main_height = main.offsetHeight
+  let scrollY = this.scrollY
+  //console.log(scrollY)
+  if (scrollY > main_height - 100) {
+    setTimeout(click_egg(), 3000)
+  } else {
+  }
+})

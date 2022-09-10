@@ -22,7 +22,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: rgb(17, 17, 17);
   text-align: center;
   overflow: hidden;
   margin: 0;
@@ -45,12 +44,17 @@
 }
 
 .grt_contents .grts {
+  position: absolute;
+  z-index: 2;
+  font-family: "SBAggroB";
   /* 인삿말 */
   font-size: 140px;
-  color: rgb(255, 196, 48);
-  background: -webkit-linear-gradient(top, rgb(255, 196, 48), rgb(255, 196, 48), rgb(92, 74, 0), rgb(0, 0, 0));
-  text-shadow: 2px 3px rgba(255, 255, 255, 0.129);
-  -webkit-background-clip: text;
+  color: #E09E50;
+}
+
+.grt_contents .grts > span {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #E8ECE8;
   -webkit-text-fill-color: transparent;
 }
 

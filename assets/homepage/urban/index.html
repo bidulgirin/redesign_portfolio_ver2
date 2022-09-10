@@ -52,24 +52,14 @@
 			</div>
 
 		</header>
-		<script>
-			function bye() {
-				const content = document.querySelector('#aside');
-				const x_button = document.querySelector('.x_button');
 
-				x_button.addEventListener('click', function () {
-					content.style.bottom = "-91vh"
-				})
-			}
-		</script>
 		<div id="aside">
 			<div class="aside_wrap">
 				<img src="images/aside.png" alt="#">
-
 				<div class="asideback">
 					<div class="asideback_wrap">
 						<h3>Ours Urban</h3>
-						<div class="x_button" onclick=bye()>X</div>
+						<button class="x_button" onclick=buy();>X</button>
 						<video src="images/mov2.mp4" loop autoplay muted>
 						</video>
 						<ul>
