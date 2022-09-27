@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "JSDongkang-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BBTreeGR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.title {
+  padding: 20px 0;
+}
+.banner {
+  background-image: url("../images/sub1.png");
+  height: 200px;
+  background-size: cover;
+}
+.pic {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.pic_img {
+}
+.pic_img > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .pic_img {
+    width: 99%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,93 @@
+/* 여행 안내 */
+.trip {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  transition: all 1s;
+  padding-bottom: 30px;
+}
+.trip ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.trip ul li {
+  float: left;
+  width: 25%;
+  margin-left: 0%;
+  overflow: hidden;
+}
+.trip p {
+  clear: both;
+  background: white;
+  position: relative;
+  z-index: 3;
+  padding: 5px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 100%;
+}
+.trip > ul > li > p {
+  border-right: 1px solid #999;
+  box-sizing: border-box;
+}
+.trip > ul > li > p:nth-child(4n) {
+  border-right: none;
+  box-sizing: border-box;
+}
+
+.trip ul li:nth-child(1) {
+  margin-left: 0%;
+}
+.trip ul li img {
+  width: 100%;
+  float: left;
+  transition: all 0.5s;
+}
+.trip ul li img:hover {
+  transform: scale(1.1, 1.1);
+}
+@media screen and (max-width: 1400px) {
+  .trip {
+    width: 100%;
+    transition: all 1s;
+  }
+  .trip ul {
+    overflow: auto;
+  }
+  .trip ul li {
+    width: 33.3333%;
+    margin: 0%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .trip {
+    width: 95%;
+    margin: 0 auto;
+    transition: all 1s;
+  }
+  .trip ul {
+    overflow: auto;
+  }
+  .trip ul li {
+    width: 50%;
+  }
+
+  .trip ul li:nth-child(3n + 1) {
+    margin-left: 0%;
+  }
+  .trip ul li img {
+    width: 100%;
+  }
+  .trip > ul > li > p {
+    border-right: 1px solid #999;
+    box-sizing: border-box;
+  }
+  .trip > ul > li > p:nth-child(2n) {
+    border-right: none;
+    box-sizing: border-box;
+  }
+}

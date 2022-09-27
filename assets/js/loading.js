@@ -4,6 +4,7 @@ const loader_wrap = document.querySelector("#container")
 /**
  * 휠 못하게
  */
+//로딩 휠 못하게 막기
 loader.addEventListener("wheel", preventScroll, { passive: false })
 
 function preventScroll(e) {
@@ -12,13 +13,15 @@ function preventScroll(e) {
 
   return false
 }
+
+// 페이지가 로드되면 로딩바가 사라짐
 function byeloader() {
-  loader.style.display = "none"
+  loader.classList.add("bye")
 }
-window.onload = function () {
-  setTimeout(function () {
-    var t = performance.timing.loadEventEnd - performance.timing.responseEnd
-    console.log(t)
-  }, 0)
-}
-setTimeout(byeloader, 1800)
+
+window.addEventListener("load", function (e) {
+  // 페이지 로딩타임을 알고 싶어
+  const loadingTime = e.timeStamp
+
+  setTimeout(byeloader, loadingTime * 1.2)
+})

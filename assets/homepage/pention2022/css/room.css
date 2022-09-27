@@ -1,0 +1,99 @@
+/* 룸 소개 */
+#blue {
+  position: relative;
+  text-align: center;
+  background: #c8e5ff;
+}
+.room {
+  padding-top: 10px;
+  transition: all 1s;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  transition: all 1s;
+}
+
+.room ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.room ul li {
+  transition: all 1s;
+  width: 30%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.room_text p {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  background: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 4px;
+}
+
+.room ul li:nth-child(1) {
+  margin-left: 0%;
+}
+.room_img {
+  overflow: hidden;
+}
+.room_img img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.room_img:hover img {
+  transform: scale(1.1, 1.1);
+}
+.room_book_img {
+  width: 50%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.room_book_img > a {
+  display: inline-block;
+}
+.room_book_img > a > img {
+  width: 100%;
+}
+.go_book{
+  margin-top:30px;
+}
+.go_book a{
+  border:1px solid black;
+  display: inline-block;
+  padding:10px 30px;
+  box-sizing: border-box;
+}
+.go_book a:hover{
+  color:rgba(0, 0, 0, 0.529);
+}
+@media screen and (max-width: 1400px) {
+  .room {
+    width: 90%;
+    margin: 0 auto;
+    transition: all 1s;
+  }
+
+  .room ul li {
+    transition: all 1s;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .room {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .room ul {
+    overflow: auto;
+  }
+  .room ul li {
+    width: 100%;
+
+    transition: all 1s;
+    margin-left: 0;
+  }
+}

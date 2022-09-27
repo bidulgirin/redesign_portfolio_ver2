@@ -134,14 +134,14 @@ export default function bidulgirin() {
     let Greetings = document.querySelector(".grts")
     const background = document.querySelector(".grt_background")
     if (scroll > 200) {
-      background.style.background = "#E09E50"
+      background.style.background = "#eb9f43"
       background.style.transition = "0.5s"
       canvas.style.opacity = 0.4
       canvas.style.transition = 0.3 + "s"
       Greetings.style.opacity = 0.4
       Greetings.style.transition = 0.3 + "s"
     } else {
-      background.style.background = "#2D3E4E"
+      background.style.background = "#4576a4"
       canvas.style.opacity = 1
       Greetings.style.opacity = 1
     }

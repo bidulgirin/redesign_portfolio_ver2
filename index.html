@@ -3,31 +3,27 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <meta name="keywords" content="퍼블리셔, 웹, 웹퍼블리셔, 포트폴리오, 웹 포트폴리오, 프론트엔드, 웹퍼블리셔포트폴리오, 개발자">
+  <meta name="keywords" content="웹 퍼블리셔,퍼블리셔, 신입, 경력, 퍼블리셔, 웹, 웹퍼블리셔, 포트폴리오, 웹 포트폴리오, 프론트엔드, 웹 퍼블리셔포트폴리오, 개발자">
   <meta name="description" content="웹 퍼블리셔 이경민 포트폴리오 홈페이지 입니다">
   <meta name="author" content="이경민">
   <meta name="generator" content="vcode">
   <meta name="robots" content="index,follow">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="웹 퍼블리셔 : 이경민">
   <meta property="og:description" content="웹 퍼블리셔 이경민 포트폴리오 입니다">
+  <meta property="og:site_name" content="웹 퍼블리셔 : 이경민" />
   <meta property="og:image" content="./assets/img/main/sumnail.png">
   <meta property="og:url" content="https://leekyungminweb.kr">
+
+  <!-- twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:url" content="https://leekyungminweb.kr" />
   <meta name="twitter:title" content="웹 퍼블리셔 : 이경민" />
-  <meta name="twitter:description" content="퍼블리셔, 웹, 웹퍼블리셔, 포트폴리오, 웹 포트폴리오, 프론트엔드, 웹퍼블리셔포트폴리오" />
+  <meta name="twitter:description" content="퍼블리셔, 신입, 웹, 웹퍼블리셔, 포트폴리오, 웹 포트폴리오, 프론트엔드, 웹 퍼블리셔포트폴리오" />
   <meta name="twitter:image" content="https://leekyungminweb.kr/assets/img/main/sumnail.png" />
-  <meta property="og:title" content="웹 퍼블리셔 : 이경민" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://leekyungminweb.kr" />
-  <meta property="og:site_name" content="웹 퍼블리셔 : 이경민" />
-  <!-- 웹 사이트의 제목 -->
-  <meta property="og:url" content="https://leekyungminweb.kr" />
-  <!-- 표시하고싶은URL -->
-  <meta property="og:description" content="웹 퍼블리셔 포트폴리오 입니다" />
 
   <!-- robot meta -->
   <meta name="NaverBot" content="All">
@@ -37,6 +33,8 @@
   <link rel="canonical" href="https://leekyungminweb.kr">
 
   <title> 웹 퍼블리셔 포트폴리오 : 이경민 </title>
+
+  <!-- favicon -->
   <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="./assets/favicon/apple-touch-icon.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-touch-icon-57x57.png" />
@@ -49,8 +47,9 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon-180x180.png" />
 
   <!-- css 통합용 -->
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- fontawsome_cdn start -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css" />
@@ -65,14 +64,15 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./assets/js/console.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+  <script src="./assets/js/prefixfree.dynamic-dom.min.js"></script>
   <!-- 💎script end -->
 
 </head>
 
 <body class="cursor_not_blink" oncontextmenu="return false">
+
   <!-- 🔍 로딩 화면 start -->
   <div id="loading_wrap">
-
     <img class="loading_1" src="./assets/img/main/loading.png" alt="이미지: 로딩 이미지 내부 ">
     <img class="loading_2" src="./assets/img/main/loading2.png" alt="이미지: 로딩 이미지 외부">
   </div>
@@ -81,9 +81,6 @@
   <div class="cursor_wrap">
     <div id="cursor"></div>
     <div class="cursor_follower"></div>
-    <div class="cursor_event">
-      <!-- <div class="circle1"></div><div class="circle2"></div> -->
-    </div>
   </div>
   <!-- 🖱 마우스 커서 end -->
   <!-- 🚕 고정 네비게이션 start -->
@@ -118,6 +115,7 @@
 
   <!-- 📃 콘텐츠 start -->
   <div id="wrapper">
+
     <!-- 헤더 start -->
     <header id="header">
       <nav>
@@ -140,6 +138,45 @@
     <main id="container" class="loading_animation">
       <!-- 1. 인사 화면 start -->
       <div id="grt_wrap" class="overflow_hidden">
+        <div class="back_img">
+          <span>
+            <i class="fa-solid fa-circle"></i>
+          </span>
+          <span>
+            <i class="fa-regular fa-circle"></i>
+          </span>
+          <span>
+            <i class="fa-solid fa-circle"></i>
+          </span>
+          <span>
+            <i class="fa-regular fa-circle"></i>
+          </span>
+          <span>
+            <i class="fa-solid fa-circle"></i>
+          </span>
+          <span>
+            <i class="fa-regular fa-circle"></i>
+          </span>
+          <span>
+            <i class="fa-solid fa-circle"></i>
+          </span>
+          <span>
+            <i class="fa-regular fa-circle"></i>
+          </span>
+          <span>
+            <i class="fa-solid fa-circle"></i>
+          </span>
+          <span>
+            <i class="fa-regular fa-circle"></i>
+          </span>
+          <span>
+            <i class="fa-solid fa-circle"></i>
+          </span>
+          <span>
+            <i class="fa-regular fa-circle"></i>
+          </span>
+
+        </div>
         <div class="grt_background">
           <div class="grt_contents">
 
@@ -158,12 +195,14 @@
           <i class="fas fa-biking "></i>안녕하세요!
         </h2>
         <div class="itd_sub_title">
-          개발이라는 수영장을 용감하게 뛰어드는 <b>웹 퍼블리셔 이경민</b>입니다<br /><br />
+          개발이라는 파도를 용감하게 뛰어드는 <span class="line_break"><b>웹 퍼블리셔 이경민</b>입니다</span><br /><br />
 
-          현재는 웹 퍼블리셔에서 프론트엔드 개발자가 되기 위해 노력하고 있습니다<br />
+
+          현재는 웹 퍼블리셔에서 <span class="line_break">프론트엔드 개발자가 되기 위해 노력하고 있습니다</span><br /><br />
           Html, Css, JavaScript의 기초를 탄탄하게 공부하고<br />
-          React, threeJs, NextJs등 라이브러리나 프레임워크를 사용할 수 있도록 <br />
-          개발방법에 대한 지식을 익히는 중입니다!
+          React, threeJs, NextJs등 <span class="line_break">라이브러리나 프레임워크를 사용할 수 있도록</span> <br />
+          개발방법에 대한 지식을 익히는 중입니다!<br /><br />
+          파도는 매번 변화하기에 그 변화에 맞춰 성장하겠습니다.
 
           <br />
 
@@ -185,7 +224,7 @@
                   <p class="itd_des_title"><i class="fas fa-user"></i> Profile </p>
                   <table>
                     <tr>
-                      <td class="bold_txt under_border_y m-r"><span>이름</span></td>
+                      <td><span class="bold_txt under_border_y m-r">이름</span></td>
                       <td>Lee Kyung Min / 이경민</td>
                     </tr>
                     <tr>
@@ -204,20 +243,20 @@
                   <p class="itd_des_title"><i class="fa-solid fa-clock-rotate-left"></i> History</p>
                   <table>
                     <tr>
-                      <td><span class="bold_txt under_border_y m-r">2020.2</span></td>
+                      <td><span class="bold_txt under_border_y m-r">2020.02</span></td>
                       <td>가구디자인과 졸업</td>
                     </tr>
                     <tr>
-                      <td><span class="bold_txt under_border_y m-r">2020.3 </span></td>
+                      <td><span class="bold_txt under_border_y m-r">2020.03 </span></td>
                       <td>동성사 입사</td>
                     </tr>
                     <tr>
-                      <td><span class="bold_txt under_border_y m-r">2020.7 </span></td>
+                      <td><span class="bold_txt under_border_y m-r">2021.01 </span></td>
                       <td>더조은 아카데미 웹 퍼블리셔 과정</td>
                     </tr>
                     <tr>
-                      <td><span class="bold_txt under_border_y m-r">2021.11 </span></td>
-                      <td>하우투 입사 ( 웹 퍼블리셔 업무 ) </td>
+                      <td><span class="bold_txt under_border_y m-r">2021.06 </span></td>
+                      <td>하우투 ( 웹 퍼블리셔 업무 ) </td>
                     </tr>
                   </table>
                 </div>
@@ -228,11 +267,13 @@
                   <p class="itd_des_title"><i class="fas fa-award"></i> Contect</p>
                   <table>
                     <tr>
-                      <td class="bold_txt under_border_y m-r">Tel</td>
+                      <td>
+                        <span class="bold_txt under_border_y m-r">Tel</span>
+                      </td>
                       <td>010-4909-9553</td>
                     </tr>
                     <tr>
-                      <td class="bold_txt under_border_y m-r">Email</td>
+                      <td><span class="bold_txt under_border_y m-r">Email</span></td>
                       <td>de05164@gmail.com</td>
                     </tr>
 
@@ -248,7 +289,7 @@
                       <td><i class="fas fa-angle-right"></i> &nbsp;사람들의 다양한 생각을 받아드릴 수 있는 유연한 사람</td>
                     </tr>
                     <tr>
-                      <td><i class="fas fa-angle-right"></i> &nbsp;프로그램의 빠른 이해와 응용력을 가진 사람</td>
+                      <td><i class="fas fa-angle-right"></i> &nbsp;코드의 빠른 이해와 응용력을 가진 사람</td>
                     </tr>
                     <tr>
                       <td><i class="fas fa-angle-right"></i> &nbsp;깔끔한 코드를 추구하는 사람</td>
@@ -284,7 +325,6 @@
                       </td>
                       <td>
                         <img src="./assets/img/program/jquery.png" alt="아이콘 : jQuery">
-
                       </td>
                       <td>
                         <img src="./assets/img/program/react.png" alt="아이콘 : react">
@@ -325,167 +365,451 @@
 
       <!--3. 포트폴리오 start -->
       <section id="portfolio_wrap">
-        <h2 class="port_title title_ly" data-aos="fade-right">portfolio
-
-        </h2>
+        <h2 class="port_title title_ly" data-aos="fade-right">portfolio</h2>
 
         <div class="portfolio_contents contents_ly">
+          <div id="lightbox-overlay"></div>
+
+          <ul class="stage">
+            <li>
+              <div class="portImg">
+                <img class="popup_button" src="./assets/img/webpages/monitorme.png" alt="사이트 : 포트폴리오 사이트">
+              </div>
+              <div class="portTxt">
+                2019 포트폴리오
+                <p class="portTxt_D"> 2019 포트폴리오 리액트 버전</p>
+              </div>
+              <div class="pop_wrap">
+                <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                <div class="popTxt">
+                  2019 포트폴리오
+                </div>
+                <p class="pop_tag">
+                  <span class="pop_tag_span">
+                    #REACT리뉴얼
+                  </span>
+
+                </p>
+                <p class="popTxt_D"> 일반 퍼블리싱 사이트를 리액트로 리뉴얼 해보았습니다!
+                  호환성을 위한 jquery 코드 수정
+                  반복되는 코드는 map메소드를 활용하여 코드의 길이를 줄였습니다
+                </p>
+                <a href="./assets/homepage/portfolio_react/index.html"> website 바로가기
+                  <i class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <a href="./assets/pdf/portfolio.pdf"> PDF 기획서 보기 <i class="fa-solid fa-download"></i>
+
+                </a>
+                <div class="popImg">
+                  <img src="./assets/img/popup_img/portfolio2019.png" alt="이미지: 이경민 포트폴리오 2019">
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="portImg">
+                <img class="popup_button" src="./assets/img/webpages/modooClone.png" alt="사이트 미리보기 : modoo!">
+              </div>
+              <div class="portTxt">
+                네이버 modoo!
+                <p class="portTxt_D"> 네이버 모두! 클론 사이트</p>
+              </div>
+              <div class="pop_wrap">
+                <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                <div class="popTxt">
+                  네이버 modoo!
+                </div>
+                <p class="pop_tag"> <span class="pop_tag_span">#SwiperJs</span></p>
+                <p class="popTxt_D"> SwiperJs를 응용하여 제작한 naver modoo 클론 사이트
+                </p>
+                <a href="./assets/homepage/naver_modoo/index.html"> website 바로가기
+                  <i class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <div class="popImg">
+                  <img src="./assets/img/popup_img/modooClone.png" alt="사이트 미리보기: modoo!">
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="portImg">
+                <img class="popup_button" src="./assets/img/webpages/monitorp-1.png" alt="사이트 미리보기 : 바다와시인 펜션 사이트">
+              </div>
+              <div class="portTxt">
+                바다와 시인
+                <p class="portTxt_D"> 펜션사이트</p>
+              </div>
+              <div class="pop_wrap">
+                <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                <div class="popTxt">
+                  바다와 시인
+                </div>
+                <p class="pop_tag">
+                  <span class="pop_tag_span">#디자인리뉴얼</span>
+                  <span class="pop_tag_span">#반응형</span>
+                  <span class="pop_tag_span">#상세페이지</span>
+                </p>
+                <p class="popTxt_D"> 실제있는 펜션사이트 바다와 시인 홈페이지를 리뉴얼했습니다 </p>
+                <a href="./assets/homepage/pention2022/index.html"> website 바로가기 <i
+                    class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <a href="./assets/homepage/pention2022/pension_sub1.html"> 상세페이지1 <i
+                    class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <a href="./assets/homepage/pention2022/pension_sub1_room.html"> 상세페이지2 <i
+                    class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <a href="./assets/pdf/pension.pdf"> PDF 기획서 보기 <i class="fa-solid fa-download"></i>
+
+                </a>
+
+                <div class="popImg">
+                  <img src="./assets/img/popup_img/pention.png" alt="이미지: 바다와시인펜션사이트">
+                </div>
+
+              </div>
+
+            </li>
+            <li>
+              <div class="portImg">
+                <img class="popup_button" src="./assets/img/webpages/monitorI-1.png" alt="사이트 미리보기 : 일룸, 가구 판매 사이트">
+              </div>
+              <div class="portTxt">
+                Iloome
+                <p class="portTxt_D"> 가구&인테리어 사이트</p>
+              </div>
+              <div class="pop_wrap">
+                <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                <div class="popTxt">
+                  Iloome
+                </div>
+                <p class="popTxt_D"> 가구&인테리어 사이트 </p>
+                <p class="pop_tag">
+                  <span class="pop_tag_span">#일룸</span>
+                  <span class="pop_tag_span">#퍼블리싱100%</span>
+                  <span class="pop_tag_span">#기획</span>
+                </p>
+                <a href="./assets/homepage/illoom/index.html"> website 바로가기 <i class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <a href="./assets/pdf/illoom.pdf"> PDF 기획서 보기 <i class="fa-solid fa-download"></i>
+
+                </a>
+                <div class="popImg">
+                  <img src="./assets/img/popup_img/iloom-furniture.png" alt="이미지: 일룸클론사이트">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="portImg">
+                <img class="popup_button" src="./assets/img/webpages/baba.png" alt="사이트 미리보기 : 옷 쇼핑몰 사이트">
+              </div>
+              <div class="portTxt">
+                Babasell
+                <p class="portTxt_D"> 옷 쇼핑몰 사이트/ PC</p>
+              </div>
+              <div class="pop_wrap">
+                <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                <div class="popTxt">
+                  Babasell
+                </div>
+                <p class="pop_tag">
+                  <span class="pop_tag_span">#디자인리뉴얼</span>
+                  <span class="pop_tag_span">#퍼블리싱100%</span>
+                  <span class="pop_tag_span">#웹디자인기능사코드</span>
+                </p>
+                <p class="popTxt_D"> 옷 쇼핑몰 사이트/ PC </p>
+                <a href="./assets/homepage/babasell/index.html"> website 바로가기 <i class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <div class="popImg">
+                  <img src="./assets/img/popup_img/babasell.png" alt="이미지: babasell">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="portImg">
+                <img class="popup_button" src="./assets/img/webpages/monitorE.png" alt="사이트 미리보기 : 건설사 홍보 사이트">
+              </div>
+              <div class="portTxt">
+                Urban project
+                <p class="portTxt_D"> Video Full Page</p>
+              </div>
+              <div class="pop_wrap">
+                <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                <div class="popTxt">
+                  Urban project
+                </div>
+                <p class="pop_tag">
+                  <span class="pop_tag_span">#디자인리뉴얼</span>
+                  <span class="pop_tag_span">#퍼블리싱100%</span>
+                  <span class="pop_tag_span">#동영상풀페이지</span>
+                </p>
+                <p class="popTxt_D">Video Full Page </p>
+                <a href="./assets/homepage/urban/index.html"> website 바로가기 <i class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <div class="popImg">
+                  <img src="./assets/img/popup_img/urban.png" alt="이미지: Urbanbursh">
+                </div>
+              </div>
+
+            </li>
+            <li>
+              <div class="portImg">
+                <img class="popup_button" src="./assets/img/webpages/school.png" alt="사이트 미리보기 : 동대부여고">
+              </div>
+              <div class="portTxt">
+                동대부여고
+                <p class="portTxt_D"> 학교 사이트/ PC</p>
+              </div>
+              <div class="pop_wrap">
+                <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                <div class="popTxt">
+                  동대부여고
+                </div>
+                <p class="pop_tag"> <span class="pop_tag_span">#퍼블리싱100%</span></p>
+                <p class="popTxt_D"> 학교 사이트 </p>
+                <a href="./assets/homepage/school/index.html"> website 바로가기 <i class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <div class="popImg">
+                  <img src="./assets/img/popup_img/school.png" alt="이미지: scholl">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="portImg">
+                <img class="popup_button" src="./assets/img/webpages/diteLive.png" alt="사이트 미리보기 : 다이어트라이브">
+              </div>
+              <div class="portTxt">
+                다이어트 live
+                <p class="portTxt_D">하우투 플랫폼</p>
+              </div>
+              <div class="pop_wrap">
+                <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                <div class="popTxt">
+                  다이어트 live
+                </div>
+                <p class="pop_tag"> <span class="pop_tag_span">#퍼블리싱100%</span> </p>
+                <p class="popTxt_D"> 다이어트 라이브 플랫폼 제작 </p>
+                <a href="./assets/homepage/dietlife/index.html"> website 바로가기 <i class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <div class="popImg">
+                  <img src="./assets/img/popup_img/ditelive.png" alt="이미지: 다이어트 라이브">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="portImg">
+                <img class="popup_button" src="./assets/img/webpages/furniture.png" alt="사이트 미리보기 : 다이어트라이브">
+              </div>
+              <div class="portTxt">
+                아리아 퍼니쳐
+                <p class="portTxt_D">가구 쇼핑몰 사이트</p>
+              </div>
+              <div class="pop_wrap">
+                <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                <div class="popTxt">
+                  아리아 퍼니쳐
+                </div>
+                <p class="pop_tag"> <span class="pop_tag_span">#퍼블리싱100%</span> </p>
+                <p class="popTxt_D"> 아리아 퍼니쳐 </p>
+                <a href="./assets/homepage/araFuniture/index.html"> website 바로가기 <i
+                    class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <div class="popImg">
+                  <img src="./assets/img/popup_img/iloom-furniture.png" alt="이미지: 아리아 퍼니쳐">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="portImg">
+                <img class="popup_button" src="./assets/img/webpages/test_mbti.png" alt="사이트 미리보기 : 유튜브 적성 검사">
+              </div>
+              <div class="portTxt">
+                유튜버 적성검사
+                <p class="portTxt_D">하우투 플랫폼</p>
+              </div>
+              <div class="pop_wrap">
+                <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                <div class="popTxt">
+                  유튜버 적성검사
+                </div>
+                <p class="pop_tag"> <span class="pop_tag_span">#퍼블리싱100% </span></p>
+                <p class="popTxt_D"> 유튜버 적성검사 </p>
+                <a href="./assets/homepage/mbti/index.html"> website 바로가기 <i class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <div class="popImg">
+                  <img src="./assets/img/popup_img/test1.png" alt="유튜브 적성 검사">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="portImg">
+                <img class="popup_button" src="./error/img/error.png" alt="사이트 미리보기 : 에러 페이지 모음">
+              </div>
+              <div class="portTxt">
+                오류페이지
+                <p class="portTxt_D">에러페이지 모음집</p>
+              </div>
+              <div class="pop_wrap">
+                <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                <div class="popTxt">
+                  오류페이지
+                </div>
+                <p class="pop_tag">
+                  <span class="pop_tag_span">#401</span>
+                  <span class="pop_tag_span">#403</span>
+                  <span class="pop_tag_span">#404</span>
+                  <span class="pop_tag_span">#500</span>
+                </p>
+                <p class="popTxt_D"> 오류페이지 redirect 설정을 해줬습니다 </p>
+                <a href="./error/401.html"> 401페이지 <i class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <a href="./error/403.html"> 403페이지 <i class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <a href="./error/404.html"> 404페이지 <i class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <a href="./error/500.html"> 500페이지 <i class="fa-solid fa-arrow-right-long">
+                  </i>
+                </a>
+                <div class="popImg">
+                  <img src="./assets/img/popup_img/error.png" alt="사이트 미리보기 : 오류페이지">
+                  <img src="./assets/img/popup_img/error500.png" alt="사이트 미리보기 : 오류페이지 500">
+                </div>
+              </div>
+            </li>
+
+          </ul>
           <article class="toy_port">
-            <h3> 🎠Toy Project</h3>
-            <ul>
-              <li>
-                <a href="./assets/homepage/mbti/index.html" class="popup">
-                  <div class="portImg">
-                    <img src="./assets/img/webpages/swim.png" alt="사이트 : 심리테스트">
-                  </div>
-                  <div class="portTxt">
-                    심리테스트
-                    <p class="portTxt_D"> 자바스크립트 심리테스트 조코딩</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="./assets/homepage/todo/todolistOptimize/index.html" class="popup">
-                  <div class="portImg">
-                    <img src="./assets/img/portfolio/todolist.png" alt="사이트 : 심리테스트">
-                  </div>
-                  <div class="portTxt">
-                    투두 리스트
-                    <p class="portTxt_D"> 리액트로 만든 투두 리스트</p>
-                  </div>
-                </a>
+            <h3> <i class="fa-solid fa-cube"></i> study Project</h3>
 
+            <ul class="stage2">
+
+              <li>
+                <div class="portImg">
+                  <img class="popup_button" src="./assets/img/webpages/todoList.png" alt="사이트 : 투두리스트">
+                </div>
+                <div class="portTxt">
+                  투두 리스트
+                  <p class="portTxt_D"> 리액트로 만든 투두 리스트</p>
+                </div>
+                <div class="pop_wrap">
+                  <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                  <div class="popTxt">
+                    TodoList
+                  </div>
+                  <p class="pop_tag">
+                    <span class="pop_tag_span">#React</span>
+                    <span class="pop_tag_span">#CRUD</span>
+                    <span class="pop_tag_span"> #리액트기본중의기본</span>
+                  </p>
+                  <p class="popTxt_D"> 리액트로 만든 투두 리스트입니다.<br />
+                    리액트의 기본적인 동작을 익히는데에 유용한 프로젝트입니다 </p>
+                  <a href="./assets/homepage/todo/todolistOptimize/index.html">website 바로가기 <i
+                      class="fa-solid fa-arrow-right-long">
+                    </i></a>
+                  <div class="popImg">
+                    <img src="./assets/img/popup_img/todoList.png" alt="사이트 미리보기 : todoList1">
+                  </div>
+
+                </div>
               </li>
               <li>
-                <a href="./assets/homepage/button_testing_app/index.html" class="popup">
-                  <div class="portImg">
-                    <img src="./assets/img/portfolio/button_app.png" alt="사이트 : 버튼 앱">
-                  </div>
-                  <div class="portTxt">
+                <div class="portImg">
+                  <img class="popup_button" src="./assets/img/portfolio/button_app.png" alt="사이트 : 버튼 앱">
+                </div>
+                <div class="portTxt">
+                  BUTTON
+                  <p class="portTxt_D"> TDD(테스트 주도 개발)을 이용한<br /> 간단한 버튼 앱</p>
+                </div>
+                <div class="pop_wrap">
+                  <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                  <div class="popTxt">
                     BUTTON
-                    <p class="portTxt_D"> TDD(테스트 주도 개발)을 이용한<br /> 간단한 버튼 앱</p>
                   </div>
-                </a>
+                  <p class="popTxt_D"> TDD(테스트 주도 개발)을 이용한<br /> 간단한 버튼 앱 </p>
+                  <a href="./assets/homepage/button_testing_app/index.html">website 바로가기 <i
+                      class="fa-solid fa-arrow-right-long">
+                    </i></a>
+                  <div class="popImg">
+                    <img src="./assets/img/popup_img/button_app.png" alt="사이트 미리보기 : todoList1">
 
+                  </div>
+                </div>
               </li>
               <li>
-                <a href="https://bidulgirin.github.io/React_netflix_clone/" class="popup">
-                  <div class="portImg">
-                    <img src="./assets/img/webpages/netflix.png" alt="사이트 : 넷플릭스 클론">
-                  </div>
-                  <div class="portTxt">
+                <div class="portImg">
+                  <img class="popup_button" src="./assets/img/webpages/netflix.png" alt="사이트 : 넷플릭스 클론">
+                </div>
+                <div class="portTxt">
+                  넷플릭스
+                  <p class="portTxt_D"> 리액트로 만든 넷플릭스 클론 사이트</p>
+                </div>
+                <div class="pop_wrap">
+                  <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                  <div class="popTxt">
                     넷플릭스
-                    <p class="portTxt_D"> 리액트로 만든 넷플릭스 클론 사이트</p>
                   </div>
-                </a>
+                  <p class="pop_tag">
+                    <span class="pop_tag_span">#React</span>
+                    <span class="pop_tag_span">#Router</span>
+                    <span class="pop_tag_span">#넷플릭스클론</span>
+                    <span class="pop_tag_span">#git배포</span>
+                  </p>
+                  <p class="popTxt_D"> 리액트로 만든 넷플릭스 클론 사이트 </p>
+                  <a href="https://bidulgirin.github.io/React_netflix_clone/">website 바로가기 <i
+                      class="fa-solid fa-arrow-right-long">
+                    </i></a>
+                  <div class="popImg">
+                    <img src="./assets/img/popup_img/Netflix.png" alt="사이트 미리보기: 넷플릭스">
+                    <img src="./assets/img/popup_img/Netflix2.png" alt="사이트 미리보기2: 넷플릭스">
 
+                  </div>
+                </div>
               </li>
               <li>
-                <a href="javascript:void(0)" class="popup">
-                  <div class="portImg">
-                    <img src="./assets/img/portfolio/blog_ready.png" alt="사이트 : 블로그 사이트 준비중">
-                  </div>
-                  <div class="portTxt">
+                <div class="portImg">
+                  <img class="popup_button" src="./assets/img/portfolio/blog.png" alt="사이트 : 블로그 사이트">
+                </div>
+                <div class="portTxt">
+                  블로그
+                  <p class="portTxt_D"> NextJs 와 TypeScript를 이용한 블로그 사이트</p>
+                </div>
+                <div class="pop_wrap">
+                  <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+                  <div class="popTxt">
                     블로그
-                    <p class="portTxt_D"> NextJs 와 TypeScript를 이용한 블로그 사이트</p>
                   </div>
-                </a>
+                  <p class="pop_tag">
+                    <span class="pop_tag_span">#React</span>
+                    <span class="pop_tag_span">#NextJs</span>
+                    <span class="pop_tag_span">#typeScript</span>
+                  </p>
+                  <p class="popTxt_D"> NextJs 와 TypeScript를 이용한 블로그 사이트 </p>
+                  <a href="https://react-blog-app-67a7.vercel.app/">website 바로가기 <i
+                      class="fa-solid fa-arrow-right-long">
+                    </i></a>
+                  <div class="popImg">
+                    <img src="./assets/img/portfolio/blog.png" alt="사이트 미리보기: 블로그">
 
+                  </div>
+                </div>
               </li>
             </ul>
           </article>
-          <ul>
-            <li>
-              <a href="./assets/homepage/portfolioVer1/index.html" class="popup">
-                <div class="portImg">
-                  <img src="./assets/img/webpages/monitorme.png" alt="사이트 : 포트폴리오 사이트">
-                </div>
-                <div class="portTxt">
-                  2019 포트폴리오
-                  <p class="portTxt_D"> 이경민 포트폴리오 사이트/ PC</p>
-                </div>
-              </a>
-              <div class="popup">
-
-              </div>
-            </li>
-            <li>
-              <a href="./assets/homepage/pention/index.html" class="popup">
-                <div class="portImg">
-                  <img src="./assets/img/webpages/monitorp-1.png" alt="사이트 : 바다와시인 펜션 사이트">
-                </div>
-                <div class="portTxt">
-                  바다와 시인
-                  <p class="portTxt_D"> 펜션사이트/반응형</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./assets/homepage/illoom/index.html" class="popup">
-                <div class="portImg">
-                  <img src="./assets/img/webpages/monitorI-1.png" alt="사이트 : 일룸, 가구 판매 사이트">
-                </div>
-                <div class="portTxt">
-                  Iloome
-                  <p class="portTxt_D"> 가구&인테리어 사이트/ 반응형</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./assets/homepage/babasell/index.html" class="popup">
-                <div class="portImg">
-                  <img src="./assets/img/webpages/baba.png" alt="사이트 : 옷 쇼핑몰 사이트">
-                </div>
-                <div class="portTxt">
-                  Babasell
-                  <p class="portTxt_D"> 옷 쇼핑몰 사이트/ PC</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./assets/homepage/urban/index.html" class="popup">
-                <div class="portImg">
-                  <img src="./assets/img/webpages/monitorE.png" alt="사이트 : 건설사 홍보 사이트">
-                </div>
-                <div class="portTxt">
-                  Urban project
-                  <p class="portTxt_D"> 가상 건설 사이트/ PC</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./assets/homepage/market/index.html" class="popup">
-                <div class="portImg">
-                  <img src="./assets/img/webpages/monitorK-1.png" alt="사이트 : 건설사 홍보 사이트">
-                </div>
-                <div class="portTxt">
-                  마켓컬리
-                  <p class="portTxt_D"> 마켓컬리 반응형 </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./404.html" class="popup">
-                <div class="portImg">
-                  <img src="./assets/img/404/sorry.png" alt="페이지: 404페이지">
-                </div>
-                <div class="portTxt">
-                  404
-                  <p class="portTxt_D"> 잘못된 경로입니다</p>
-                </div>
-              </a>
-
-            </li>
-            <!-- <li>
-              <div class="portImg">
-                <img src="./assets/img/webpages/not.png" alt="사이트 : 추가예정">
-              </div>
-              <div class="portTxt">
-                updating...
-              </div>
-            </li> -->
-          </ul>
-
 
         </div>
       </section>
@@ -505,7 +829,7 @@
             </div>
 
             <div class="how2_des">
-              <span class="bold_txt under_border_y">웹 퍼블리셔 담당 업무</span><br />
+              <span class="bold_txt under_border_y">담당 업무</span><br />
               <p><i class="fas fa-sort-down"></i> 홈페이지 제작</p>
               <p><i class="fas fa-sort-down"></i> 웹 페이지 최적화 (SEO)</p>
               <p><i class="fas fa-sort-down"></i> 도메인 변경 </p>
@@ -526,14 +850,11 @@
                   <div class="carr_img">
                     <img src="./assets/img/homepage/diteLive.png" alt="사이트 : 다이어트 라이브">
                   </div>
-                  <div class="go_site"> 사이트 보러가기 → </div>
+                  <div class="go_site"> 사이트 보러가기 <i class="fa-solid fa-arrow-right-long"></i> </div>
                 </a>
               </div>
               <div>
                 <p class="carr_sub_title">다이어트 라이브</p>
-                <p>사용된기술 :
-                  <span class="carr_sub_skill">HTML, CSS, JavaScript, AOS.js</span>
-                </p>
                 <p class="carr_des">
                   일러스트, 상세페이지 디자인 작업<br />
                   회원가입, 로그인 및 게시판 기능 추가<br />
@@ -548,12 +869,11 @@
                   <div class="carr_img">
                     <img src="./assets/img/webpages/how2.PNG" alt="사이트 : 하우투 유튜브">
                   </div>
-                  <div class="go_site"> 사이트 보러가기 → </div>
+                  <div class="go_site"> 사이트 보러가기 <i class="fa-solid fa-arrow-right-long"></i> </div>
                 </a>
               </div>
               <div>
                 <p class="carr_sub_title"> 하우투 유튜브</p>
-                <p>사용된기술 : HTML, CSS, JavaScript, Ajax</p>
                 <p class="carr_des">
                   <a href="https://www.how2youtube.com/"></a>
                   외부 템플릿 디자인 변형 및 리디자인<br />
@@ -569,12 +889,11 @@
                   <div class="carr_img">
                     <img src="./assets/img/webpages/youtubeclass.PNG" alt="사이트 : 유튜브 클래스">
                   </div>
-                  <div class="go_site">사이트 보러가기 →</div>
+                  <div class="go_site">사이트 보러가기 <i class="fa-solid fa-arrow-right-long"></i></div>
                 </a>
               </div>
               <div>
                 <p class="carr_sub_title"> 유튜브 클래스 </p>
-                <p>사용된기술 : HTML, CSS, JavaScript, Php</p>
                 <p class="carr_des">
                   유튜버가 되고 싶은 사람들을 위한 컨설팅 강의 사이트<br />
                   작업: UI/UX 수정
@@ -590,7 +909,7 @@
                   </div>
 
                   <div class="go_site">
-                    사이트 보러가기 →
+                    사이트 보러가기 <i class="fa-solid fa-arrow-right-long"></i>
                   </div>
                 </a>
               </div>
@@ -610,14 +929,12 @@
       </section>
 
       <!-- 4. 이력 사항 end -->
-      <!-- 5. 스킬 start-->
-      <!-- 5. 스킬end -->
 
-      <!-- 6. 연락 start -->
+      <!-- 5. 연락 start -->
       <div id="contact_wrap">
         <div class="contact-up ">
           <div class="contact-form-img">
-            <div id="skill" class="">
+            <div id="skill">
               <div class="skill">
                 <ul class="skill_ul">
                   <li>
@@ -635,13 +952,13 @@
           <div class="contact-form-info">
             <div class="contact-form-info-wrap">
               <div class="box-info-contact">
-                <h3>다양한 분야에 도전하는<br /> 개발자를 찾으신다면?</h3><br />
-                <h5><i class="fa-sharp fa-solid fa-address-card"></i> contect me </h5>
+                <h3>다양한 분야에 도전하는<br /> 개발자를 찾으신다면</h3><br />
+                <p><i class="fa-sharp fa-solid fa-address-card"></i> contect me </p>
                 <p>함께 프로젝트를 진행해요</p>
                 <ul>
                   <li>
                     <span>Phone</span>
-                    <a href="tel:010 4909 9553">010 4909 9553</a>
+                    <a href="tel:01049099553">010 4909 9553</a>
                   </li>
                   <li>
                     <span>Email</span>
@@ -696,7 +1013,7 @@
           </div>
         </div>
       </div>
-      <!-- 6. 연락 end -->
+      <!-- 5. 연락 end -->
 
     </main>
     <!-- 메인컨텐츠 end -->
@@ -714,6 +1031,11 @@
             <a href="https://efficient-canvas-f8a.notion.site/94dfc9d8506846ca951b51d3950f1ab4">
               <img src="./assets/img/sns/notion.png" alt="아이콘 : 노션">
             </a>
+          </p>
+          <p>
+            <i class="fa-solid fa-download">
+              <a href="./assets/pdf/portfolio2022.pdf"></a>
+            </i>
           </p>
         </div>
         <p class="footer_p">
@@ -733,7 +1055,8 @@
   <script src="assets/js/scroll_show_navi.js"></script>
   <script src="assets/js/cursor.js"></script>
   <script src="assets/js/plugins.js"></script>
-
+  <script src="assets/js/pop_modal.js"></script>
+  <script src="assets/js/parallex.js"></script>
   <script>
     AOS.init();
   </script>

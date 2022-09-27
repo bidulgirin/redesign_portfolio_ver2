@@ -24,7 +24,6 @@ if (isMobile()) {
   //location.href = "/main.html";		//PC용 페이지
 
   window.onload = function () {
-    let cursorEffect = document.querySelector(".cursor_event")
     let circle1 = document.querySelector(".circle1")
     let circle2 = document.querySelector(".circle2")
 
@@ -59,21 +58,18 @@ if (isMobile()) {
       //마우스 커서위치 정하기
       cursor.style.left = x + "px"
       cursor.style.top = y + "px"
-      cursorEffect.style.left = x - 20 + "px"
-      cursorEffect.style.top = y - 20 + "px"
+
       //따라오는 원위치
       mouseX = e.pageX
       mouseY = e.pageY
-      cursorEffect.style.opacity = 0
 
       function createSpan() {
         circle1.classList.add("expand")
         circle2.classList.add("expand2")
-        cursorEffect.style.opacity = 1
+
         setTimeout(() => {
           circle1.classList.remove("expand")
           circle2.classList.remove("expand2")
-          cursorEffect.style.opacity = 0
         }, 140)
       }
       //window.addEventListener("click", createSpan)

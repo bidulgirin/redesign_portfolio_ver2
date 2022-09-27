@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "JSDongkang-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BBTreeGR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*상세페이지 공통 스타일*/
+
+.banner img {
+  width: 100%;
+}
+.title {
+  font-family: "SANGJUGyeongcheonIsland";
+  font-size: 35px;
+}
+/* 작은 서브메뉴*/
+.subsubMenu {
+  background-color: rgb(208, 235, 255);
+  font-family: "BBTreeGR";
+  font-weight: bold;
+  padding: 10px 0;
+  font-size: 1.2em;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.subsubMenu ul {
+  max-width: 300px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subsubMenu ul li {
+  width: 30%;
+  border-right: 1px solid #a9bcf5;
+  text-align: center;
+  box-sizing: border-box;
+}
+.subsubMenu ul li:nth-child(3) {
+  border: none;
+}
+.subsubMenu ul li a {
+  display: block;
+  color: #222;
+}
+.subsubMenu ul li a:hover {
+  color: #848484;
+}
+.subsubMenu ul li a:focus {
+  color: #222;
+}
+
+.contain {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}

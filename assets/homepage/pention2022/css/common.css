@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SANGJUGyeongcheonIsland";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JSDongkang-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BBTreeGR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JSDongkang-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BBTreeGR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*전 문서 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body 영역 */
+
+.hidden {
+  display: hidden;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #222;
+  transition: all 0.5s;
+}
+body {
+  font: 14px/1.5 "맑은 고딕";
+  font-family: "BBTreeGR";
+  color: #222;
+}
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header 영역 */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  z-index: 100;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.692);
+}
+
+.header h1 {
+  position: relative;
+  width: 130px;
+  transition: all 0.5s;
+}
+.header h1 img {
+  display: inline-block;
+  width: 100%;
+}
+/* nav 영역 */
+
+/*메인 메뉴*/
+.pc_navMenu {
+  width: 100%;
+  right: 0;
+  top: 0px;
+  z-index: 544;
+}
+
+.pc_navMenu li {
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+}
+.pc_navMenu li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.pc_navMenu li a:hover {
+  color: rgba(33, 33, 33, 0.658);
+}
+
+/*  제목 */
+.blue_title {
+  width: 280px;
+  font-family: "SANGJUGyeongcheonIsland";
+  font-size: 45px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 24px;
+}
+.blue_title > span {
+  font-family: "GmarketSansMedium";
+  font-weight: 100;
+  font-size: 16px;
+  color: rgb(120, 120, 120);
+}
+/*footer*/
+
+/* footer 영역 */
+.footer {
+  width: 100%;
+  background: #123456;
+  color:white;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+.footer_wrap{
+  max-width: 1400px;
+  flex-direction: row;
+  margin:0 auto;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer h6 {
+  max-width: 120px;
+  width:40%;
+}
+.footer img {
+  width: 100%;
+}
+.contact form{
+  padding-top:10px;
+}
+.contact form label{
+  display:inline-block;
+  padding:5px 0;
+}
+.contact form input{
+  width:250px;
+  padding:5px;
+  border-radius: 7px;
+  border:none;
+  background-color: #1f5892;
+}
+
+
+
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .footer h6 {
+    top: 80px;
+    left: 130px;
+    transition: all 1s;
+  }
+}
+@media screen and (max-width:900px) {
+  .footer_wrap{
+    flex-direction: column;
+  }
+  
+.footer h6 {
+  max-width: 160px;
+  width:90%;
+}
+.info{
+  width:90%;
+  margin:0 auto;
+  padding: 20px;
+  margin-bottom:20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.454);
+}
+.contact{
+  font-weight: bold;
+  width:90%;
+  margin:0 auto;
+}
+.contact > span {
+  display: inline-block;
+}
+}
+@media screen and (max-width: 700px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  .footer h6 {
+    top: 130px;
+    left: 30px;
+    transition: all 1s;
+  }
+  .footer h6 img {
+    width: 100%;
+  }
+  /* nav 영역 */
+  .pc {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  /*서브 메뉴*/
+
+  .mobile_navMenu {
+    text-align: right;
+  }
+  .mobile_navMenu .hamberger {
+    display: inline-block;
+  }
+  .mobile_navMenu .hamberger i {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .mobile_navMenu ul {
+    position: absolute;
+    z-index: 230;
+    text-align: center;
+    width: 100vw;
+    top: 75px;
+    left: 0;
+    background: #eee;
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .mobile_navMenu ul.clicked {
+    visibility: visible;
+    opacity: 1;
+    
+  }
+  .mobile_navMenu ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+    transition: all 0.5s;
+  }
+  .mobile_navMenu ul li a {
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px 0;
+  }
+  .mobile_navMenu ul li:hover {
+    background: rgb(133, 204, 255);
+  }
+}

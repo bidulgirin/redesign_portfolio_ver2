@@ -2,6 +2,8 @@
     checkURL On
     ServerEncoding EUC-KR
     ClientEncoding UTF-8
-    ErrorDocument 404 https://leekyungminweb.kr/404.html
-    ErrorDocument 403 https://leekyungminweb.kr/403.html
+    ErrorDocument 401 https://leekyungminweb.kr/error/401.html
+    ErrorDocument 403 https://leekyungminweb.kr/error/403.html
+    ErrorDocument 404 https://leekyungminweb.kr/error/404.html
+    ErrorDocument 500 https://leekyungminweb.kr/error/500.html
 </IfModule>

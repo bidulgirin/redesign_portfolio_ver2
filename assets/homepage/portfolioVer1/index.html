@@ -18,21 +18,14 @@
 	<meta property="og:image" content="images/swim.png">
 	<meta property="og:url" content="http://kmportfolio.dothome.co.kr/">
 	<link rel="canonical" href="http://kmportfolio.dothome.co.kr/">
-
-
-
 	<title>lee_kyung_min_portfolio</title>
-
-
 	<link rel="shortcut icon" href="images/icon.png">
 	<link rel="apple-touch-icon" href="images/icon.png">
 	<link rel="stylesheet" type="text/css" href="css/introducestyle.css">
 	<link rel="stylesheet" href="css/swipebox.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css" />
 	<link rel="stylesheet" href="css/jquery.modal.css">
-
 	<meta name="naver-site-verification" content="067bf4dfa7ffd4ff165e1dc6283f812751ba7d9e" />
-
 	<!-- 스크립트 선언 -->
 	<script src="js/jquery-2.1.0.min.js"></script>
 	<!-- 포트폴리오 라이트 박스 -->
@@ -45,67 +38,16 @@
 	<script src="js/jquery.easing.js"></script>
 	<!--네비게이션에 대한 동적 구현-->
 	<!-- <script src="js/intro.js"></script> -->
-	<!-- 원형 그래프 plugin -->
-	<script src="js/circle-progress.js"></script>
-	<script src="js/graph-1.js"></script>
 	<!--스크롤시 컨텐츠 나타남-->
 	<script src="js/respondtxt.js"></script>
 
-
-
-
 	<!-- 스크롤 시 부드럽게 하는 스크립트 -->
-	<script>
-		$(function () {
-			$('#menu a').click(function () {
-				$('body').scrollTo($(this).attr('href'), 500);
-				return false;
-			});
-			$('#headerNav a').click(function () {
-				$('body').scrollTo($(this).attr('href'), 500);
-				return false;
-			});
-			$('.swimming').click(function () {
-				$('body').scrollTo($(this).attr('href'), 500);
-				return false;
-			});
-			$('h6 a').click(function () {
-				$('body').scrollTo($(this).attr('href'), 500);
-				return false;
-			});
-
-			$('#topM a').click(function () {
-				$('body').scrollTo($(this).attr('href'), 500);
-				return false;
-			});
-
-
-		});
-	</script>
+	<script src="js/scrollTo.js"></script>
 	<script src="js/script-1.js"></script>
 	<!-- light box -->
 	<script src="js/ios-orientationchange-fix.js"></script>
 	<script src="js/jquery.swipebox.js"></script>
-	<script>
-		$(document).ready(function () {
-
-			/* Basic Gallery */
-			$('.swipebox').swipebox();
-
-			/* Video */
-			$('.swipebox-video').swipebox();
-
-			/* Dynamic Gallery */
-			$('#gallery').click(function (e) {
-				e.preventDefault();
-				$.swipebox([
-					{ href: 'http://swipebox.csag.co/mages/image-1.jpg', title: 'My Caption' },
-					{ href: 'http://swipebox.csag.co/images/image-2.jpg', title: 'My Second Caption' }
-				]);
-			});
-
-		});
-	</script>
+	<script src="js/swipebox_json.js"></script>
 	<script src="js/tabmenu.js"></script>
 
 </head>
@@ -240,12 +182,8 @@
 
 
 				<div class="Self_introduction">
-
-
 					<p>안녕하세요! 끊임 없이 노력하는 예비 웹 퍼블리셔 이경민 입니다.<br /> 실제 실무 경험을 대비 하기위해 다양한 웹 사이트를 제작해 경험을 쌓았습니다.<br />
 						html5, Css3, jQuery 등 기초를 탄탄하게 공부하였고 앞으로 성장하기 위해 <br />연구를 게을리지 않는 성실한 사람이 되도록 노력하고 있습니다</p>
-
-
 
 				</div>
 			</section>
@@ -262,9 +200,7 @@
 					<li>
 						<div class="photoshop pr">
 
-							<div class="second circle">
-								<strong></strong>
-							</div>
+
 							<div class="program">
 								<img src="images/program/psd.png" alt="photoshop">
 							</div>
@@ -281,9 +217,7 @@
 					</li>
 					<li>
 						<div class="illust pr">
-							<div class="second circle">
-								<strong></strong>
-							</div>
+
 							<div class="program">
 								<img src="images/program/ai.png" alt="illust">
 							</div>
@@ -298,9 +232,7 @@
 					<li>
 						<div class="html pr">
 
-							<div class="second circle">
-								<strong></strong>
-							</div>
+
 							<div class="program">
 								<img src="images/program/html.png" alt="html">
 							</div>
@@ -316,9 +248,7 @@
 					</li>
 					<li>
 						<div class="css pr">
-							<div class="second circle">
-								<strong></strong>
-							</div>
+
 							<div class="program">
 								<img src="images/program/css.png" alt="css">
 							</div>
@@ -326,16 +256,11 @@
 								<p>css</p>
 								<p>홈페이지의 심미성과 사용성을 위해 레이아웃을 자유자재로 변형 할 수 있습니다</p>
 							</div>
-
-
-
 						</div>
 					</li>
 					<li>
 						<div class="javascript pr">
-							<div class="second circle">
-								<strong></strong>
-							</div>
+
 							<div class="program">
 								<img src="images/program/java.png" alt="javascript">
 							</div>
@@ -349,9 +274,7 @@
 					</li>
 					<li>
 						<div class="jquery pr">
-							<div class="second circle">
-								<strong></strong>
-							</div>
+
 							<div class="program">
 								<img src="images/program/jquery.png" alt="jquery">
 							</div>
@@ -365,9 +288,7 @@
 					</li>
 					<li>
 						<div class="autocad pr">
-							<div class="second circle">
-								<strong></strong>
-							</div>
+
 							<div class="program">
 								<img src="images/program/autocad.png" alt="autocad">
 							</div>
@@ -381,9 +302,7 @@
 					</li>
 					<li>
 						<div class="max pr">
-							<div class="second circle">
-								<strong></strong>
-							</div>
+
 							<div class="program">
 								<img src="images/program/max.png" alt="3dmax">
 							</div>
@@ -397,9 +316,7 @@
 					</li>
 					<li>
 						<div class="Rhinoceros pr">
-							<div class="second circle">
-								<strong></strong>
-							</div>
+
 							<div class="program">
 								<img src="images/program/r6.png" alt="Rhinoceros">
 							</div>
@@ -437,64 +354,6 @@
 
 								<div class="website wrap">
 									<ul class="port cb">
-										<li>
-											<a href="javascript:void(0);" rel="modal:open" target="_blank">
-												<div class="portImg">
-													<img src="images/monitorp-1.png" alt="pension">
-												</div>
-												<div class="portTxt">
-													심리테스트
-													<p class="portTxt_D"> 자바스크립트 심리테스트 조코딩</p>
-												</div>
-											</a>
-											<div id="pop1" class="pop">
-												<h2>#01 심리테스트</h2>
-												<h3>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</h3>
-												<hr>
-												<div class="pop_sub">
-													<div class="pop_left pop_f">
-														<div class="big">
-															<a href="javascript:void(0);" target="_blank"><img
-																	src="images/monitorp-1.png" alt="바다와시인"></a>
-															<span><a target="_blank" href="webpages/"
-																	data-hover="보러가기">홈페이지</a></span>
-															<span class="document"><a target="_blank"
-																	href="pdf/pension.pdf"
-																	data-hover="보러가기">기획서</a></span>
-														</div>
-													</div>
-													<div class="pop_right pop_f">
-														<div class="pop_sub">
-															<ul>
-																<li>
-																	<h4>01. 작업내용</h4>
-																	<p>- 개인 제작 작품 / 리서치, 디자인, 설계,코딩 100% 개인제작</p>
-																</li>
-																<li>
-																	<h4>02. 작업툴</h4>
-																	<p>- PHOTOSHOP, ILLUSTRATOR, HTML, JQUERY</p>
-																</li>
-																<li>
-																	<h4>03. 제작페이지</h4>
-																	<p>- 메인 페이지, 서브 페이지(진행중) </p>
-																</li>
-																<li>
-																	<h4>04. 제작기간</h4>
-																	<p>- 약 3주</p>
-																</li>
-																<li>
-																	<h4>05. 제작후기</h4>
-																	<p>- 스스로 처음 디자인과 구현까지 해 본 사이트라 많이 미흡하지만 홈페이지의 기초를 알게
-																		해주며 배웠던 기능을 연습할 수 있었던 애정이 가는 사이트</p>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-
-
-										</li>
 										<li>
 											<a href="javascript:void(0);" rel="modal:open" target="_blank">
 												<div class="portImg">

@@ -1,0 +1,186 @@
+@charset "UTF-8";
+#grt_wrap {
+  scroll-snap-align: start;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.grt_background {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.grt_contents {
+  /* 컨텐츠 중앙으로 모으기위해 flex 사용*/
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.grt_contents #threeJs_object {
+  /* three.js 모델 스타일*/
+  background: rgba(255, 255, 255, 0.147);
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  border-radius: 50%;
+}
+
+.grt_contents #threeJs_object:hover {
+  transform: translate(-50%, -60%);
+}
+
+.grt_contents .grts {
+  position: absolute;
+  z-index: 2;
+  font-family: "SBAggroB";
+  /* 인삿말 */
+  font-size: 9.5em;
+  color: rgb(253, 159, 70);
+}
+
+.grt_contents .grts > span {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #E8ECE8;
+  -webkit-text-fill-color: transparent;
+}
+
+.back_img span {
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.065);
+  position: absolute;
+  z-index: 0;
+}
+
+@keyframes a {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+.back_img span:nth-child(1) {
+  top: 4%;
+  left: 84%;
+  animation: a 1s infinite alternate;
+}
+
+.back_img span:nth-child(2) {
+  top: 9%;
+  left: 9%;
+  animation: a 1s infinite alternate;
+}
+
+.back_img span:nth-child(3) {
+  top: 8%;
+  left: 63%;
+  animation: a 1s infinite alternate;
+}
+
+.back_img span:nth-child(4) {
+  top: 47%;
+  left: 28%;
+  animation: a 2s infinite alternate;
+}
+
+.back_img span:nth-child(5) {
+  top: 40%;
+  left: 9%;
+  animation: a 2s infinite alternate;
+}
+
+.back_img span:nth-child(6) {
+  top: 40%;
+  left: 78%;
+  animation: a 2s infinite alternate;
+}
+
+.back_img span:nth-child(7) {
+  top: 79%;
+  left: 77%;
+  animation: a 1s infinite alternate;
+}
+
+.back_img span:nth-child(8) {
+  top: 76%;
+  left: 6%;
+  animation: a 1s infinite alternate;
+}
+
+.back_img span:nth-child(9) {
+  top: 62%;
+  left: 71%;
+  animation: a 1s infinite alternate;
+}
+
+.back_img span:nth-child(10) {
+  top: 90%;
+  left: 9%;
+  animation: a 2s infinite alternate;
+}
+
+.back_img span:nth-child(11) {
+  top: 90%;
+  left: 34%;
+  animation: a 2s infinite alternate;
+}
+
+.back_img span:nth-child(12) {
+  top: 90%;
+  left: 76%;
+  animation: a 2s infinite alternate;
+}
+
+@keyframes animationgradienttitle {
+  0% {
+    background-position: 200px 1600px;
+  }
+  100% {
+    background-position: 1600px 200px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .grt_contents .grts {
+    /* 인삿말 */
+    font-size: 5em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .grt_contents .grts {
+    /* 인삿말 */
+    font-size: 3em;
+  }
+  .grt_contents .grts .grt_contents #threeJs_object {
+    user-select: none;
+    pointer-events: none;
+  }
+}
+@media screen and (max-width: 380px) {
+  .grt_contents .grts {
+    font-size: 50px;
+  }
+  .back_img span {
+    font-size: 30px;
+  }
+}
+@media screen and (max-height: 900px) {
+  #grt_wrap {
+    height: 100vh;
+  }
+}
